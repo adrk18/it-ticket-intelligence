@@ -1,0 +1,12 @@
+{
+  "model": "TF-IDF (1-2 grams) + Logistic Regression",
+  "evaluation": "grouped 5-fold cross-validation by message (out-of-fold)",
+  "macro_f1": 0.5414479430433057,
+  "weighted_f1": 0.5411323244210353,
+  "macro_precision": 0.531165025597993,
+  "macro_recall": 0.5841409797296421,
+  "accuracy": 0.5845,
+  "roc_auc_macro": 0.8615058787794297,
+  "review_share": 0.45705,
+  "confidence_threshold": 0.6
+}

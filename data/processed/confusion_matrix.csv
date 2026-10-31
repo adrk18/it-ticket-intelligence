@@ -1,0 +1,9 @@
+,account_access,billing_problem,bug,feature_request,how_to,other,performance,security_concern
+account_access,0,830,829,0,0,0,0,863
+billing_problem,814,841,0,0,821,0,0,0
+bug,0,0,2470,0,0,0,0,0
+feature_request,0,0,0,2497,0,0,0,0
+how_to,0,0,0,0,2548,0,0,0
+other,833,0,0,0,1659,0,0,0
+performance,0,0,0,0,0,0,2503,0
+security_concern,829,0,0,0,0,832,0,831

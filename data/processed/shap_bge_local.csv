@@ -1,0 +1,769 @@
+initial_message,predicted,confidence,term,shap
+Can you add an option to customize analytics dashboard?,feature_request,0.97873175,customize,2.050059568408936
+Can you add an option to customize analytics dashboard?,feature_request,0.97873175,option,1.2368290913956501
+Can you add an option to customize analytics dashboard?,feature_request,0.97873175,add,0.9031730887435736
+Can you add an option to customize analytics dashboard?,feature_request,0.97873175,Can,0.4783307083542388
+Can you add an option to customize analytics dashboard?,feature_request,0.97873175,dashboard?,-0.22360601529242496
+Can you add an option to customize analytics dashboard?,feature_request,0.97873175,an,0.15883838408996193
+Can you add an option to customize analytics dashboard?,feature_request,0.97873175,you,-0.0810048223014862
+Can you add an option to customize analytics dashboard?,feature_request,0.97873175,analytics,0.07435687581698096
+Can you add an option to customize api integration?,feature_request,0.9834088,customize,2.0644208965793487
+Can you add an option to customize api integration?,feature_request,0.9834088,option,1.3955031426179967
+Can you add an option to customize api integration?,feature_request,0.9834088,add,0.8389380464478147
+Can you add an option to customize api integration?,feature_request,0.9834088,Can,0.5951153284500519
+Can you add an option to customize api integration?,feature_request,0.9834088,api,-0.4220230837189961
+Can you add an option to customize api integration?,feature_request,0.9834088,an,0.12264830567060968
+Can you add an option to customize api integration?,feature_request,0.9834088,integration?,0.06253648802401528
+Can you add an option to customize api integration?,feature_request,0.9834088,you,-0.05017099801510101
+Can you add an option to customize billing?,feature_request,0.9879274,customize,2.1708745104925975
+Can you add an option to customize billing?,feature_request,0.9879274,option,1.5262705160038819
+Can you add an option to customize billing?,feature_request,0.9879274,add,0.9855711489915845
+Can you add an option to customize billing?,feature_request,0.9879274,billing?,-0.7047426789999008
+Can you add an option to customize billing?,feature_request,0.9879274,Can,0.5289251797256018
+Can you add an option to customize billing?,feature_request,0.9879274,an,0.1501266614312217
+Can you add an option to customize billing?,feature_request,0.9879274,to,0.03717563478719621
+Can you add an option to customize billing?,feature_request,0.9879274,you,-0.03074595857234227
+Can you add an option to customize data export?,feature_request,0.95562446,customize,2.114573531018362
+Can you add an option to customize data export?,feature_request,0.95562446,option,1.280163279128452
+Can you add an option to customize data export?,feature_request,0.95562446,add,0.8922199822134446
+Can you add an option to customize data export?,feature_request,0.95562446,data,-0.6669260284730362
+Can you add an option to customize data export?,feature_request,0.95562446,Can,0.4604807593283198
+Can you add an option to customize data export?,feature_request,0.95562446,export?,0.16306829521107313
+Can you add an option to customize data export?,feature_request,0.95562446,an,0.10954190421672108
+Can you add an option to customize data export?,feature_request,0.95562446,to,0.05799771895011267
+Can you add an option to customize login auth?,feature_request,0.9823888,customize,2.197991092337502
+Can you add an option to customize login auth?,feature_request,0.9823888,option,1.3199304714562399
+Can you add an option to customize login auth?,feature_request,0.9823888,add,0.9289628800418638
+Can you add an option to customize login auth?,feature_request,0.9823888,login,-0.56472838362531
+Can you add an option to customize login auth?,feature_request,0.9823888,Can,0.5532046720149023
+Can you add an option to customize login auth?,feature_request,0.9823888,auth?,-0.3154885545136436
+Can you add an option to customize login auth?,feature_request,0.9823888,an,0.12226993375354336
+Can you add an option to customize login auth?,feature_request,0.9823888,you,-0.10565787008593953
+Can you add an option to customize mobile app?,feature_request,0.99536264,customize,2.2296728158754004
+Can you add an option to customize mobile app?,feature_request,0.99536264,option,1.4872533940133594
+Can you add an option to customize mobile app?,feature_request,0.99536264,add,0.812521411171035
+Can you add an option to customize mobile app?,feature_request,0.99536264,Can,0.5545682161100328
+Can you add an option to customize mobile app?,feature_request,0.99536264,app?,0.32520753324977947
+Can you add an option to customize mobile app?,feature_request,0.99536264,an,0.16876916386305332
+Can you add an option to customize mobile app?,feature_request,0.99536264,to,0.10977762750689941
+Can you add an option to customize mobile app?,feature_request,0.99536264,you,-0.1054717798554708
+Can you add an option to customize notifications?,feature_request,0.98989606,customize,2.1155800949959525
+Can you add an option to customize notifications?,feature_request,0.98989606,option,1.5003972340197784
+Can you add an option to customize notifications?,feature_request,0.98989606,add,0.9856922504447755
+Can you add an option to customize notifications?,feature_request,0.98989606,Can,0.5502349566136088
+Can you add an option to customize notifications?,feature_request,0.98989606,notifications?,-0.3315514130961327
+Can you add an option to customize notifications?,feature_request,0.98989606,an,0.11176738334553575
+Can you add an option to customize notifications?,feature_request,0.98989606,you,-0.03878860679410752
+Can you add an option to customize notifications?,feature_request,0.98989606,to,-0.004853616512957071
+Can you explain how to configure analytics dashboard properly?,how_to,0.97360015,configure,1.5671558689030387
+Can you explain how to configure analytics dashboard properly?,how_to,0.97360015,how,1.1150173572320785
+Can you explain how to configure analytics dashboard properly?,how_to,0.97360015,explain,0.7903611570596689
+Can you explain how to configure analytics dashboard properly?,how_to,0.97360015,dashboard,0.7179711864581192
+Can you explain how to configure analytics dashboard properly?,how_to,0.97360015,analytics,0.7154937322650633
+Can you explain how to configure analytics dashboard properly?,how_to,0.97360015,properly?,0.4470872454700015
+Can you explain how to configure analytics dashboard properly?,how_to,0.97360015,to,0.3448497238613314
+Can you explain how to configure analytics dashboard properly?,how_to,0.97360015,Can,-0.2781276047939344
+Can you explain how to configure api integration properly?,how_to,0.98131496,configure,1.5362739826951708
+Can you explain how to configure api integration properly?,how_to,0.98131496,how,1.0619145249563544
+Can you explain how to configure api integration properly?,how_to,0.98131496,api,0.9058183379116509
+Can you explain how to configure api integration properly?,how_to,0.98131496,explain,0.7848604492724889
+Can you explain how to configure api integration properly?,how_to,0.98131496,integration,0.5542278114765408
+Can you explain how to configure api integration properly?,how_to,0.98131496,properly?,0.5331821415632494
+Can you explain how to configure api integration properly?,how_to,0.98131496,to,0.3293801210702416
+Can you explain how to configure api integration properly?,how_to,0.98131496,Can,-0.2849464934260126
+Can you explain how to configure billing properly?,how_to,0.9640119,configure,1.8718096024933315
+Can you explain how to configure billing properly?,how_to,0.9640119,how,1.2568114178521284
+Can you explain how to configure billing properly?,how_to,0.9640119,explain,0.7799009510448999
+Can you explain how to configure billing properly?,how_to,0.9640119,properly?,0.5762108456520808
+Can you explain how to configure billing properly?,how_to,0.9640119,billing,0.3954882210209253
+Can you explain how to configure billing properly?,how_to,0.9640119,to,0.3839938203493757
+Can you explain how to configure billing properly?,how_to,0.9640119,Can,-0.2633393372808184
+Can you explain how to configure billing properly?,how_to,0.9640119,you,-0.12566293336096246
+Can you explain how to configure data export properly?,how_to,0.9907857,configure,1.5980160910458792
+Can you explain how to configure data export properly?,how_to,0.9907857,export,1.3525274922450399
+Can you explain how to configure data export properly?,how_to,0.9907857,how,1.1165911640912765
+Can you explain how to configure data export properly?,how_to,0.9907857,data,0.8925257501621096
+Can you explain how to configure data export properly?,how_to,0.9907857,explain,0.7145500068626707
+Can you explain how to configure data export properly?,how_to,0.9907857,properly?,0.3968278699451022
+Can you explain how to configure data export properly?,how_to,0.9907857,to,0.3249400634141198
+Can you explain how to configure data export properly?,how_to,0.9907857,Can,-0.26409494373060405
+Can you explain how to configure login auth properly?,how_to,0.9621817,configure,1.5120274234858764
+Can you explain how to configure login auth properly?,how_to,0.9621817,how,1.175407967444449
+Can you explain how to configure login auth properly?,how_to,0.9621817,explain,0.9069725746200198
+Can you explain how to configure login auth properly?,how_to,0.9621817,auth,0.7903284203438533
+Can you explain how to configure login auth properly?,how_to,0.9621817,properly?,0.49856771926085175
+Can you explain how to configure login auth properly?,how_to,0.9621817,to,0.31735914888836114
+Can you explain how to configure login auth properly?,how_to,0.9621817,Can,-0.23496793118261158
+Can you explain how to configure login auth properly?,how_to,0.9621817,you,-0.12983293859731573
+Can you explain how to configure mobile app properly?,how_to,0.9840682,configure,1.9180940670153461
+Can you explain how to configure mobile app properly?,how_to,0.9840682,how,1.18471115160556
+Can you explain how to configure mobile app properly?,how_to,0.9840682,app,0.7965880235036218
+Can you explain how to configure mobile app properly?,how_to,0.9840682,explain,0.7957523950981714
+Can you explain how to configure mobile app properly?,how_to,0.9840682,properly?,0.5586409801528567
+Can you explain how to configure mobile app properly?,how_to,0.9840682,to,0.4507322890890973
+Can you explain how to configure mobile app properly?,how_to,0.9840682,Can,-0.2210577965019241
+Can you explain how to configure mobile app properly?,how_to,0.9840682,you,-0.09772308130585969
+Can you explain how to configure notifications properly?,how_to,0.98015094,configure,1.9835419091440392
+Can you explain how to configure notifications properly?,how_to,0.98015094,how,1.3175515391996926
+Can you explain how to configure notifications properly?,how_to,0.98015094,explain,0.8633483770347776
+Can you explain how to configure notifications properly?,how_to,0.98015094,properly?,0.5804191302685512
+Can you explain how to configure notifications properly?,how_to,0.98015094,notifications,0.570699093171528
+Can you explain how to configure notifications properly?,how_to,0.98015094,to,0.38300428674334625
+Can you explain how to configure notifications properly?,how_to,0.98015094,Can,-0.2398968063649677
+Can you explain how to configure notifications properly?,how_to,0.98015094,you,-0.13522705975032975
+How can I export my data from the analytics dashboard section?,how_to,0.9805197,export,1.3977526324651997
+How can I export my data from the analytics dashboard section?,how_to,0.9805197,How,1.1562163936025298
+How can I export my data from the analytics dashboard section?,how_to,0.9805197,section?,1.0428646924863814
+How can I export my data from the analytics dashboard section?,how_to,0.9805197,data,0.7558012536464829
+How can I export my data from the analytics dashboard section?,how_to,0.9805197,dashboard,0.6536919138175235
+How can I export my data from the analytics dashboard section?,how_to,0.9805197,from,0.5020711069026209
+How can I export my data from the analytics dashboard section?,how_to,0.9805197,analytics,0.4479077138813032
+How can I export my data from the analytics dashboard section?,how_to,0.9805197,the,-0.13293179431862984
+How can I export my data from the api integration section?,how_to,0.9811204,export,1.328966793895284
+How can I export my data from the api integration section?,how_to,0.9811204,How,1.0733364793559346
+How can I export my data from the api integration section?,how_to,0.9811204,section?,0.99992086774257
+How can I export my data from the api integration section?,how_to,0.9811204,data,0.8260863502906355
+How can I export my data from the api integration section?,how_to,0.9811204,api,0.7725847215062444
+How can I export my data from the api integration section?,how_to,0.9811204,from,0.5235824762484729
+How can I export my data from the api integration section?,how_to,0.9811204,integration,0.28907751407458215
+How can I export my data from the api integration section?,how_to,0.9811204,can,-0.18095925086074424
+How can I export my data from the billing section?,how_to,0.98127234,export,1.668886697954599
+How can I export my data from the billing section?,how_to,0.98127234,How,1.2123583678215264
+How can I export my data from the billing section?,how_to,0.98127234,section?,1.094449946520821
+How can I export my data from the billing section?,how_to,0.98127234,data,1.00311511390739
+How can I export my data from the billing section?,how_to,0.98127234,from,0.589070476177667
+How can I export my data from the billing section?,how_to,0.98127234,can,-0.14487680184935764
+How can I export my data from the billing section?,how_to,0.98127234,the,-0.10758032822419733
+How can I export my data from the billing section?,how_to,0.98127234,I,-0.10545577236584253
+How can I export my data from the data export section?,how_to,0.9812004,export,1.1715542385975513
+How can I export my data from the data export section?,how_to,0.9812004,How,1.1642839767071074
+How can I export my data from the data export section?,how_to,0.9812004,section?,1.0847046009045815
+How can I export my data from the data export section?,how_to,0.9812004,export,0.7857847910336768
+How can I export my data from the data export section?,how_to,0.9812004,data,0.6914806153480116
+How can I export my data from the data export section?,how_to,0.9812004,data,0.5030167900896698
+How can I export my data from the data export section?,how_to,0.9812004,from,0.45470153655410567
+How can I export my data from the data export section?,how_to,0.9812004,the,-0.1867012295716083
+How can I export my data from the login auth section?,how_to,0.9766916,export,1.4344713163023242
+How can I export my data from the login auth section?,how_to,0.9766916,How,1.0907960276669062
+How can I export my data from the login auth section?,how_to,0.9766916,section?,0.9909726444991993
+How can I export my data from the login auth section?,how_to,0.9766916,data,0.8818881808077278
+How can I export my data from the login auth section?,how_to,0.9766916,from,0.5151955710775059
+How can I export my data from the login auth section?,how_to,0.9766916,auth,0.43898058261018075
+How can I export my data from the login auth section?,how_to,0.9766916,I,-0.1368602867078299
+How can I export my data from the login auth section?,how_to,0.9766916,the,-0.12930965107068687
+How can I export my data from the mobile app section?,how_to,0.98848534,export,1.6155955075013506
+How can I export my data from the mobile app section?,how_to,0.98848534,How,1.1986888896378256
+How can I export my data from the mobile app section?,how_to,0.98848534,section?,0.9885827660130557
+How can I export my data from the mobile app section?,how_to,0.98848534,data,0.9601361847457094
+How can I export my data from the mobile app section?,how_to,0.98848534,app,0.6386803392638025
+How can I export my data from the mobile app section?,how_to,0.98848534,from,0.6086765973899967
+How can I export my data from the mobile app section?,how_to,0.98848534,mobile,0.13662124127794675
+How can I export my data from the mobile app section?,how_to,0.98848534,the,-0.12659526064153348
+How can I export my data from the notifications section?,how_to,0.9826918,export,1.7350986658107674
+How can I export my data from the notifications section?,how_to,0.9826918,How,1.1563194845877012
+How can I export my data from the notifications section?,how_to,0.9826918,section?,1.053770670342067
+How can I export my data from the notifications section?,how_to,0.9826918,data,0.9634330647332319
+How can I export my data from the notifications section?,how_to,0.9826918,from,0.5931541273518215
+How can I export my data from the notifications section?,how_to,0.9826918,notifications,0.3405427431539887
+How can I export my data from the notifications section?,how_to,0.9826918,the,-0.15146430417422285
+How can I export my data from the notifications section?,how_to,0.9826918,I,-0.12205106755570748
+I am seeing an error message when I click on analytics dashboard.,bug,0.9816098,error,3.1641365037723044
+I am seeing an error message when I click on analytics dashboard.,bug,0.9816098,click,1.324718281686911
+I am seeing an error message when I click on analytics dashboard.,bug,0.9816098,message,0.6034664972509222
+I am seeing an error message when I click on analytics dashboard.,bug,0.9816098,when,0.49446975888165684
+I am seeing an error message when I click on analytics dashboard.,bug,0.9816098,seeing,0.392332946139282
+I am seeing an error message when I click on analytics dashboard.,bug,0.9816098,analytics,-0.3723060158569191
+I am seeing an error message when I click on analytics dashboard.,bug,0.9816098,on,0.2862360525360226
+I am seeing an error message when I click on analytics dashboard.,bug,0.9816098,an,-0.24082073741101945
+I am seeing an error message when I click on api integration.,bug,0.980713,error,2.8832648044497837
+I am seeing an error message when I click on api integration.,bug,0.980713,click,1.56386315336862
+I am seeing an error message when I click on api integration.,bug,0.980713,message,0.6456024485130897
+I am seeing an error message when I click on api integration.,bug,0.980713,integration.,-0.4794080943863679
+I am seeing an error message when I click on api integration.,bug,0.980713,when,0.469168206703181
+I am seeing an error message when I click on api integration.,bug,0.980713,on,0.3772132087896702
+I am seeing an error message when I click on api integration.,bug,0.980713,seeing,0.36574321291254897
+I am seeing an error message when I click on api integration.,bug,0.980713,an,-0.22731406402600782
+I am seeing an error message when I click on billing.,bug,0.97405034,error,3.3279451029641307
+I am seeing an error message when I click on billing.,bug,0.97405034,click,1.5006322900905742
+I am seeing an error message when I click on billing.,bug,0.97405034,billing.,-0.8578478438578128
+I am seeing an error message when I click on billing.,bug,0.97405034,message,0.6810394737589976
+I am seeing an error message when I click on billing.,bug,0.97405034,when,0.5185749759798146
+I am seeing an error message when I click on billing.,bug,0.97405034,seeing,0.4003595101718309
+I am seeing an error message when I click on billing.,bug,0.97405034,on,0.3294446001041671
+I am seeing an error message when I click on billing.,bug,0.97405034,an,-0.24940255464606992
+I am seeing an error message when I click on data export.,bug,0.9769736,error,3.089700119104909
+I am seeing an error message when I click on data export.,bug,0.9769736,click,1.544470214265338
+I am seeing an error message when I click on data export.,bug,0.9769736,message,0.6356798789760948
+I am seeing an error message when I click on data export.,bug,0.9769736,when,0.5070363956832827
+I am seeing an error message when I click on data export.,bug,0.9769736,export.,-0.4712258253456183
+I am seeing an error message when I click on data export.,bug,0.9769736,on,0.3574769786178721
+I am seeing an error message when I click on data export.,bug,0.9769736,seeing,0.31394024616722865
+I am seeing an error message when I click on data export.,bug,0.9769736,data,-0.29279403418926164
+I am seeing an error message when I click on login auth.,bug,0.94982165,error,3.017851758996648
+I am seeing an error message when I click on login auth.,bug,0.94982165,click,1.3337664472656852
+I am seeing an error message when I click on login auth.,bug,0.94982165,auth.,-0.8185924257712198
+I am seeing an error message when I click on login auth.,bug,0.94982165,message,0.6536956536703221
+I am seeing an error message when I click on login auth.,bug,0.94982165,when,0.45267373058692384
+I am seeing an error message when I click on login auth.,bug,0.94982165,seeing,0.3832369692661241
+I am seeing an error message when I click on login auth.,bug,0.94982165,on,0.3255567309343148
+I am seeing an error message when I click on login auth.,bug,0.94982165,login,0.2562772961524231
+I am seeing an error message when I click on mobile app.,bug,0.99183005,error,3.400939300729437
+I am seeing an error message when I click on mobile app.,bug,0.99183005,click,1.4101800491584477
+I am seeing an error message when I click on mobile app.,bug,0.99183005,message,0.5891298631316353
+I am seeing an error message when I click on mobile app.,bug,0.99183005,when,0.5537482322278331
+I am seeing an error message when I click on mobile app.,bug,0.99183005,seeing,0.46564906200106404
+I am seeing an error message when I click on mobile app.,bug,0.99183005,on,0.3238408933690652
+I am seeing an error message when I click on mobile app.,bug,0.99183005,an,-0.2412631377077852
+I am seeing an error message when I click on mobile app.,bug,0.99183005,am,-0.10147094073212162
+I am seeing an error message when I click on notifications.,bug,0.9905314,error,3.4107480982767386
+I am seeing an error message when I click on notifications.,bug,0.9905314,click,1.4746039934080075
+I am seeing an error message when I click on notifications.,bug,0.9905314,when,0.5653279155852955
+I am seeing an error message when I click on notifications.,bug,0.9905314,message,0.5490473406144764
+I am seeing an error message when I click on notifications.,bug,0.9905314,seeing,0.4959862800688627
+I am seeing an error message when I click on notifications.,bug,0.9905314,on,0.2643187304370072
+I am seeing an error message when I click on notifications.,bug,0.9905314,an,-0.21301580118593258
+I am seeing an error message when I click on notifications.,bug,0.9905314,notifications.,-0.1929747512163581
+I cannot log in; the system says my password is incorrect.,account_access,0.9865708,password,2.7406819262889934
+I cannot log in; the system says my password is incorrect.,account_access,0.9865708,cannot,1.84934560848564
+I cannot log in; the system says my password is incorrect.,account_access,0.9865708,in;,1.1673555095452928
+I cannot log in; the system says my password is incorrect.,account_access,0.9865708,incorrect.,0.7621001693937495
+I cannot log in; the system says my password is incorrect.,account_access,0.9865708,system,0.6434012735238319
+I cannot log in; the system says my password is incorrect.,account_access,0.9865708,log,0.3438179704835061
+I cannot log in; the system says my password is incorrect.,account_access,0.9865708,I,0.27087847469387966
+I cannot log in; the system says my password is incorrect.,account_access,0.9865708,says,0.1930399814134121
+I downgraded my plan but I am still being billed for the higher tier.,billing_problem,0.9889487,billed,1.72075334055328
+I downgraded my plan but I am still being billed for the higher tier.,billing_problem,0.9889487,downgraded,1.4655635524625072
+I downgraded my plan but I am still being billed for the higher tier.,billing_problem,0.9889487,plan,0.8177937518843679
+I downgraded my plan but I am still being billed for the higher tier.,billing_problem,0.9889487,higher,0.7136854628023876
+I downgraded my plan but I am still being billed for the higher tier.,billing_problem,0.9889487,tier.,0.4748918957347492
+I downgraded my plan but I am still being billed for the higher tier.,billing_problem,0.9889487,still,0.28076722339310006
+I downgraded my plan but I am still being billed for the higher tier.,billing_problem,0.9889487,but,0.2797711367893903
+I downgraded my plan but I am still being billed for the higher tier.,billing_problem,0.9889487,I,0.23666419168477898
+I have a general question about my account.,other,0.98262537,question,1.8989978296416148
+I have a general question about my account.,other,0.98262537,general,1.1440695495832534
+I have a general question about my account.,other,0.98262537,about,0.495323113600413
+I have a general question about my account.,other,0.98262537,my,0.45980600232169744
+I have a general question about my account.,other,0.98262537,I,0.35226749465579066
+I have a general question about my account.,other,0.98262537,account.,-0.25769277470452445
+I have a general question about my account.,other,0.98262537,a,0.08331893171582905
+I have a general question about my account.,other,0.98262537,have,0.0473535997526986
+I need help but I'm not sure which category this fits in.,other,0.99133635,help,0.866870588399631
+I need help but I'm not sure which category this fits in.,other,0.99133635,category,0.8339750042510418
+I need help but I'm not sure which category this fits in.,other,0.99133635,not,0.6981745933557493
+I need help but I'm not sure which category this fits in.,other,0.99133635,which,0.6395661106056293
+I need help but I'm not sure which category this fits in.,other,0.99133635,sure,0.6150991221828029
+I need help but I'm not sure which category this fits in.,other,0.99133635,need,0.40153230806707785
+I need help but I'm not sure which category this fits in.,other,0.99133635,this,0.33529120320279526
+I need help but I'm not sure which category this fits in.,other,0.99133635,I'm,0.12025892440804874
+I need help setting up analytics dashboard for my team.,how_to,0.98779154,setting,1.9773980896624326
+I need help setting up analytics dashboard for my team.,how_to,0.98779154,dashboard,1.079216954679717
+I need help setting up analytics dashboard for my team.,how_to,0.98779154,analytics,0.761964422428892
+I need help setting up analytics dashboard for my team.,how_to,0.98779154,team.,0.7566083897673901
+I need help setting up analytics dashboard for my team.,how_to,0.98779154,need,0.7131167182373626
+I need help setting up analytics dashboard for my team.,how_to,0.98779154,help,0.613511173770068
+I need help setting up analytics dashboard for my team.,how_to,0.98779154,I,-0.3698909017006082
+I need help setting up analytics dashboard for my team.,how_to,0.98779154,up,0.25525772667356894
+I need help setting up api integration for my team.,how_to,0.9814979,setting,1.9199853029042973
+I need help setting up api integration for my team.,how_to,0.9814979,api,0.9775543829751399
+I need help setting up api integration for my team.,how_to,0.9814979,team.,0.7947989188489459
+I need help setting up api integration for my team.,how_to,0.9814979,integration,0.6798017608740982
+I need help setting up api integration for my team.,how_to,0.9814979,need,0.6325286151397798
+I need help setting up api integration for my team.,how_to,0.9814979,help,0.6079547055538677
+I need help setting up api integration for my team.,how_to,0.9814979,I,-0.36109167613562115
+I need help setting up api integration for my team.,how_to,0.9814979,up,0.25157127499816906
+I need help setting up billing for my team.,how_to,0.97533506,setting,2.4109050807025696
+I need help setting up billing for my team.,how_to,0.97533506,team.,0.8747590561826085
+I need help setting up billing for my team.,how_to,0.97533506,help,0.7218342547970159
+I need help setting up billing for my team.,how_to,0.97533506,need,0.6240246848336288
+I need help setting up billing for my team.,how_to,0.97533506,billing,0.5257913788632743
+I need help setting up billing for my team.,how_to,0.97533506,I,-0.4073581969040254
+I need help setting up billing for my team.,how_to,0.97533506,my,0.2127121834646141
+I need help setting up billing for my team.,how_to,0.97533506,up,0.21180786741749633
+I need help setting up data export for my team.,how_to,0.9953561,setting,2.0162090096681826
+I need help setting up data export for my team.,how_to,0.9953561,export,1.516053895723253
+I need help setting up data export for my team.,how_to,0.9953561,data,1.1012159883975983
+I need help setting up data export for my team.,how_to,0.9953561,team.,0.8087833139158421
+I need help setting up data export for my team.,how_to,0.9953561,help,0.6194853416865775
+I need help setting up data export for my team.,how_to,0.9953561,need,0.5771663848842893
+I need help setting up data export for my team.,how_to,0.9953561,I,-0.34029291188787847
+I need help setting up data export for my team.,how_to,0.9953561,my,0.29982681042618237
+I need help setting up login auth for my team.,how_to,0.981778,setting,2.06898099316491
+I need help setting up login auth for my team.,how_to,0.981778,team.,0.9626728246845899
+I need help setting up login auth for my team.,how_to,0.981778,auth,0.7504384399288228
+I need help setting up login auth for my team.,how_to,0.981778,need,0.5990649766392179
+I need help setting up login auth for my team.,how_to,0.981778,help,0.5338952313458161
+I need help setting up login auth for my team.,how_to,0.981778,I,-0.4050285785621593
+I need help setting up login auth for my team.,how_to,0.981778,login,0.3458526957247941
+I need help setting up login auth for my team.,how_to,0.981778,for,0.24118488144779957
+I need help setting up mobile app for my team.,how_to,0.9846697,setting,2.318482285879907
+I need help setting up mobile app for my team.,how_to,0.9846697,team.,0.8716347561942205
+I need help setting up mobile app for my team.,how_to,0.9846697,app,0.790803211194182
+I need help setting up mobile app for my team.,how_to,0.9846697,need,0.6447345258342841
+I need help setting up mobile app for my team.,how_to,0.9846697,help,0.642895957555563
+I need help setting up mobile app for my team.,how_to,0.9846697,I,-0.39239919466513506
+I need help setting up mobile app for my team.,how_to,0.9846697,mobile,0.3031694295032628
+I need help setting up mobile app for my team.,how_to,0.9846697,up,0.25428358341848084
+I need help setting up notifications for my team.,how_to,0.98407423,setting,2.4490894870625612
+I need help setting up notifications for my team.,how_to,0.98407423,team.,0.9427217078114312
+I need help setting up notifications for my team.,how_to,0.98407423,notifications,0.7968746974236436
+I need help setting up notifications for my team.,how_to,0.98407423,need,0.6457710656618313
+I need help setting up notifications for my team.,how_to,0.98407423,help,0.643629576135722
+I need help setting up notifications for my team.,how_to,0.98407423,I,-0.3457706988863055
+I need help setting up notifications for my team.,how_to,0.98407423,up,0.30176677514636313
+I need help setting up notifications for my team.,how_to,0.98407423,my,0.17398423973530067
+I noticed a suspicious login on my account.,security_concern,0.9872136,suspicious,3.350446448155813
+I noticed a suspicious login on my account.,security_concern,0.9872136,noticed,1.4872773637374248
+I noticed a suspicious login on my account.,security_concern,0.9872136,account.,0.5300294875921236
+I noticed a suspicious login on my account.,security_concern,0.9872136,a,0.25645752654721354
+I noticed a suspicious login on my account.,security_concern,0.9872136,I,0.06559841871438996
+I noticed a suspicious login on my account.,security_concern,0.9872136,on,0.026409488277775894
+I noticed a suspicious login on my account.,security_concern,0.9872136,my,-0.012461950381596885
+I noticed a suspicious login on my account.,security_concern,0.9872136,login,-0.004654476756141279
+I was charged twice for my subscription this month.,billing_problem,0.9891528,charged,2.076079656207373
+I was charged twice for my subscription this month.,billing_problem,0.9891528,twice,1.4861007662992618
+I was charged twice for my subscription this month.,billing_problem,0.9891528,month.,1.1635020086689598
+I was charged twice for my subscription this month.,billing_problem,0.9891528,subscription,1.0185351763216266
+I was charged twice for my subscription this month.,billing_problem,0.9891528,was,0.3115901004936962
+I was charged twice for my subscription this month.,billing_problem,0.9891528,my,0.2909528896153445
+I was charged twice for my subscription this month.,billing_problem,0.9891528,I,0.27067658098798913
+I was charged twice for my subscription this month.,billing_problem,0.9891528,for,0.06377457184569231
+It would be great to have analytics dashboard support in your product.,feature_request,0.985838,would,1.0078367798531382
+It would be great to have analytics dashboard support in your product.,feature_request,0.985838,product.,0.8802548178819686
+It would be great to have analytics dashboard support in your product.,feature_request,0.985838,support,0.7132254076339458
+It would be great to have analytics dashboard support in your product.,feature_request,0.985838,analytics,0.5791866944207766
+It would be great to have analytics dashboard support in your product.,feature_request,0.985838,have,0.4131775971227915
+It would be great to have analytics dashboard support in your product.,feature_request,0.985838,great,0.3433227945522312
+It would be great to have analytics dashboard support in your product.,feature_request,0.985838,be,0.3253447954208305
+It would be great to have analytics dashboard support in your product.,feature_request,0.985838,in,0.21450743395700786
+It would be great to have api integration support in your product.,feature_request,0.99052215,would,1.067431082784012
+It would be great to have api integration support in your product.,feature_request,0.99052215,product.,0.8884159164296265
+It would be great to have api integration support in your product.,feature_request,0.99052215,support,0.6712328545587924
+It would be great to have api integration support in your product.,feature_request,0.99052215,integration,0.629598918638875
+It would be great to have api integration support in your product.,feature_request,0.99052215,great,0.44398013608581177
+It would be great to have api integration support in your product.,feature_request,0.99052215,have,0.39703151209959947
+It would be great to have api integration support in your product.,feature_request,0.99052215,be,0.3127662366882375
+It would be great to have api integration support in your product.,feature_request,0.99052215,in,0.22473071883251147
+It would be great to have billing support in your product.,feature_request,0.98326933,would,1.1180559349352495
+It would be great to have billing support in your product.,feature_request,0.98326933,product.,0.8392198660780508
+It would be great to have billing support in your product.,feature_request,0.98326933,support,0.746733037149063
+It would be great to have billing support in your product.,feature_request,0.98326933,great,0.47085070387711586
+It would be great to have billing support in your product.,feature_request,0.98326933,have,0.42389813455582376
+It would be great to have billing support in your product.,feature_request,0.98326933,be,0.3805278643514174
+It would be great to have billing support in your product.,feature_request,0.98326933,billing,-0.19191785088349203
+It would be great to have billing support in your product.,feature_request,0.98326933,in,0.18919132694838528
+It would be great to have data export support in your product.,feature_request,0.9752907,would,1.0552936366411183
+It would be great to have data export support in your product.,feature_request,0.9752907,support,0.828862578885209
+It would be great to have data export support in your product.,feature_request,0.9752907,product.,0.7524170102581155
+It would be great to have data export support in your product.,feature_request,0.9752907,export,0.6692691577762419
+It would be great to have data export support in your product.,feature_request,0.9752907,great,0.4399433431966825
+It would be great to have data export support in your product.,feature_request,0.9752907,data,-0.40401718919884316
+It would be great to have data export support in your product.,feature_request,0.9752907,have,0.39637744644976625
+It would be great to have data export support in your product.,feature_request,0.9752907,be,0.35548403721093125
+It would be great to have login auth support in your product.,feature_request,0.9799145,would,1.0467791587458375
+It would be great to have login auth support in your product.,feature_request,0.9799145,product.,0.9388039134926603
+It would be great to have login auth support in your product.,feature_request,0.9799145,support,0.7797601295949578
+It would be great to have login auth support in your product.,feature_request,0.9799145,have,0.6046526339985598
+It would be great to have login auth support in your product.,feature_request,0.9799145,great,0.4272459927123861
+It would be great to have login auth support in your product.,feature_request,0.9799145,login,-0.3277759861743978
+It would be great to have login auth support in your product.,feature_request,0.9799145,be,0.29452830672178065
+It would be great to have login auth support in your product.,feature_request,0.9799145,in,0.17397920314926774
+It would be great to have mobile app support in your product.,feature_request,0.9903791,would,1.0633437095395426
+It would be great to have mobile app support in your product.,feature_request,0.9903791,product.,0.7956828264834043
+It would be great to have mobile app support in your product.,feature_request,0.9903791,support,0.6818654125989104
+It would be great to have mobile app support in your product.,feature_request,0.9903791,great,0.4560328573354046
+It would be great to have mobile app support in your product.,feature_request,0.9903791,app,0.45015935160294923
+It would be great to have mobile app support in your product.,feature_request,0.9903791,have,0.4147643402197313
+It would be great to have mobile app support in your product.,feature_request,0.9903791,be,0.342465074579695
+It would be great to have mobile app support in your product.,feature_request,0.9903791,in,0.22486184016192645
+It would be great to have notifications support in your product.,feature_request,0.9902266,would,1.0849656530272909
+It would be great to have notifications support in your product.,feature_request,0.9902266,product.,0.8563583137346551
+It would be great to have notifications support in your product.,feature_request,0.9902266,support,0.7481431631384826
+It would be great to have notifications support in your product.,feature_request,0.9902266,have,0.47228061268684013
+It would be great to have notifications support in your product.,feature_request,0.9902266,great,0.41311755167242376
+It would be great to have notifications support in your product.,feature_request,0.9902266,notifications,0.37387442049956066
+It would be great to have notifications support in your product.,feature_request,0.9902266,be,0.3379784504443537
+It would be great to have notifications support in your product.,feature_request,0.9902266,in,0.1992897701727881
+My 2FA code is not working when I try to sign in.,account_access,0.98744607,2FA,2.3399671713855175
+My 2FA code is not working when I try to sign in.,account_access,0.98744607,sign,1.552909412866116
+My 2FA code is not working when I try to sign in.,account_access,0.98744607,try,1.1075064468231113
+My 2FA code is not working when I try to sign in.,account_access,0.98744607,not,0.9740051131776137
+My 2FA code is not working when I try to sign in.,account_access,0.98744607,code,0.7386412508097637
+My 2FA code is not working when I try to sign in.,account_access,0.98744607,working,0.5054623811501708
+My 2FA code is not working when I try to sign in.,account_access,0.98744607,in.,0.48327595715183896
+My 2FA code is not working when I try to sign in.,account_access,0.98744607,I,0.3665645129774388
+My account was locked after multiple failed login attempts.,account_access,0.9884891,locked,2.200075699696466
+My account was locked after multiple failed login attempts.,account_access,0.9884891,failed,1.7576644789604912
+My account was locked after multiple failed login attempts.,account_access,0.9884891,login,1.2307561155586013
+My account was locked after multiple failed login attempts.,account_access,0.9884891,attempts.,1.1907018614430271
+My account was locked after multiple failed login attempts.,account_access,0.9884891,account,1.1571619044930215
+My account was locked after multiple failed login attempts.,account_access,0.9884891,was,0.28669867818317707
+My account was locked after multiple failed login attempts.,account_access,0.9884891,My,0.27712087359220255
+My account was locked after multiple failed login attempts.,account_access,0.9884891,multiple,0.16652704368508045
+My invoice amount is incorrect compared to the plan I selected.,billing_problem,0.98952276,amount,1.2526577622687483
+My invoice amount is incorrect compared to the plan I selected.,billing_problem,0.98952276,plan,1.2221684331953266
+My invoice amount is incorrect compared to the plan I selected.,billing_problem,0.98952276,incorrect,1.192254552877308
+My invoice amount is incorrect compared to the plan I selected.,billing_problem,0.98952276,invoice,1.1559145377548403
+My invoice amount is incorrect compared to the plan I selected.,billing_problem,0.98952276,compared,0.8406448445278848
+My invoice amount is incorrect compared to the plan I selected.,billing_problem,0.98952276,selected.,0.4038206922199475
+My invoice amount is incorrect compared to the plan I selected.,billing_problem,0.98952276,My,0.3509997402878234
+My invoice amount is incorrect compared to the plan I selected.,billing_problem,0.98952276,I,0.25576564906027893
+Our team needs more advanced options for analytics dashboard.,feature_request,0.99066937,options,1.6887036025524136
+Our team needs more advanced options for analytics dashboard.,feature_request,0.99066937,more,0.9520638262468673
+Our team needs more advanced options for analytics dashboard.,feature_request,0.99066937,advanced,0.7879030189816917
+Our team needs more advanced options for analytics dashboard.,feature_request,0.99066937,needs,0.45194587972429034
+Our team needs more advanced options for analytics dashboard.,feature_request,0.99066937,Our,0.4375478629081967
+Our team needs more advanced options for analytics dashboard.,feature_request,0.99066937,for,0.37967083193953055
+Our team needs more advanced options for analytics dashboard.,feature_request,0.99066937,dashboard.,0.3400832286429783
+Our team needs more advanced options for analytics dashboard.,feature_request,0.99066937,analytics,0.1210822103515505
+Our team needs more advanced options for api integration.,feature_request,0.9870186,options,1.6632825686818082
+Our team needs more advanced options for api integration.,feature_request,0.9870186,more,0.9394869679023341
+Our team needs more advanced options for api integration.,feature_request,0.9870186,integration.,0.8557685420153632
+Our team needs more advanced options for api integration.,feature_request,0.9870186,advanced,0.7718161728647019
+Our team needs more advanced options for api integration.,feature_request,0.9870186,Our,0.39514152975309474
+Our team needs more advanced options for api integration.,feature_request,0.9870186,api,-0.2777858468748273
+Our team needs more advanced options for api integration.,feature_request,0.9870186,needs,0.2558739051932379
+Our team needs more advanced options for api integration.,feature_request,0.9870186,for,0.1410437693198522
+Our team needs more advanced options for billing.,feature_request,0.9841958,options,2.026555627016794
+Our team needs more advanced options for billing.,feature_request,0.9841958,more,1.0480404135726749
+Our team needs more advanced options for billing.,feature_request,0.9841958,advanced,0.970598393678665
+Our team needs more advanced options for billing.,feature_request,0.9841958,billing.,-0.4289193281105586
+Our team needs more advanced options for billing.,feature_request,0.9841958,Our,0.4070763420490991
+Our team needs more advanced options for billing.,feature_request,0.9841958,for,0.22830299224172315
+Our team needs more advanced options for billing.,feature_request,0.9841958,needs,0.22563950646491288
+Our team needs more advanced options for billing.,feature_request,0.9841958,team,-0.14224145667893545
+Our team needs more advanced options for data export.,feature_request,0.98676014,options,1.7978498456023972
+Our team needs more advanced options for data export.,feature_request,0.98676014,more,0.9810868350286329
+Our team needs more advanced options for data export.,feature_request,0.98676014,advanced,0.8746030093185494
+Our team needs more advanced options for data export.,feature_request,0.98676014,export.,0.6705412183016064
+Our team needs more advanced options for data export.,feature_request,0.98676014,data,-0.5794025351367296
+Our team needs more advanced options for data export.,feature_request,0.98676014,Our,0.4135011155217411
+Our team needs more advanced options for data export.,feature_request,0.98676014,needs,0.3192385794624449
+Our team needs more advanced options for data export.,feature_request,0.98676014,for,0.30605706511035796
+Our team needs more advanced options for login auth.,feature_request,0.9765054,options,1.7254173973250009
+Our team needs more advanced options for login auth.,feature_request,0.9765054,more,0.9824484251321308
+Our team needs more advanced options for login auth.,feature_request,0.9765054,advanced,0.7785214033391736
+Our team needs more advanced options for login auth.,feature_request,0.9765054,login,-0.7418164686551165
+Our team needs more advanced options for login auth.,feature_request,0.9765054,Our,0.48015013559470093
+Our team needs more advanced options for login auth.,feature_request,0.9765054,for,0.411201265406987
+Our team needs more advanced options for login auth.,feature_request,0.9765054,needs,0.3081603652901116
+Our team needs more advanced options for login auth.,feature_request,0.9765054,auth.,0.13768693927734615
+Our team needs more advanced options for mobile app.,feature_request,0.9913147,options,1.7766810500432566
+Our team needs more advanced options for mobile app.,feature_request,0.9913147,more,0.9822155570700057
+Our team needs more advanced options for mobile app.,feature_request,0.9913147,advanced,0.9143562636678189
+Our team needs more advanced options for mobile app.,feature_request,0.9913147,Our,0.4157934899841036
+Our team needs more advanced options for mobile app.,feature_request,0.9913147,app.,0.3960488638707566
+Our team needs more advanced options for mobile app.,feature_request,0.9913147,needs,0.32391868531703955
+Our team needs more advanced options for mobile app.,feature_request,0.9913147,for,0.12151784669785262
+Our team needs more advanced options for mobile app.,feature_request,0.9913147,team,-0.08515909612178801
+Our team needs more advanced options for notifications.,feature_request,0.99057263,options,2.005048585505713
+Our team needs more advanced options for notifications.,feature_request,0.99057263,more,0.960315456418764
+Our team needs more advanced options for notifications.,feature_request,0.99057263,advanced,0.906583061956224
+Our team needs more advanced options for notifications.,feature_request,0.99057263,Our,0.4133214276461374
+Our team needs more advanced options for notifications.,feature_request,0.99057263,needs,0.31566423248677017
+Our team needs more advanced options for notifications.,feature_request,0.99057263,notifications.,0.13745972102596643
+Our team needs more advanced options for notifications.,feature_request,0.99057263,for,0.12313998667966752
+Our team needs more advanced options for notifications.,feature_request,0.99057263,team,-0.08568408304736724
+Overall performance has degraded in the last few days.,performance,0.99073833,degraded,1.7048450093893763
+Overall performance has degraded in the last few days.,performance,0.99073833,performance,1.2643750419692381
+Overall performance has degraded in the last few days.,performance,0.99073833,days.,0.9918657075791131
+Overall performance has degraded in the last few days.,performance,0.99073833,few,0.6286826164949503
+Overall performance has degraded in the last few days.,performance,0.99073833,Overall,0.6194794649879142
+Overall performance has degraded in the last few days.,performance,0.99073833,last,0.13637728899244272
+Overall performance has degraded in the last few days.,performance,0.99073833,the,-0.0829898091772246
+Overall performance has degraded in the last few days.,performance,0.99073833,has,0.0813249361183908
+Queries in the analytics dashboard module are timing out.,performance,0.9852734,timing,1.964267448347712
+Queries in the analytics dashboard module are timing out.,performance,0.9852734,Queries,1.3829106743373571
+Queries in the analytics dashboard module are timing out.,performance,0.9852734,out.,1.193507790896627
+Queries in the analytics dashboard module are timing out.,performance,0.9852734,module,0.3594329391680069
+Queries in the analytics dashboard module are timing out.,performance,0.9852734,analytics,0.29923390352300233
+Queries in the analytics dashboard module are timing out.,performance,0.9852734,dashboard,-0.20762793906624352
+Queries in the analytics dashboard module are timing out.,performance,0.9852734,are,0.16852905879181534
+Queries in the analytics dashboard module are timing out.,performance,0.9852734,the,0.028792826275503846
+Queries in the api integration module are timing out.,performance,0.9884554,timing,2.1039490192655528
+Queries in the api integration module are timing out.,performance,0.9884554,Queries,1.5266134567203973
+Queries in the api integration module are timing out.,performance,0.9884554,out.,1.219135631821931
+Queries in the api integration module are timing out.,performance,0.9884554,module,0.4134398932494814
+Queries in the api integration module are timing out.,performance,0.9884554,integration,-0.31885942029101516
+Queries in the api integration module are timing out.,performance,0.9884554,are,0.2099916839883441
+Queries in the api integration module are timing out.,performance,0.9884554,api,0.11485780038767379
+Queries in the api integration module are timing out.,performance,0.9884554,in,0.05627614072864015
+Queries in the billing module are timing out.,performance,0.98366874,timing,1.9475774185998096
+Queries in the billing module are timing out.,performance,0.98366874,Queries,1.5568252893430845
+Queries in the billing module are timing out.,performance,0.98366874,out.,1.3178338282874649
+Queries in the billing module are timing out.,performance,0.98366874,billing,-0.8754130768634025
+Queries in the billing module are timing out.,performance,0.98366874,module,0.5202886685906423
+Queries in the billing module are timing out.,performance,0.98366874,are,0.2259154161704439
+Queries in the billing module are timing out.,performance,0.98366874,in,0.052950054974783035
+Queries in the billing module are timing out.,performance,0.98366874,the,0.0011608955760796721
+Queries in the data export module are timing out.,performance,0.9898615,timing,2.1479546097062876
+Queries in the data export module are timing out.,performance,0.9898615,Queries,1.483243336232881
+Queries in the data export module are timing out.,performance,0.9898615,out.,1.1717067677113744
+Queries in the data export module are timing out.,performance,0.9898615,module,0.2983600358641338
+Queries in the data export module are timing out.,performance,0.9898615,data,0.2554100877945386
+Queries in the data export module are timing out.,performance,0.9898615,export,-0.2225629742065119
+Queries in the data export module are timing out.,performance,0.9898615,are,0.19668788315048294
+Queries in the data export module are timing out.,performance,0.9898615,in,0.03801619404601672
+Queries in the login auth module are timing out.,performance,0.9763505,timing,1.9980836265616957
+Queries in the login auth module are timing out.,performance,0.9763505,Queries,1.398799481041848
+Queries in the login auth module are timing out.,performance,0.9763505,out.,1.2053469386838733
+Queries in the login auth module are timing out.,performance,0.9763505,auth,-0.5790899088103622
+Queries in the login auth module are timing out.,performance,0.9763505,module,0.3953224902943012
+Queries in the login auth module are timing out.,performance,0.9763505,are,0.24963237491864987
+Queries in the login auth module are timing out.,performance,0.9763505,login,-0.11802325264092464
+Queries in the login auth module are timing out.,performance,0.9763505,in,0.09980678145611094
+Queries in the mobile app module are timing out.,performance,0.99086237,timing,2.1123170000220095
+Queries in the mobile app module are timing out.,performance,0.99086237,Queries,1.5399333266038742
+Queries in the mobile app module are timing out.,performance,0.99086237,out.,1.2024562253838487
+Queries in the mobile app module are timing out.,performance,0.99086237,module,0.44099065830546724
+Queries in the mobile app module are timing out.,performance,0.99086237,are,0.1963889628412232
+Queries in the mobile app module are timing out.,performance,0.99086237,in,0.10086729286445512
+Queries in the mobile app module are timing out.,performance,0.99086237,mobile,-0.08884873970869987
+Queries in the mobile app module are timing out.,performance,0.99086237,app,-0.0589390148482625
+Queries in the notifications module are timing out.,performance,0.9879666,timing,1.9575878350507638
+Queries in the notifications module are timing out.,performance,0.9879666,Queries,1.5643936226765316
+Queries in the notifications module are timing out.,performance,0.9879666,out.,1.2210212564184553
+Queries in the notifications module are timing out.,performance,0.9879666,module,0.45483729495179076
+Queries in the notifications module are timing out.,performance,0.9879666,are,0.18678485094791372
+Queries in the notifications module are timing out.,performance,0.9879666,notifications,-0.14343579624380381
+Queries in the notifications module are timing out.,performance,0.9879666,in,0.04953867846301623
+Queries in the notifications module are timing out.,performance,0.9879666,the,0.0010441416431040754
+"Something seems off, can you please check my workspace?",other,0.98678803,workspace?,1.5896732107041383
+"Something seems off, can you please check my workspace?",other,0.98678803,"off,",0.6548362341192033
+"Something seems off, can you please check my workspace?",other,0.98678803,seems,0.584150066924474
+"Something seems off, can you please check my workspace?",other,0.98678803,Something,0.5740471891940585
+"Something seems off, can you please check my workspace?",other,0.98678803,my,0.457117983083876
+"Something seems off, can you please check my workspace?",other,0.98678803,check,0.4430706493438237
+"Something seems off, can you please check my workspace?",other,0.98678803,can,0.19123053276349625
+"Something seems off, can you please check my workspace?",other,0.98678803,you,-0.10219327570900077
+The analytics dashboard feature is not saving my changes.,bug,0.9884397,saving,2.3353818560521757
+The analytics dashboard feature is not saving my changes.,bug,0.9884397,not,1.8766816528070542
+The analytics dashboard feature is not saving my changes.,bug,0.9884397,changes.,1.007193903151959
+The analytics dashboard feature is not saving my changes.,bug,0.9884397,dashboard,0.6867410856343449
+The analytics dashboard feature is not saving my changes.,bug,0.9884397,is,0.23821841917695508
+The analytics dashboard feature is not saving my changes.,bug,0.9884397,feature,0.19453215369038154
+The analytics dashboard feature is not saving my changes.,bug,0.9884397,analytics,0.14968559988552613
+The analytics dashboard feature is not saving my changes.,bug,0.9884397,The,-0.14711654991029754
+The analytics dashboard page is very slow and takes a long time to load.,performance,0.9887398,slow,2.1124914494110083
+The analytics dashboard page is very slow and takes a long time to load.,performance,0.9887398,long,0.9256923991480108
+The analytics dashboard page is very slow and takes a long time to load.,performance,0.9887398,takes,0.6278791835527653
+The analytics dashboard page is very slow and takes a long time to load.,performance,0.9887398,time,0.5948553436173445
+The analytics dashboard page is very slow and takes a long time to load.,performance,0.9887398,load.,0.5392488060807106
+The analytics dashboard page is very slow and takes a long time to load.,performance,0.9887398,page,0.39579726909212243
+The analytics dashboard page is very slow and takes a long time to load.,performance,0.9887398,analytics,0.3070294930508754
+The analytics dashboard page is very slow and takes a long time to load.,performance,0.9887398,dashboard,-0.26971244289619223
+The api integration feature is not saving my changes.,bug,0.9824837,saving,2.2971051272063967
+The api integration feature is not saving my changes.,bug,0.9824837,not,1.6956472206919908
+The api integration feature is not saving my changes.,bug,0.9824837,changes.,1.005137368433532
+The api integration feature is not saving my changes.,bug,0.9824837,api,0.49484870749570087
+The api integration feature is not saving my changes.,bug,0.9824837,is,0.2415868846788293
+The api integration feature is not saving my changes.,bug,0.9824837,feature,0.20592226077994658
+The api integration feature is not saving my changes.,bug,0.9824837,my,0.11805268777386539
+The api integration feature is not saving my changes.,bug,0.9824837,The,-0.11316023936702138
+The api integration page is very slow and takes a long time to load.,performance,0.98130727,slow,1.9285164427586559
+The api integration page is very slow and takes a long time to load.,performance,0.98130727,long,0.9032278919563362
+The api integration page is very slow and takes a long time to load.,performance,0.98130727,load.,0.6508354891536153
+The api integration page is very slow and takes a long time to load.,performance,0.98130727,takes,0.6086559496260058
+The api integration page is very slow and takes a long time to load.,performance,0.98130727,time,0.6080246547750415
+The api integration page is very slow and takes a long time to load.,performance,0.98130727,integration,-0.5248196806169804
+The api integration page is very slow and takes a long time to load.,performance,0.98130727,page,0.5233948499589527
+The api integration page is very slow and takes a long time to load.,performance,0.98130727,very,0.22875751750960227
+The billing feature is not saving my changes.,bug,0.963129,saving,2.3623430209145653
+The billing feature is not saving my changes.,bug,0.963129,not,1.8671983842693616
+The billing feature is not saving my changes.,bug,0.963129,changes.,1.0773764817487628
+The billing feature is not saving my changes.,bug,0.963129,feature,0.393843438103795
+The billing feature is not saving my changes.,bug,0.963129,billing,-0.3626029080046075
+The billing feature is not saving my changes.,bug,0.963129,The,-0.24907004079293626
+The billing feature is not saving my changes.,bug,0.963129,is,0.2490682179729143
+The billing feature is not saving my changes.,bug,0.963129,my,0.07957545818672294
+The billing page is very slow and takes a long time to load.,performance,0.97955954,slow,2.1061219558458837
+The billing page is very slow and takes a long time to load.,performance,0.97955954,billing,-1.1301155388192756
+The billing page is very slow and takes a long time to load.,performance,0.97955954,long,0.9920710347051098
+The billing page is very slow and takes a long time to load.,performance,0.97955954,takes,0.6591120798153554
+The billing page is very slow and takes a long time to load.,performance,0.97955954,load.,0.6150715332409232
+The billing page is very slow and takes a long time to load.,performance,0.97955954,time,0.5929298903644638
+The billing page is very slow and takes a long time to load.,performance,0.97955954,page,0.5847346478825262
+The billing page is very slow and takes a long time to load.,performance,0.97955954,very,0.23667797793804105
+The data export feature is not saving my changes.,bug,0.9709405,saving,2.30965028619246
+The data export feature is not saving my changes.,bug,0.9709405,not,1.7504556538034524
+The data export feature is not saving my changes.,bug,0.9709405,changes.,1.1092797703213162
+The data export feature is not saving my changes.,bug,0.9709405,feature,0.361584692430638
+The data export feature is not saving my changes.,bug,0.9709405,is,0.24911933871843506
+The data export feature is not saving my changes.,bug,0.9709405,my,0.20054632335428207
+The data export feature is not saving my changes.,bug,0.9709405,The,-0.1375048975918501
+The data export feature is not saving my changes.,bug,0.9709405,data,-0.09638864314627078
+The data export page is very slow and takes a long time to load.,performance,0.9839281,slow,1.9865793040767608
+The data export page is very slow and takes a long time to load.,performance,0.9839281,long,0.904155746282292
+The data export page is very slow and takes a long time to load.,performance,0.9839281,takes,0.6395186088731989
+The data export page is very slow and takes a long time to load.,performance,0.9839281,time,0.5864974985344699
+The data export page is very slow and takes a long time to load.,performance,0.9839281,load.,0.5201874363465738
+The data export page is very slow and takes a long time to load.,performance,0.9839281,export,-0.5189195364793888
+The data export page is very slow and takes a long time to load.,performance,0.9839281,page,0.4907824904512217
+The data export page is very slow and takes a long time to load.,performance,0.9839281,very,0.25630926424173217
+The login auth feature is not saving my changes.,bug,0.96475685,saving,2.3220660075190507
+The login auth feature is not saving my changes.,bug,0.96475685,not,1.80201702962319
+The login auth feature is not saving my changes.,bug,0.96475685,changes.,0.8870669110190299
+The login auth feature is not saving my changes.,bug,0.96475685,login,0.31860906392454186
+The login auth feature is not saving my changes.,bug,0.96475685,feature,0.25343384039662176
+The login auth feature is not saving my changes.,bug,0.96475685,is,0.22175876645460013
+The login auth feature is not saving my changes.,bug,0.96475685,auth,-0.20640919076663164
+The login auth feature is not saving my changes.,bug,0.96475685,The,-0.19763543568551534
+The login auth page is very slow and takes a long time to load.,performance,0.9734736,slow,2.0190875120804184
+The login auth page is very slow and takes a long time to load.,performance,0.9734736,long,0.9592325256586436
+The login auth page is very slow and takes a long time to load.,performance,0.9734736,auth,-0.7093008463840678
+The login auth page is very slow and takes a long time to load.,performance,0.9734736,takes,0.6717204482224243
+The login auth page is very slow and takes a long time to load.,performance,0.9734736,time,0.629747451027218
+The login auth page is very slow and takes a long time to load.,performance,0.9734736,load.,0.4744180312015709
+The login auth page is very slow and takes a long time to load.,performance,0.9734736,page,0.42315326634947875
+The login auth page is very slow and takes a long time to load.,performance,0.9734736,very,0.24869041039734072
+The mobile app feature is not saving my changes.,bug,0.9896187,saving,2.558153943067032
+The mobile app feature is not saving my changes.,bug,0.9896187,not,1.9641285819430188
+The mobile app feature is not saving my changes.,bug,0.9896187,changes.,0.9726020077746058
+The mobile app feature is not saving my changes.,bug,0.9896187,app,0.5157851358136489
+The mobile app feature is not saving my changes.,bug,0.9896187,The,-0.24781520137829455
+The mobile app feature is not saving my changes.,bug,0.9896187,feature,0.23172434868202352
+The mobile app feature is not saving my changes.,bug,0.9896187,is,0.19332853968417837
+The mobile app feature is not saving my changes.,bug,0.9896187,my,0.13388785026849256
+The mobile app page is very slow and takes a long time to load.,performance,0.9923793,slow,2.1394586824294914
+The mobile app page is very slow and takes a long time to load.,performance,0.9923793,long,1.0136348999490121
+The mobile app page is very slow and takes a long time to load.,performance,0.9923793,takes,0.6407788152272735
+The mobile app page is very slow and takes a long time to load.,performance,0.9923793,time,0.6153695930096106
+The mobile app page is very slow and takes a long time to load.,performance,0.9923793,page,0.5370624079728019
+The mobile app page is very slow and takes a long time to load.,performance,0.9923793,load.,0.45435115319121294
+The mobile app page is very slow and takes a long time to load.,performance,0.9923793,very,0.31704369036846447
+The mobile app page is very slow and takes a long time to load.,performance,0.9923793,and,-0.08790506394806416
+The notifications feature is not saving my changes.,bug,0.98850167,saving,2.388273665202515
+The notifications feature is not saving my changes.,bug,0.98850167,not,1.7617538017176442
+The notifications feature is not saving my changes.,bug,0.98850167,changes.,1.0015230721661021
+The notifications feature is not saving my changes.,bug,0.98850167,notifications,0.7341463423201013
+The notifications feature is not saving my changes.,bug,0.98850167,is,0.2553094120607489
+The notifications feature is not saving my changes.,bug,0.98850167,feature,0.20506632439792144
+The notifications feature is not saving my changes.,bug,0.98850167,The,-0.17684432207828485
+The notifications feature is not saving my changes.,bug,0.98850167,my,0.14153345035655157
+The notifications page is very slow and takes a long time to load.,performance,0.9879985,slow,2.0270969530039307
+The notifications page is very slow and takes a long time to load.,performance,0.9879985,long,0.9940971189290024
+The notifications page is very slow and takes a long time to load.,performance,0.9879985,takes,0.6765601628485525
+The notifications page is very slow and takes a long time to load.,performance,0.9879985,time,0.5991160667800042
+The notifications page is very slow and takes a long time to load.,performance,0.9879985,load.,0.5552071095283718
+The notifications page is very slow and takes a long time to load.,performance,0.9879985,page,0.5389602411259236
+The notifications page is very slow and takes a long time to load.,performance,0.9879985,notifications,-0.349188061623124
+The notifications page is very slow and takes a long time to load.,performance,0.9879985,very,0.2618734233914975
+The page keeps crashing whenever I try to open the analytics dashboard section.,bug,0.9848069,crashing,2.7548153324858404
+The page keeps crashing whenever I try to open the analytics dashboard section.,bug,0.9848069,page,0.9158228447188802
+The page keeps crashing whenever I try to open the analytics dashboard section.,bug,0.9848069,open,0.7678282257011949
+The page keeps crashing whenever I try to open the analytics dashboard section.,bug,0.9848069,try,0.7105756372052935
+The page keeps crashing whenever I try to open the analytics dashboard section.,bug,0.9848069,dashboard,0.5000808492005179
+The page keeps crashing whenever I try to open the analytics dashboard section.,bug,0.9848069,whenever,0.43369343415914136
+The page keeps crashing whenever I try to open the analytics dashboard section.,bug,0.9848069,keeps,0.3417146920648803
+The page keeps crashing whenever I try to open the analytics dashboard section.,bug,0.9848069,I,0.20846194699084142
+The page keeps crashing whenever I try to open the api integration section.,bug,0.98163164,crashing,2.6761516579473827
+The page keeps crashing whenever I try to open the api integration section.,bug,0.98163164,page,1.0428339394897566
+The page keeps crashing whenever I try to open the api integration section.,bug,0.98163164,open,0.8107970778509762
+The page keeps crashing whenever I try to open the api integration section.,bug,0.98163164,try,0.6814754372295772
+The page keeps crashing whenever I try to open the api integration section.,bug,0.98163164,keeps,0.3773945138207805
+The page keeps crashing whenever I try to open the api integration section.,bug,0.98163164,api,0.3716115727498817
+The page keeps crashing whenever I try to open the api integration section.,bug,0.98163164,whenever,0.3502009427056446
+The page keeps crashing whenever I try to open the api integration section.,bug,0.98163164,I,0.17387458267328626
+The page keeps crashing whenever I try to open the billing section.,bug,0.97843677,crashing,2.7318563487106617
+The page keeps crashing whenever I try to open the billing section.,bug,0.97843677,page,1.1418621893224916
+The page keeps crashing whenever I try to open the billing section.,bug,0.97843677,open,0.8484984511162799
+The page keeps crashing whenever I try to open the billing section.,bug,0.97843677,try,0.7320465947787634
+The page keeps crashing whenever I try to open the billing section.,bug,0.97843677,whenever,0.48642724902996637
+The page keeps crashing whenever I try to open the billing section.,bug,0.97843677,keeps,0.3505040585623801
+The page keeps crashing whenever I try to open the billing section.,bug,0.97843677,I,0.23049318165629892
+The page keeps crashing whenever I try to open the billing section.,bug,0.97843677,billing,-0.21890778563819915
+The page keeps crashing whenever I try to open the data export section.,bug,0.9843279,crashing,2.6807909655132955
+The page keeps crashing whenever I try to open the data export section.,bug,0.9843279,page,1.1088062766505644
+The page keeps crashing whenever I try to open the data export section.,bug,0.9843279,open,0.8240046117035906
+The page keeps crashing whenever I try to open the data export section.,bug,0.9843279,try,0.7363627736254368
+The page keeps crashing whenever I try to open the data export section.,bug,0.9843279,whenever,0.46577430301759176
+The page keeps crashing whenever I try to open the data export section.,bug,0.9843279,keeps,0.3503011759541355
+The page keeps crashing whenever I try to open the data export section.,bug,0.9843279,I,0.24057171841069627
+The page keeps crashing whenever I try to open the data export section.,bug,0.9843279,section.,0.19513309234702603
+The page keeps crashing whenever I try to open the login auth section.,bug,0.9617256,crashing,2.795266469387811
+The page keeps crashing whenever I try to open the login auth section.,bug,0.9617256,page,1.000399246144136
+The page keeps crashing whenever I try to open the login auth section.,bug,0.9617256,open,0.6937749474987636
+The page keeps crashing whenever I try to open the login auth section.,bug,0.9617256,try,0.680833440161941
+The page keeps crashing whenever I try to open the login auth section.,bug,0.9617256,whenever,0.41612410292799373
+The page keeps crashing whenever I try to open the login auth section.,bug,0.9617256,keeps,0.3592717285589826
+The page keeps crashing whenever I try to open the login auth section.,bug,0.9617256,login,0.34688813695517684
+The page keeps crashing whenever I try to open the login auth section.,bug,0.9617256,auth,-0.2880074582629692
+The page keeps crashing whenever I try to open the mobile app section.,bug,0.98756814,crashing,2.8294894108550963
+The page keeps crashing whenever I try to open the mobile app section.,bug,0.98756814,page,0.984699245882108
+The page keeps crashing whenever I try to open the mobile app section.,bug,0.98756814,open,0.809137856560602
+The page keeps crashing whenever I try to open the mobile app section.,bug,0.98756814,try,0.7223019735588913
+The page keeps crashing whenever I try to open the mobile app section.,bug,0.98756814,app,0.46908226230614114
+The page keeps crashing whenever I try to open the mobile app section.,bug,0.98756814,whenever,0.42456414535168724
+The page keeps crashing whenever I try to open the mobile app section.,bug,0.98756814,keeps,0.3499583376116888
+The page keeps crashing whenever I try to open the mobile app section.,bug,0.98756814,I,0.23766163851309527
+The page keeps crashing whenever I try to open the notifications section.,bug,0.9903612,crashing,2.753640627465381
+The page keeps crashing whenever I try to open the notifications section.,bug,0.9903612,page,1.0992785598077461
+The page keeps crashing whenever I try to open the notifications section.,bug,0.9903612,open,0.809020487516903
+The page keeps crashing whenever I try to open the notifications section.,bug,0.9903612,try,0.7784022400658284
+The page keeps crashing whenever I try to open the notifications section.,bug,0.9903612,notifications,0.6674615966486722
+The page keeps crashing whenever I try to open the notifications section.,bug,0.9903612,whenever,0.4417474154431326
+The page keeps crashing whenever I try to open the notifications section.,bug,0.9903612,keeps,0.3430602693250259
+The page keeps crashing whenever I try to open the notifications section.,bug,0.9903612,I,0.22665134072411283
+There seems to be a vulnerability in the analytics dashboard functionality.,security_concern,0.97902143,vulnerability,3.040156812542272
+There seems to be a vulnerability in the analytics dashboard functionality.,security_concern,0.97902143,functionality.,0.8010690206476352
+There seems to be a vulnerability in the analytics dashboard functionality.,security_concern,0.97902143,seems,0.7225528167977285
+There seems to be a vulnerability in the analytics dashboard functionality.,security_concern,0.97902143,dashboard,-0.6651631844344228
+There seems to be a vulnerability in the analytics dashboard functionality.,security_concern,0.97902143,There,0.5583460589808995
+There seems to be a vulnerability in the analytics dashboard functionality.,security_concern,0.97902143,analytics,0.5065828295421895
+There seems to be a vulnerability in the analytics dashboard functionality.,security_concern,0.97902143,the,0.301852387964489
+There seems to be a vulnerability in the analytics dashboard functionality.,security_concern,0.97902143,to,-0.2206550136160153
+There seems to be a vulnerability in the api integration functionality.,security_concern,0.9729115,vulnerability,3.1082610833094404
+There seems to be a vulnerability in the api integration functionality.,security_concern,0.9729115,functionality.,0.963848713898298
+There seems to be a vulnerability in the api integration functionality.,security_concern,0.9729115,seems,0.689618124122077
+There seems to be a vulnerability in the api integration functionality.,security_concern,0.9729115,There,0.5619249410260718
+There seems to be a vulnerability in the api integration functionality.,security_concern,0.9729115,integration,-0.5453698164010672
+There seems to be a vulnerability in the api integration functionality.,security_concern,0.9729115,the,0.3184511519226681
+There seems to be a vulnerability in the api integration functionality.,security_concern,0.9729115,to,-0.18008724036176302
+There seems to be a vulnerability in the api integration functionality.,security_concern,0.9729115,api,-0.1603934050778205
+There seems to be a vulnerability in the billing functionality.,security_concern,0.97163785,vulnerability,3.2935100613605437
+There seems to be a vulnerability in the billing functionality.,security_concern,0.97163785,billing,-0.8088961471877402
+There seems to be a vulnerability in the billing functionality.,security_concern,0.97163785,seems,0.7765105013099927
+There seems to be a vulnerability in the billing functionality.,security_concern,0.97163785,functionality.,0.6610645549519674
+There seems to be a vulnerability in the billing functionality.,security_concern,0.97163785,There,0.6034127960543316
+There seems to be a vulnerability in the billing functionality.,security_concern,0.97163785,the,0.30643153654795785
+There seems to be a vulnerability in the billing functionality.,security_concern,0.97163785,to,-0.2115954456348267
+There seems to be a vulnerability in the billing functionality.,security_concern,0.97163785,a,0.1597301216736909
+There seems to be a vulnerability in the data export functionality.,security_concern,0.9899413,vulnerability,3.2353833614489758
+There seems to be a vulnerability in the data export functionality.,security_concern,0.9899413,data,0.9952545474429889
+There seems to be a vulnerability in the data export functionality.,security_concern,0.9899413,export,-0.8314180927162969
+There seems to be a vulnerability in the data export functionality.,security_concern,0.9899413,seems,0.7074593869144085
+There seems to be a vulnerability in the data export functionality.,security_concern,0.9899413,functionality.,0.6301693330294468
+There seems to be a vulnerability in the data export functionality.,security_concern,0.9899413,There,0.5730276726121774
+There seems to be a vulnerability in the data export functionality.,security_concern,0.9899413,the,0.34714890927248404
+There seems to be a vulnerability in the data export functionality.,security_concern,0.9899413,to,-0.20449312027129832
+There seems to be a vulnerability in the login auth functionality.,security_concern,0.9839579,vulnerability,2.584297950955011
+There seems to be a vulnerability in the login auth functionality.,security_concern,0.9839579,functionality.,0.8344082483245006
+There seems to be a vulnerability in the login auth functionality.,security_concern,0.9839579,seems,0.8325500721582254
+There seems to be a vulnerability in the login auth functionality.,security_concern,0.9839579,There,0.6776395207800486
+There seems to be a vulnerability in the login auth functionality.,security_concern,0.9839579,the,0.37523027006026066
+There seems to be a vulnerability in the login auth functionality.,security_concern,0.9839579,auth,0.2638607791244634
+There seems to be a vulnerability in the login auth functionality.,security_concern,0.9839579,to,-0.2354026847579457
+There seems to be a vulnerability in the login auth functionality.,security_concern,0.9839579,login,-0.21946352528082932
+There seems to be a vulnerability in the mobile app functionality.,security_concern,0.985789,vulnerability,3.2779558919122866
+There seems to be a vulnerability in the mobile app functionality.,security_concern,0.985789,seems,0.8176898313097609
+There seems to be a vulnerability in the mobile app functionality.,security_concern,0.985789,functionality.,0.6612730121398601
+There seems to be a vulnerability in the mobile app functionality.,security_concern,0.985789,There,0.5885539284741984
+There seems to be a vulnerability in the mobile app functionality.,security_concern,0.985789,the,0.31795520809348693
+There seems to be a vulnerability in the mobile app functionality.,security_concern,0.985789,to,-0.2277786706532599
+There seems to be a vulnerability in the mobile app functionality.,security_concern,0.985789,mobile,-0.17978547228228767
+There seems to be a vulnerability in the mobile app functionality.,security_concern,0.985789,in,0.17245373257542013
+There seems to be a vulnerability in the notifications functionality.,security_concern,0.9868094,vulnerability,3.2762859060650764
+There seems to be a vulnerability in the notifications functionality.,security_concern,0.9868094,seems,0.8237377313157871
+There seems to be a vulnerability in the notifications functionality.,security_concern,0.9868094,There,0.6256508714977712
+There seems to be a vulnerability in the notifications functionality.,security_concern,0.9868094,functionality.,0.5741837946668504
+There seems to be a vulnerability in the notifications functionality.,security_concern,0.9868094,the,0.32098867973637923
+There seems to be a vulnerability in the notifications functionality.,security_concern,0.9868094,to,-0.21600836672125368
+There seems to be a vulnerability in the notifications functionality.,security_concern,0.9868094,a,0.14148084989024537
+There seems to be a vulnerability in the notifications functionality.,security_concern,0.9868094,in,0.1281168543452782
+We need details about your data encryption and compliance.,security_concern,0.98791456,encryption,2.6830089697762154
+We need details about your data encryption and compliance.,security_concern,0.98791456,compliance.,1.0742757222955186
+We need details about your data encryption and compliance.,security_concern,0.98791456,We,1.0085204235854606
+We need details about your data encryption and compliance.,security_concern,0.98791456,data,0.7681157162974753
+We need details about your data encryption and compliance.,security_concern,0.98791456,your,0.38002961469548036
+We need details about your data encryption and compliance.,security_concern,0.98791456,need,-0.35709186295668277
+We need details about your data encryption and compliance.,security_concern,0.98791456,details,0.19460682000905744
+We need details about your data encryption and compliance.,security_concern,0.98791456,about,0.0985430195218041

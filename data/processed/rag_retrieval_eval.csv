@@ -1,0 +1,29 @@
+question,expected,top_result,rank
+Which categories have the most unhappy customers?,analytics:satisfaction,analytics:satisfaction,1.0
+How good is the model?,model:summary / model:embeddings,model:summary,1.0
+Is there data leakage?,model:leakage / notebook:01#7 / report#1,notebook:01#7,1.0
+How long do tickets take to resolve?,analytics:resolution,analytics:resolution,1.0
+Were there any spikes in ticket volume?,anomaly:volume,anomaly:volume,1.0
+What are the recurring bug issues?,themes:bug,theme:bug#2,2.0
+Which words drive billing_problem predictions?,shap:billing_problem,shap:billing_problem,1.0
+Why was Logistic Regression chosen over SVM?,model:comparison,model:comparison,1.0
+Which queue gets the most tickets?,analytics:routing,analytics:routing,1.0
+Which tickets were handled unusually?,anomaly:tickets,notebook:05#3,4.0
+Which groups need operational attention?,anomaly:hotspots,anomaly:hotspots,1.0
+Is the data synthetic?,data:quality,data:quality,1.0
+Explain the performance category,category:performance,theme:performance#2,2.0
+Which embedding model works best?,model:embeddings / notebook:02b#4 / notebook:02b#6,notebook:02b#4,1.0
+How much does the BGE model reduce manual review work?,model:confidence_rule / notebook:02b#6,model:confidence_rule,1.0
+Which sentences does the best model still get wrong?,model:errors / notebook:02b#5,model:errors,1.0
+Can we trust the SHAP explanations of the embedding model?,model:shap_bge / notebook:03b#4,notebook:03b#4,1.0
+Are there topics that span several categories?,topics:overview / notebook:04b#3,notebook:04b#3,1.0
+How did the recurring themes change with BGE clustering?,cluster:bge_vs_lsa / notebook:04b#4 / notebook:04b#7,notebook:04b#0,2.0
+What F1 does account_access get with each embedding?,model:embedding_per_class,shap:account_access,
+Do priority or channel help predict the category?,analytics:profile,analytics:profile,1.0
+Does the SLA plan change how fast tickets are resolved?,analytics:resolution,analytics:resolution,1.0
+Why does Random Forest do badly on embeddings?,model:embeddings / notebook:02b#4,model:embeddings,1.0
+How do I run the project?,readme#2,readme#2,1.0
+What are the limitations of this project?,report#9 / readme#6,readme#6,1.0
+What did the correlation analysis show?,notebook:01#6,notebook:01#6,1.0
+Why do customers get frustrated with login problems?,category:account_access / analytics:satisfaction,analytics:satisfaction,1.0
+"My customers keep getting locked out, what does the data say?",category:account_access / themes:account_access,notebook:06#2,3.0

@@ -1,0 +1,81 @@
+category,term,mean_shap
+account_access,account was,0.13584112919113125
+account_access,multiple,0.13584112919113125
+account_access,multiple failed,0.13584112919113125
+account_access,failed login,0.13584112919113125
+account_access,login attempts,0.13584112919113125
+account_access,failed,0.13584112919113125
+account_access,locked,0.13584112919113125
+account_access,locked after,0.13584112919113125
+account_access,after multiple,0.13584112919113125
+account_access,after,0.13584112919113125
+billing_problem,plan,0.2887656088780054
+billing_problem,this month,0.14279921908541246
+billing_problem,charged twice,0.14279921908541246
+billing_problem,subscription this,0.14279921908541246
+billing_problem,subscription,0.14279921908541246
+billing_problem,month,0.14279921908541246
+billing_problem,my subscription,0.14279921908541246
+billing_problem,charged,0.14279921908541246
+billing_problem,twice for,0.14279921908541246
+billing_problem,twice,0.14279921908541246
+bug,changes,0.18042974397157002
+bug,saving my,0.18042974397157002
+bug,saving,0.18042974397157002
+bug,not saving,0.18042974397157002
+bug,feature is,0.18042974397157002
+bug,feature,0.18042974397157002
+bug,my changes,0.18042974397157002
+bug,seeing,0.12594953738452824
+bug,click on,0.12594953738452824
+bug,seeing an,0.12594953738452824
+feature_request,you add,0.16927296731630154
+feature_request,add,0.16927296731630154
+feature_request,add an,0.16927296731630154
+feature_request,to customize,0.16927296731630154
+feature_request,option,0.16927296731630154
+feature_request,customize,0.16927296731630154
+feature_request,option to,0.16927296731630154
+feature_request,an option,0.16927296731630154
+feature_request,options for,0.13660877173478025
+feature_request,needs more,0.13660877173478025
+how_to,how,0.41310432542624675
+how_to,my team,0.17784613018735962
+how_to,setting up,0.17784613018735962
+how_to,setting,0.17784613018735962
+how_to,help setting,0.17784613018735962
+how_to,up,0.17784613018735962
+how_to,can,0.17194025750821357
+how_to,you explain,0.15054032570175088
+how_to,configure,0.15054032570175088
+how_to,explain,0.15054032570175088
+other,about my,0.22187449401009143
+other,general question,0.22187449401009143
+other,have general,0.22187449401009143
+other,general,0.22187449401009143
+other,question about,0.22187449401009143
+other,question,0.22187449401009143
+other,off,0.13485081129544166
+other,you please,0.13485081129544166
+other,please,0.13485081129544166
+other,off can,0.13485081129544166
+performance,in the,0.16052994171610036
+performance,timing out,0.15630990519358312
+performance,queries in,0.15630990519358312
+performance,timing,0.15630990519358312
+performance,module are,0.15630990519358312
+performance,module,0.15630990519358312
+performance,out,0.15630990519358312
+performance,queries,0.15630990519358312
+performance,are timing,0.15630990519358312
+performance,are,0.15630990519358312
+security_concern,noticed suspicious,0.2275067027652851
+security_concern,noticed,0.2275067027652851
+security_concern,suspicious login,0.2275067027652851
+security_concern,on my,0.2275067027652851
+security_concern,suspicious,0.2275067027652851
+security_concern,login on,0.2275067027652851
+security_concern,to be,0.16910912303148262
+security_concern,seems to,0.16910912303148262
+security_concern,functionality,0.16910912303148262
+security_concern,vulnerability,0.16910912303148262

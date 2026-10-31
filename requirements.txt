@@ -1,0 +1,16 @@
+pandas>=2.0
+numpy>=1.24
+scipy>=1.10
+scikit-learn>=1.3
+matplotlib>=3.7
+seaborn>=0.12
+openpyxl>=3.1          # reads the Excel dataset
+joblib>=1.3
+requests>=2.31         # LLM API calls (optional)
+streamlit>=1.32
+plotly>=5.18
+notebook>=7.0          # to open and run the notebooks
+
+# optional extras
+# sentence-transformers # needed for notebooks 02b, 03b, 04b; optional in notebook 04
+# shap                  # optional cross-check in notebooks 03 and 03b

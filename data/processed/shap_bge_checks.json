@@ -1,0 +1,9 @@
+{
+  "additivity_max_error": 3.6253037904998564e-08,
+  "shap_library_max_difference": 1.1412395917176354e-08,
+  "stop_word_share_tfidf": 0.274251452481258,
+  "stop_word_share_bge": 0.26044244923190446,
+  "stop_word_share_of_words": 0.518727694111444,
+  "messages_explained": 96,
+  "sentences_embedded": 221312
+}

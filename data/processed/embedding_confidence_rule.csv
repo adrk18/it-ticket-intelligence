@@ -1,0 +1,3 @@
+model,sent to review,auto-routed accuracy,reviewed accuracy,overall accuracy
+TF-IDF + LR,0.45705,0.9236577953771066,0.18159938737556067,0.5845
+BGE + LR,0.1671,0.9502341217433066,0.24805505685218432,0.8329

@@ -1,0 +1,1154 @@
+doc_id,source,title,text
+overview,analytics,Dataset overview and ticket volume,"The analysis uses a stratified sample of 20000 tickets created between <PHONE> and <PHONE>. There are 8 categories and they are balanced: the largest is how_to with 12.7% of tickets and the smallest is bug with 12.3%. Ticket volume is flat over time at about 417 tickets per month. 50.6% of tickets are resolved and 39.2% are still open, in progress or on hold. Overall 42.1% of customers are negative. The ticket messages are built from only 96 unique sentences."
+analytics:profile,analytics,"Ticket profile: priority, channel, product area, segment, platform, region, SLA","Share of tickets by field. priority: low 39.0%, medium 35.9%, high 19.9%, urgent 5.2%; channel: in_app 20.2%, email 20.2%, phone_transcript 19.9%, web_form 19.9%, chat 19.8%; product area: api_integration 14.7%, login_auth 14.7%, notifications 14.6%, billing 14.2%, data_export 14.1%, analytics_dashboard 14.0%, mobile_app 13.7%; customer segment: enterprise 20.6%, education 20.2%, non_profit 19.9%, small_business 19.8%, individual 19.5%; platform: android 20.2%, desktop_app 20.1%, web 20.0%, api_client 20.0%, ios 19.7%; region: MEA 20.5%, LATAM 20.3%, Unknown 20.0%, EU 19.8%, APAC 19.4%; sla plan: standard 60.4%, gold 29.3%, platinum 10.3%. Attachments are included in 25.0% of tickets. These fields do not tell the category apart: within every product area each category's share lies between 10.7% and 14.1%, so the classifiers use only the ticket description."
+analytics:satisfaction,analytics,Customer satisfaction by category: which customers are unhappy,"Customer sentiment and satisfaction (CSAT) differ a lot by category. Share of negative or very negative (unhappy, frustrated) customers and average CSAT per category, from worst to best: performance: 60.8% negative, CSAT 2.80; security_concern: 60.1% negative, CSAT 2.85; billing_problem: 59.1% negative, CSAT 2.82; account_access: 58.1% negative, CSAT 2.85; bug: 30.7% negative, CSAT 3.40; other: 29.0% negative, CSAT 3.45; feature_request: 20.0% negative, CSAT 3.73; how_to: 18.9% negative, CSAT 3.76. Problem categories make customers much unhappier than requests such as how_to and feature_request."
+analytics:resolution,analytics,"Resolution time: how long tickets take to resolve, reopen rate","Median resolution time of resolved tickets by priority: urgent: 4.0 hours; high: 12.7 hours; medium: 25.5 hours; low: 40.5 hours. By SLA plan: gold: 23.3 hours; platinum: 23.1 hours; standard: 23.0 hours. By category the median resolution time is almost the same everywhere: account_access: 22.4 hours; billing_problem: 23.3 hours; bug: 23.2 hours; feature_request: 23.3 hours; how_to: 23.7 hours; other: 23.6 hours; performance: 22.9 hours; security_concern: 22.6 hours. Priority drives how fast tickets are resolved, the category does not. The reopen rate is 5.1% overall; by priority: urgent: 5.1%; high: 5.1%; medium: 4.9%; low: 5.1%."
+analytics:routing,analytics,Routing: tickets per support queue and manual review,Predicted tickets per support queue with the TF-IDF model (low-confidence tickets go to Manual Triage): Manual Triage: 9141 tickets; Application Support (L2): 3299 tickets; Service Desk (L1): 2548 tickets; Product Management: 2497 tickets; Platform / SRE: 1684 tickets; Security Operations: 831 tickets. The category-to-queue routing table is an assumption because the data has no assignment group: account_access goes to Identity & Access Team; billing_problem goes to Billing Operations; bug goes to Application Support (L2); feature_request goes to Product Management; how_to goes to Service Desk (L1); other goes to Manual Triage; performance goes to Platform / SRE; security_concern goes to Security Operations.
+category:account_access,category,"Category account_access: volume, satisfaction, resolution, model performance, SHAP words and recurring themes","Category account_access has 2522 tickets (12.6% of all tickets) and is routed to Identity & Access Team. Customer sentiment is negative for 58.1% of these tickets, average CSAT (rated tickets) is 2.85, the reopen rate is 4.8% and the median resolution time of resolved tickets is 22.4 hours. TF-IDF + Logistic Regression performance for account_access: precision 0.00, recall 0.00, F1 0.00, ROC-AUC 0.65; 67.1% of its tickets fall below the confidence threshold and go to manual review. BGE embeddings + Logistic Regression (best model) performance for account_access: precision 1.00, recall 0.67, F1 0.80, ROC-AUC 0.97. SHAP words that push tickets into account_access with the TF-IDF model: account was, multiple, multiple failed, failed login, login attempts, failed. SHAP words with the BGE model: password, 2fa, locked, cannot, failed, in. Recurring themes in account_access (notebook 04, TF-IDF + LSA clustering): locked multiple, login attempts, multiple, multiple failed (863 tickets, e.g. ""My account was locked after multiple failed login attempts.""); password, password incorrect, log, log says (830 tickets, e.g. ""I cannot log in; the system says my password is incorrect.""); 2fa, 2fa code, working try, working (829 tickets, e.g. ""My 2FA code is not working when I try to sign in.""). Themes with BGE clustering (notebook 4b): says password, says, password, password incorrect (1693 tickets, e.g. ""My account was locked after multiple failed login attempts.""); 2fa, 2fa code, working, code working (829 tickets, e.g. ""My 2FA code is not working when I try to sign in."")."
+shap:account_access,shap,Which words drive account_access predictions (SHAP explainability),"According to SHAP, the words that most push the TF-IDF model to predict account_access are: account was, multiple, multiple failed, failed login, login attempts, failed. These are averaged SHAP values over all account_access tickets. For the BGE embedding model, exact word-level SHAP gives these top words for account_access: password (0.90), 2fa (0.77), locked (0.75), cannot (0.61), failed (0.60), in (0.54), sign (0.51), login (0.42)."
+themes:account_access,theme,Recurring issues in account_access (clustering),"Clustering (notebook 04, TF-IDF + LSA) found 3 recurring issue themes in account_access: locked multiple, login attempts, multiple, multiple failed (863 tickets, e.g. ""My account was locked after multiple failed login attempts.""); password, password incorrect, log, log says (830 tickets, e.g. ""I cannot log in; the system says my password is incorrect.""); 2fa, 2fa code, working try, working (829 tickets, e.g. ""My 2FA code is not working when I try to sign in.""). With BGE embeddings (notebook 4b) the themes are: says password, says, password, password incorrect (1693 tickets, 2 descriptions, e.g. ""My account was locked after multiple failed login attempts.""); 2fa, 2fa code, working, code working (829 tickets, 1 descriptions, e.g. ""My 2FA code is not working when I try to sign in."")."
+category:billing_problem,category,"Category billing_problem: volume, satisfaction, resolution, model performance, SHAP words and recurring themes","Category billing_problem has 2476 tickets (12.4% of all tickets) and is routed to Billing Operations. Customer sentiment is negative for 59.1% of these tickets, average CSAT (rated tickets) is 2.82, the reopen rate is 5.4% and the median resolution time of resolved tickets is 23.3 hours. TF-IDF + Logistic Regression performance for billing_problem: precision 0.50, recall 0.34, F1 0.41, ROC-AUC 0.89; 100.0% of its tickets fall below the confidence threshold and go to manual review. BGE embeddings + Logistic Regression (best model) performance for billing_problem: precision 0.75, recall 1.00, F1 0.86, ROC-AUC 1.00. SHAP words that push tickets into billing_problem with the TF-IDF model: plan, this month, charged twice, subscription this, subscription, month. SHAP words with the BGE model: charged, plan, billed, downgraded, twice, amount. Recurring themes in billing_problem (notebook 04, TF-IDF + LSA clustering): tier, plan billed, higher, higher tier (841 tickets, e.g. ""I downgraded my plan but I am still being billed for the higher tier.""); twice subscription, twice, charged, charged twice (821 tickets, e.g. ""I was charged twice for my subscription this month.""); compared, compared plan, plan selected, incorrect compared (814 tickets, e.g. ""My invoice amount is incorrect compared to the plan I selected.""). Themes with BGE clustering (notebook 4b): plan billed, downgraded plan, higher tier, higher (841 tickets, e.g. ""I downgraded my plan but I am still being billed for the higher tier.""); charged twice, month, charged, subscription (821 tickets, e.g. ""I was charged twice for my subscription this month.""); incorrect compared, invoice, invoice incorrect, plan selected (814 tickets, e.g. ""My invoice amount is incorrect compared to the plan I selected."")."
+shap:billing_problem,shap,Which words drive billing_problem predictions (SHAP explainability),"According to SHAP, the words that most push the TF-IDF model to predict billing_problem are: plan, this month, charged twice, subscription this, subscription, month. These are averaged SHAP values over all billing_problem tickets. For the BGE embedding model, exact word-level SHAP gives these top words for billing_problem: charged (0.69), plan (0.68), billed (0.58), downgraded (0.50), twice (0.49), amount (0.41), incorrect (0.39), month (0.39)."
+themes:billing_problem,theme,Recurring issues in billing_problem (clustering),"Clustering (notebook 04, TF-IDF + LSA) found 3 recurring issue themes in billing_problem: tier, plan billed, higher, higher tier (841 tickets, e.g. ""I downgraded my plan but I am still being billed for the higher tier.""); twice subscription, twice, charged, charged twice (821 tickets, e.g. ""I was charged twice for my subscription this month.""); compared, compared plan, plan selected, incorrect compared (814 tickets, e.g. ""My invoice amount is incorrect compared to the plan I selected.""). With BGE embeddings (notebook 4b) the themes are: plan billed, downgraded plan, higher tier, higher (841 tickets, 1 descriptions, e.g. ""I downgraded my plan but I am still being billed for the higher tier.""); charged twice, month, charged, subscription (821 tickets, 1 descriptions, e.g. ""I was charged twice for my subscription this month.""); incorrect compared, invoice, invoice incorrect, plan selected (814 tickets, 1 descriptions, e.g. ""My invoice amount is incorrect compared to the plan I selected."")."
+category:bug,category,"Category bug: volume, satisfaction, resolution, model performance, SHAP words and recurring themes","Category bug has 2470 tickets (12.3% of all tickets) and is routed to Application Support (L2). Customer sentiment is negative for 30.7% of these tickets, average CSAT (rated tickets) is 3.40, the reopen rate is 4.8% and the median resolution time of resolved tickets is 23.2 hours. TF-IDF + Logistic Regression performance for bug: precision 0.75, recall 1.00, F1 0.86, ROC-AUC 1.00; 0.0% of its tickets fall below the confidence threshold and go to manual review. BGE embeddings + Logistic Regression (best model) performance for bug: precision 0.75, recall 1.00, F1 0.86, ROC-AUC 1.00. SHAP words that push tickets into bug with the TF-IDF model: changes, saving my, saving, not saving, feature is, feature. SHAP words with the BGE model: error, crashing, saving, not, click, changes. Recurring themes in bug (notebook 04, TF-IDF + LSA clustering): click, message, message click, error (871 tickets, e.g. ""I am seeing an error message when I click on notifications.""); changes, feature saving, feature, saving changes (825 tickets, e.g. ""The billing feature is not saving my changes.""); try open, open, page keeps, keeps crashing (774 tickets, e.g. ""The page keeps crashing whenever I try to open the notifications section.""). Themes with BGE clustering (notebook 4b): error, error message, seeing, seeing error (871 tickets, e.g. ""I am seeing an error message when I click on notifications.""); feature saving, feature, saving, saving changes (825 tickets, e.g. ""The billing feature is not saving my changes.""); crashing try, open, keeps, keeps crashing (774 tickets, e.g. ""The page keeps crashing whenever I try to open the notifications section."")."
+shap:bug,shap,Which words drive bug predictions (SHAP explainability),"According to SHAP, the words that most push the TF-IDF model to predict bug are: changes, saving my, saving, not saving, feature is, feature. These are averaged SHAP values over all bug tickets. For the BGE embedding model, exact word-level SHAP gives these top words for bug: error (1.13), crashing (0.86), saving (0.79), not (0.61), click (0.51), changes (0.34), page (0.33), open (0.25)."
+themes:bug,theme,Recurring issues in bug (clustering),"Clustering (notebook 04, TF-IDF + LSA) found 3 recurring issue themes in bug: click, message, message click, error (871 tickets, e.g. ""I am seeing an error message when I click on notifications.""); changes, feature saving, feature, saving changes (825 tickets, e.g. ""The billing feature is not saving my changes.""); try open, open, page keeps, keeps crashing (774 tickets, e.g. ""The page keeps crashing whenever I try to open the notifications section.""). With BGE embeddings (notebook 4b) the themes are: error, error message, seeing, seeing error (871 tickets, 7 descriptions, e.g. ""I am seeing an error message when I click on notifications.""); feature saving, feature, saving, saving changes (825 tickets, 7 descriptions, e.g. ""The billing feature is not saving my changes.""); crashing try, open, keeps, keeps crashing (774 tickets, 7 descriptions, e.g. ""The page keeps crashing whenever I try to open the notifications section."")."
+category:feature_request,category,"Category feature_request: volume, satisfaction, resolution, model performance, SHAP words and recurring themes","Category feature_request has 2497 tickets (12.5% of all tickets) and is routed to Product Management. Customer sentiment is negative for 20.0% of these tickets, average CSAT (rated tickets) is 3.73, the reopen rate is 5.6% and the median resolution time of resolved tickets is 23.3 hours. TF-IDF + Logistic Regression performance for feature_request: precision 1.00, recall 1.00, F1 1.00, ROC-AUC 1.00; 0.0% of its tickets fall below the confidence threshold and go to manual review. BGE embeddings + Logistic Regression (best model) performance for feature_request: precision 0.75, recall 1.00, F1 0.86, ROC-AUC 1.00. SHAP words that push tickets into feature_request with the TF-IDF model: you add, add, add an, to customize, option, customize. SHAP words with the BGE model: customize, options, option, more, would, add. Recurring themes in feature_request (notebook 04, TF-IDF + LSA clustering): option, option customize, customize, add option (880 tickets, e.g. ""Can you add an option to customize analytics dashboard?""); team needs, options, needs advanced, needs (856 tickets, e.g. ""Our team needs more advanced options for api integration.""); support product, product, great, support (761 tickets, e.g. ""It would be great to have notifications support in your product.""). Themes with BGE clustering (notebook 4b): customize, option, add, add option (880 tickets, e.g. ""Can you add an option to customize analytics dashboard?""); needs, advanced options, advanced, team needs (856 tickets, e.g. ""Our team needs more advanced options for api integration.""); product, support, support product, great (761 tickets, e.g. ""It would be great to have notifications support in your product."")."
+shap:feature_request,shap,Which words drive feature_request predictions (SHAP explainability),"According to SHAP, the words that most push the TF-IDF model to predict feature_request are: you add, add, add an, to customize, option, customize. These are averaged SHAP values over all feature_request tickets. For the BGE embedding model, exact word-level SHAP gives these top words for feature_request: customize (0.75), options (0.62), option (0.49), more (0.34), would (0.32), add (0.32), advanced (0.29), product (0.26)."
+themes:feature_request,theme,Recurring issues in feature_request (clustering),"Clustering (notebook 04, TF-IDF + LSA) found 3 recurring issue themes in feature_request: option, option customize, customize, add option (880 tickets, e.g. ""Can you add an option to customize analytics dashboard?""); team needs, options, needs advanced, needs (856 tickets, e.g. ""Our team needs more advanced options for api integration.""); support product, product, great, support (761 tickets, e.g. ""It would be great to have notifications support in your product.""). With BGE embeddings (notebook 4b) the themes are: customize, option, add, add option (880 tickets, 7 descriptions, e.g. ""Can you add an option to customize analytics dashboard?""); needs, advanced options, advanced, team needs (856 tickets, 7 descriptions, e.g. ""Our team needs more advanced options for api integration.""); product, support, support product, great (761 tickets, 7 descriptions, e.g. ""It would be great to have notifications support in your product."")."
+category:how_to,category,"Category how_to: volume, satisfaction, resolution, model performance, SHAP words and recurring themes","Category how_to has 2548 tickets (12.7% of all tickets) and is routed to Service Desk (L1). Customer sentiment is negative for 18.9% of these tickets, average CSAT (rated tickets) is 3.76, the reopen rate is 4.8% and the median resolution time of resolved tickets is 23.7 hours. TF-IDF + Logistic Regression performance for how_to: precision 0.51, recall 1.00, F1 0.67, ROC-AUC 1.00; 0.0% of its tickets fall below the confidence threshold and go to manual review. BGE embeddings + Logistic Regression (best model) performance for how_to: precision 1.00, recall 1.00, F1 1.00, ROC-AUC 1.00. SHAP words that push tickets into how_to with the TF-IDF model: how, my team, setting up, setting, help setting, up. SHAP words with the BGE model: how, setting, export, configure, data, section. Recurring themes in how_to (notebook 04, TF-IDF + LSA clustering): export data, export, section, data (859 tickets, e.g. ""How can I export my data from the billing section?""); help setting, setting, help, need help (856 tickets, e.g. ""I need help setting up login auth for my team.""); configure, explain configure, explain, properly (833 tickets, e.g. ""Can you explain how to configure data export properly?""). Themes with BGE clustering (notebook 4b): export data, export, data, section (986 tickets, e.g. ""How can I export my data from the billing section?""); setting, help setting, need help, help (856 tickets, e.g. ""I need help setting up login auth for my team.""); explain configure, configure, explain, properly (706 tickets, e.g. ""Can you explain how to configure mobile app properly?"")."
+shap:how_to,shap,Which words drive how_to predictions (SHAP explainability),"According to SHAP, the words that most push the TF-IDF model to predict how_to are: how, my team, setting up, setting, help setting, up. These are averaged SHAP values over all how_to tickets. For the BGE embedding model, exact word-level SHAP gives these top words for how_to: how (0.77), setting (0.73), export (0.67), configure (0.56), data (0.41), section (0.35), team (0.29), explain (0.26)."
+themes:how_to,theme,Recurring issues in how_to (clustering),"Clustering (notebook 04, TF-IDF + LSA) found 3 recurring issue themes in how_to: export data, export, section, data (859 tickets, e.g. ""How can I export my data from the billing section?""); help setting, setting, help, need help (856 tickets, e.g. ""I need help setting up login auth for my team.""); configure, explain configure, explain, properly (833 tickets, e.g. ""Can you explain how to configure data export properly?""). With BGE embeddings (notebook 4b) the themes are: export data, export, data, section (986 tickets, 8 descriptions, e.g. ""How can I export my data from the billing section?""); setting, help setting, need help, help (856 tickets, 7 descriptions, e.g. ""I need help setting up login auth for my team.""); explain configure, configure, explain, properly (706 tickets, 6 descriptions, e.g. ""Can you explain how to configure mobile app properly?"")."
+category:other,category,"Category other: volume, satisfaction, resolution, model performance, SHAP words and recurring themes","Category other has 2492 tickets (12.5% of all tickets) and is routed to Manual Triage. Customer sentiment is negative for 29.0% of these tickets, average CSAT (rated tickets) is 3.45, the reopen rate is 5.4% and the median resolution time of resolved tickets is 23.6 hours. TF-IDF + Logistic Regression performance for other: precision 0.00, recall 0.00, F1 0.00, ROC-AUC 0.64; 100.0% of its tickets fall below the confidence threshold and go to manual review. BGE embeddings + Logistic Regression (best model) performance for other: precision 1.00, recall 0.33, F1 0.49, ROC-AUC 1.00. SHAP words that push tickets into other with the TF-IDF model: about my, general question, have general, general, question about, question. SHAP words with the BGE model: question, workspace, general, my, help, category. Recurring themes in other (notebook 04, TF-IDF + LSA clustering): workspace, check, check workspace (848 tickets, e.g. ""Something seems off, can you please check my workspace?""); general, general question, question, question account (833 tickets, e.g. ""I have a general question about my account.""); sure category, sure, category, category fits (811 tickets, e.g. ""I need help but I'm not sure which category this fits in.""). Themes with BGE clustering (notebook 4b): workspace, check workspace, check (848 tickets, e.g. ""Something seems off, can you please check my workspace?""); question, general, general question, question account (833 tickets, e.g. ""I have a general question about my account.""); category, category fits, help sure, sure (811 tickets, e.g. ""I need help but I'm not sure which category this fits in."")."
+shap:other,shap,Which words drive other predictions (SHAP explainability),"According to SHAP, the words that most push the TF-IDF model to predict other are: about my, general question, have general, general, question about, question. These are averaged SHAP values over all other tickets. For the BGE embedding model, exact word-level SHAP gives these top words for other: question (0.63), workspace (0.54), general (0.38), my (0.31), help (0.28), category (0.27), not (0.23), off (0.22)."
+themes:other,theme,Recurring issues in other (clustering),"Clustering (notebook 04, TF-IDF + LSA) found 3 recurring issue themes in other: workspace, check, check workspace (848 tickets, e.g. ""Something seems off, can you please check my workspace?""); general, general question, question, question account (833 tickets, e.g. ""I have a general question about my account.""); sure category, sure, category, category fits (811 tickets, e.g. ""I need help but I'm not sure which category this fits in.""). With BGE embeddings (notebook 4b) the themes are: workspace, check workspace, check (848 tickets, 1 descriptions, e.g. ""Something seems off, can you please check my workspace?""); question, general, general question, question account (833 tickets, 1 descriptions, e.g. ""I have a general question about my account.""); category, category fits, help sure, sure (811 tickets, 1 descriptions, e.g. ""I need help but I'm not sure which category this fits in."")."
+category:performance,category,"Category performance: volume, satisfaction, resolution, model performance, SHAP words and recurring themes","Category performance has 2503 tickets (12.5% of all tickets) and is routed to Platform / SRE. Customer sentiment is negative for 60.8% of these tickets, average CSAT (rated tickets) is 2.80, the reopen rate is 5.4% and the median resolution time of resolved tickets is 22.9 hours. TF-IDF + Logistic Regression performance for performance: precision 1.00, recall 1.00, F1 1.00, ROC-AUC 1.00; 32.7% of its tickets fall below the confidence threshold and go to manual review. BGE embeddings + Logistic Regression (best model) performance for performance: precision 1.00, recall 1.00, F1 1.00, ROC-AUC 1.00. SHAP words that push tickets into performance with the TF-IDF model: in the, timing out, queries in, timing, module are, module. SHAP words with the BGE model: slow, timing, degraded, queries, performance, out. Recurring themes in performance (notebook 04, TF-IDF + LSA clustering): time load, time, takes long, takes (851 tickets, e.g. ""The login auth page is very slow and takes a long time to load.""); timing, module, module timing, queries (833 tickets, e.g. ""Queries in the login auth module are timing out.""); overall, overall performance, performance, performance degraded (819 tickets, e.g. ""Overall performance has degraded in the last few days.""). Themes with BGE clustering (notebook 4b): slow, page slow, slow takes, takes (851 tickets, e.g. ""The login auth page is very slow and takes a long time to load.""); module timing, module, queries, timing (833 tickets, e.g. ""Queries in the login auth module are timing out.""); overall performance, degraded days, degraded, days (819 tickets, e.g. ""Overall performance has degraded in the last few days."")."
+shap:performance,shap,Which words drive performance predictions (SHAP explainability),"According to SHAP, the words that most push the TF-IDF model to predict performance are: in the, timing out, queries in, timing, module are, module. These are averaged SHAP values over all performance tickets. For the BGE embedding model, exact word-level SHAP gives these top words for performance: slow (0.70), timing (0.68), degraded (0.56), queries (0.50), performance (0.41), out (0.41), long (0.33), days (0.32)."
+themes:performance,theme,Recurring issues in performance (clustering),"Clustering (notebook 04, TF-IDF + LSA) found 3 recurring issue themes in performance: time load, time, takes long, takes (851 tickets, e.g. ""The login auth page is very slow and takes a long time to load.""); timing, module, module timing, queries (833 tickets, e.g. ""Queries in the login auth module are timing out.""); overall, overall performance, performance, performance degraded (819 tickets, e.g. ""Overall performance has degraded in the last few days.""). With BGE embeddings (notebook 4b) the themes are: slow, page slow, slow takes, takes (851 tickets, 7 descriptions, e.g. ""The login auth page is very slow and takes a long time to load.""); module timing, module, queries, timing (833 tickets, 7 descriptions, e.g. ""Queries in the login auth module are timing out.""); overall performance, degraded days, degraded, days (819 tickets, 1 descriptions, e.g. ""Overall performance has degraded in the last few days."")."
+category:security_concern,category,"Category security_concern: volume, satisfaction, resolution, model performance, SHAP words and recurring themes","Category security_concern has 2492 tickets (12.5% of all tickets) and is routed to Security Operations. Customer sentiment is negative for 60.1% of these tickets, average CSAT (rated tickets) is 2.85, the reopen rate is 4.2% and the median resolution time of resolved tickets is 22.6 hours. TF-IDF + Logistic Regression performance for security_concern: precision 0.49, recall 0.33, F1 0.40, ROC-AUC 0.72; 66.7% of its tickets fall below the confidence threshold and go to manual review. BGE embeddings + Logistic Regression (best model) performance for security_concern: precision 0.66, recall 0.67, F1 0.66, ROC-AUC 0.98. SHAP words that push tickets into security_concern with the TF-IDF model: noticed suspicious, noticed, suspicious login, on my, suspicious, login on. SHAP words with the BGE model: suspicious, vulnerability, encryption, noticed, compliance, we. Recurring themes in security_concern (notebook 04, TF-IDF + LSA clustering): compliance, need details, details, details data (832 tickets, e.g. ""We need details about your data encryption and compliance.""); vulnerability, functionality, vulnerability billing, billing functionality (831 tickets, e.g. ""There seems to be a vulnerability in the billing functionality.""); suspicious login, suspicious, noticed, login account (829 tickets, e.g. ""I noticed a suspicious login on my account.""). Themes with BGE clustering (notebook 4b): suspicious login, login account, noticed suspicious, suspicious (1660 tickets, e.g. ""I noticed a suspicious login on my account.""); encryption compliance, data encryption, compliance, details (832 tickets, e.g. ""We need details about your data encryption and compliance."")."
+shap:security_concern,shap,Which words drive security_concern predictions (SHAP explainability),"According to SHAP, the words that most push the TF-IDF model to predict security_concern are: noticed suspicious, noticed, suspicious login, on my, suspicious, login on. These are averaged SHAP values over all security_concern tickets. For the BGE embedding model, exact word-level SHAP gives these top words for security_concern: suspicious (1.11), vulnerability (1.04), encryption (0.90), noticed (0.49), compliance (0.36), we (0.34), data (0.31), seems (0.25)."
+themes:security_concern,theme,Recurring issues in security_concern (clustering),"Clustering (notebook 04, TF-IDF + LSA) found 3 recurring issue themes in security_concern: compliance, need details, details, details data (832 tickets, e.g. ""We need details about your data encryption and compliance.""); vulnerability, functionality, vulnerability billing, billing functionality (831 tickets, e.g. ""There seems to be a vulnerability in the billing functionality.""); suspicious login, suspicious, noticed, login account (829 tickets, e.g. ""I noticed a suspicious login on my account.""). With BGE embeddings (notebook 4b) the themes are: suspicious login, login account, noticed suspicious, suspicious (1660 tickets, 8 descriptions, e.g. ""I noticed a suspicious login on my account.""); encryption compliance, data encryption, compliance, details (832 tickets, 1 descriptions, e.g. ""We need details about your data encryption and compliance."")."
+model:summary,model,"How good is the TF-IDF classifier: F1, precision, recall, accuracy","The original classifier is TF-IDF (1-2 grams) + Logistic Regression, evaluated with grouped 5-fold cross-validation by message (out-of-fold). Macro F1 is 0.541, weighted F1 0.541, macro precision 0.531, macro recall 0.584, accuracy 0.585 and macro ROC-AUC 0.862. Tickets with confidence below 60% go to manual review; that is 45.7% of tickets. The weakest categories are account_access, other, which have only 3 different sentences each, so the model rarely sees new wording for them. The BGE embedding model is better: macro F1 0.816."
+model:comparison,model,TF-IDF model comparison: Logistic Regression vs SVM vs Naive Bayes,"With TF-IDF features, on the held-out test messages the models scored: Majority baseline: macro F1 0.012, ROC-AUC 0.500; Naive Bayes: macro F1 0.611, ROC-AUC 0.915; Linear SVM: macro F1 0.611, ROC-AUC 0.886; Logistic Regression: macro F1 0.611, ROC-AUC 0.886. In grouped 5-fold cross-validation the macro F1 was: Majority baseline: 0.002; Naive Bayes: 0.591; Linear SVM: 0.591; Logistic Regression: 0.591. Naive Bayes, Linear SVM and Logistic Regression tie on F1 (0.591) because the test set has so few distinct sentences; Logistic Regression was chosen because it gives probabilities for the confidence score and its SHAP values can be computed exactly."
+model:leakage,model,Data leakage and train/test split,"The dataset has only 96 unique ticket messages repeated across all tickets, and each message always has the same category. A random train/test split therefore puts the same sentences in both sets and gives a misleading macro F1 of 1.0. The project splits by message instead (grouped split), so the test only contains unseen wording. The columns agent_first_reply and resolution_summary reveal the category and are never used as model inputs, and outcome columns such as status, sentiment and CSAT are only known after a ticket is handled."
+model:shap,model,How SHAP explanations work for the TF-IDF model,SHAP gives each word in a ticket a score for how much it pushed the prediction towards or away from a category. For the linear TF-IDF + Logistic Regression model the SHAP value of a word is its model weight times the difference between its TF-IDF value in the ticket and its average TF-IDF value. The values add up exactly to the model score. Some filler words such as 'my' and 'the' carry weight because the synthetic sentences are built from templates.
+model:embeddings,model,"Best model: sentence embeddings (BGE, MPNet, MiniLM) vs TF-IDF, which classifier is best","Notebook 2b replaced TF-IDF with pre-trained sentence embeddings that capture meaning: MiniLM (all-MiniLM-L6-v2), MPNet (all-mpnet-base-v2) and BGE (BAAI/bge-base-en-v1.5). Each was paired with Logistic Regression, Linear SVM, k-nearest neighbours and Random Forest, using the same message-level split and grouped 5-fold cross-validation as the TF-IDF models. Best macro F1 per representation in grouped CV: BGE with Linear SVM: 0.822 (std 0.092); MPNet with Logistic Regression: 0.789 (std 0.119); MiniLM with Logistic Regression: 0.708 (std 0.161); TF-IDF with Logistic Regression: 0.591 (std 0.051). The chosen model is BGE (BAAI/bge-base-en-v1.5) embeddings + Logistic Regression: out-of-fold macro F1 0.816, accuracy 0.833, macro precision 0.864, macro recall 0.833, weighted F1 0.817 and macro ROC-AUC 0.994, compared with macro F1 0.541 and accuracy 0.585 for TF-IDF + Logistic Regression. Linear classifiers work best on embeddings; Random Forest is weakest because meaning is spread over hundreds of dimensions and there are only about 77 training sentences per fold."
+model:embedding_grid,model,All embedding x classifier scores (grouped cross-validation table),"Grouped 5-fold cross-validation macro F1 (mean and std over folds) and out-of-fold ROC-AUC for every combination of text representation and classifier: BGE + Linear SVM: F1 0.822 (std 0.092), accuracy 0.832, ROC-AUC 0.998; BGE + Logistic Regression: F1 0.813 (std 0.099), accuracy 0.832, ROC-AUC 0.994; BGE + kNN (k=3): F1 0.795 (std 0.074), accuracy 0.807, ROC-AUC 0.969; MPNet + Logistic Regression: F1 0.789 (std 0.119), accuracy 0.797, ROC-AUC 0.992; MPNet + Linear SVM: F1 0.789 (std 0.119), accuracy 0.797, ROC-AUC 0.988; MiniLM + Logistic Regression: F1 0.708 (std 0.161), accuracy 0.709, ROC-AUC 0.956; MiniLM + Linear SVM: F1 0.695 (std 0.173), accuracy 0.709, ROC-AUC 0.956; BGE + Random Forest: F1 0.693 (std 0.184), accuracy 0.708, ROC-AUC 0.970; MiniLM + Random Forest: F1 0.599 (std 0.072), accuracy 0.619, ROC-AUC 0.904; MPNet + kNN (k=3): F1 0.591 (std 0.094), accuracy 0.630, ROC-AUC 0.876; TF-IDF + Linear SVM: F1 0.591 (std 0.051), accuracy 0.581, ROC-AUC 0.875; TF-IDF + Naive Bayes: F1 0.591 (std 0.051), accuracy 0.581, ROC-AUC 0.895; TF-IDF + Logistic Regression: F1 0.591 (std 0.051), accuracy 0.581, ROC-AUC 0.862; MPNet + Random Forest: F1 0.549 (std 0.095), accuracy 0.572, ROC-AUC 0.957; TF-IDF + kNN (k=3): F1 0.546 (std 0.050), accuracy 0.545, ROC-AUC 0.777; MiniLM + kNN (k=3): F1 0.545 (std 0.077), accuracy 0.565, ROC-AUC 0.823; TF-IDF + Random Forest: F1 0.529 (std 0.108), accuracy 0.503, ROC-AUC 0.776."
+model:embedding_per_class,model,Per-class F1: TF-IDF vs MiniLM vs MPNet vs BGE,"Out-of-fold F1 per category with Logistic Regression on each representation: account_access: TF-IDF + LR 0.00, MiniLM + LR 0.58, MPNet + LR 0.80, BGE + LR 0.80; billing_problem: TF-IDF + LR 0.41, MiniLM + LR 0.80, MPNet + LR 1.00, BGE + LR 0.86; bug: TF-IDF + LR 0.86, MiniLM + LR 0.75, MPNet + LR 0.75, BGE + LR 0.86; feature_request: TF-IDF + LR 1.00, MiniLM + LR 1.00, MPNet + LR 1.00, BGE + LR 0.86; how_to: TF-IDF + LR 0.67, MiniLM + LR 0.76, MPNet + LR 0.67, BGE + LR 1.00; other: TF-IDF + LR 0.00, MiniLM + LR 0.00, MPNet + LR 0.00, BGE + LR 0.49; performance: TF-IDF + LR 1.00, MiniLM + LR 1.00, MPNet + LR 1.00, BGE + LR 1.00; security_concern: TF-IDF + LR 0.40, MiniLM + LR 0.40, MPNet + LR 0.80, BGE + LR 0.66. The two classes TF-IDF missed completely improve the most with BGE: account_access and other."
+model:confidence_rule,model,"Manual review rule: confidence threshold, review share, auto-routing accuracy","Tickets whose top-class confidence is below 60% go to manual review (Manual Triage) instead of being routed automatically. With TF-IDF + LR: 45.7% of tickets are sent to review, auto-routed tickets are 92.4% correct, reviewed tickets 18.2% correct, overall accuracy 58.5%. With BGE + LR: 16.7% of tickets are sent to review, auto-routed tickets are 95.0% correct, reviewed tickets 24.8% correct, overall accuracy 83.3%. The BGE model cuts the manual review workload by almost two thirds."
+model:errors,model,Which sentences the models get wrong (error analysis),"Out of 96 unique sentences, TF-IDF + LR gets 86 right and BGE + LR gets 92 right; BGE fixes 6 sentences and breaks 0. Fixed by BGE: ""I need help but I'm not sure which category this fits in."" (other, TF-IDF said how_to); ""I noticed a suspicious login on my account."" (security_concern, TF-IDF said account_access); ""My account was locked after multiple failed login attempts."" (account_access, TF-IDF said security_concern); ""My invoice amount is incorrect compared to the plan I selected."" (billing_problem, TF-IDF said account_access); ""I was charged twice for my subscription this month."" (billing_problem, TF-IDF said how_to); ""I cannot log in; the system says my password is incorrect."" (account_access, TF-IDF said billing_problem). Still wrong with BGE: ""I have a general question about my account."" (true other, predicted billing_problem with confidence 0.26); ""Something seems off, can you please check my workspace?"" (true other, predicted security_concern with confidence 0.31); ""My 2FA code is not working when I try to sign in."" (true account_access, predicted bug with confidence 0.73); ""We need details about your data encryption and compliance."" (true security_concern, predicted feature_request with confidence 0.58). The TF-IDF model matches words, not meaning: for example the lockout sentence went to security_concern because 'login' only appeared in a security sentence during training."
+model:shap_bge,model,"How SHAP works for the BGE embedding model (word-level, exact) and is it faithful","The BGE model sees a 768-number vector, so SHAP is computed at the word level: each word is a player, leaving a word out means deleting it from the sentence and embedding the shorter sentence again, and the value explained is the model's score (logit) per category. Messages have 8 to 14 words, so every subset of words is tried and the Shapley values are exact (221312 shortened sentences embedded for 96 messages). Checks: base value plus word values equals the model score within 3.6e-08, and the shap library's Exact explainer agrees within 1.1e-08. Deletion test: removing the top SHAP word lowers the predicted-class probability by 0.125 on average versus 0.026 for a random word; removing the top 3 lowers it by 0.519 versus 0.118 and changes the prediction for 40.6% of messages. Share of the explanation going to stop words: 27.4% for TF-IDF and 26.0% for BGE, while 51.9% of words are stop words. Most influential words overall with TF-IDF: how, plan, can, in the, on my, noticed suspicious, noticed, suspicious, login on, suspicious login, general, general question. With BGE: not, error, suspicious, vulnerability, i, password, my, encryption, export, data, crashing, how."
+model:shap_examples,model,Worked examples: TF-IDF vs BGE predictions for new sentences,"Predictions for sentences that are not in the dataset: ""I was charged twice for my subscription this month."": TF-IDF + LR billing_problem (99%), BGE + LR billing_problem (99%); ""Locked out of my account after entering the wrong password too many times"": TF-IDF + LR account_access (66%), BGE + LR account_access (98%); ""The export page crashes and the invoice is wrong"": TF-IDF + LR performance (37%), BGE + LR bug (69%); ""How do I reset my password?"": TF-IDF + LR account_access (40%), BGE + LR account_access (92%); ""My account was locked after multiple failed login attempts."": TF-IDF + LR account_access (99%), BGE + LR account_access (99%)."
+cluster:bge_vs_lsa,theme,Clustering with BGE embeddings vs TF-IDF + LSA: what changed,"Notebook 4b repeated the recurring-issue clustering with BGE embeddings. Average cosine similarity of sentence pairs: TF-IDF + LSA (notebook 04): same problem different product 0.73, same product different problem 0.26, unrelated 0.00; BGE: same problem different product 0.80, same product different problem 0.71, unrelated 0.53. So BGE also groups sentences about the same product or subject. Clustering all categories into 8 groups gives a purity of TF-IDF + LSA 0.66, BGE 0.79. Within each category, agreement of BGE themes with the notebook 04 themes (adjusted Rand index): account_access 0.00 (2 BGE themes vs 3 LSA themes); billing_problem 1.00 (3 BGE themes vs 3 LSA themes); bug 1.00 (3 BGE themes vs 3 LSA themes); feature_request 1.00 (3 BGE themes vs 3 LSA themes); how_to 0.85 (3 BGE themes vs 3 LSA themes); other 1.00 (3 BGE themes vs 3 LSA themes); performance 1.00 (3 BGE themes vs 3 LSA themes); security_concern 0.57 (2 BGE themes vs 3 LSA themes). BGE merges the login and password failures into one account_access theme, groups vulnerability reports with suspicious login as security incidents, and moves 'configure data export' into the export theme."
+topics:overview,theme,Cross-category topics: subject areas such as login and billing (BGE clustering),"Clustering all tickets into 8 groups with BGE embeddings gives subject and intent topics that cut across categories: topic 0 (export, data, section, export data): 4886 tickets, categories bug 39%, performance 29%, how_to 20%, security_concern 12%, e.g. ""I am seeing an error message when I click on notifications.""; topic 2 (team, option customize, customize, add): 3690 tickets, categories feature_request 68%, how_to 32%, e.g. ""Can you add an option to customize analytics dashboard?""; topic 1 (login, says password, says, password incorrect): 3460 tickets, categories account_access 73%, bug 9%, performance 8%, how_to 7%, e.g. ""My account was locked after multiple failed login attempts.""; topic 5 (plan, twice, charged, charged twice): 2992 tickets, categories billing_problem 83%, bug 9%, security_concern 5%, how_to 4%, e.g. ""I downgraded my plan but I am still being billed for the higher tier.""; topic 3 (account, question account, general, general question): 2473 tickets, categories other 66%, security_concern 34%, e.g. ""I have a general question about my account.""; topic 7 (workspace, check workspace, check): 848 tickets, categories other 100%, e.g. ""Something seems off, can you please check my workspace?""; topic 6 (encryption compliance, data encryption, compliance, details): 832 tickets, categories security_concern 100%, e.g. ""We need details about your data encryption and compliance.""; topic 4 (overall performance, degraded days, degraded, days): 819 tickets, categories performance 100%, e.g. ""Overall performance has degraded in the last few days."". The login topic collects all account_access tickets plus login auth bugs, slowness, set-up and vulnerability tickets; the billing topic collects billing_problem plus billing bugs, set-up and vulnerability tickets. Reporting by category alone hides these subject areas."
+theme:feature_request#2,theme,"Recurring issue in feature_request: option, option customize, customize, add option","Recurring issue theme in feature_request (notebook 04) with top words option, option customize, customize, add option. It covers 880 tickets (35.0% of the category) from 7 different descriptions; cohesion 0.89. Example description: ""Can you add an option to customize analytics dashboard?""."
+theme:bug#2,theme,"Recurring issue in bug: click, message, message click, error","Recurring issue theme in bug (notebook 04) with top words click, message, message click, error. It covers 871 tickets (35.0% of the category) from 7 different descriptions; cohesion 0.92. Example description: ""I am seeing an error message when I click on notifications.""."
+theme:account_access#2,theme,"Recurring issue in account_access: locked multiple, login attempts, multiple, multiple failed","Recurring issue theme in account_access (notebook 04) with top words locked multiple, login attempts, multiple, multiple failed. It covers 863 tickets (34.0% of the category) from 1 different descriptions; cohesion 1.00. Example description: ""My account was locked after multiple failed login attempts.""."
+theme:how_to#0,theme,"Recurring issue in how_to: export data, export, section, data","Recurring issue theme in how_to (notebook 04) with top words export data, export, section, data. It covers 859 tickets (34.0% of the category) from 7 different descriptions; cohesion 0.81. Example description: ""How can I export my data from the billing section?""."
+theme:feature_request#1,theme,"Recurring issue in feature_request: team needs, options, needs advanced, needs","Recurring issue theme in feature_request (notebook 04) with top words team needs, options, needs advanced, needs. It covers 856 tickets (34.0% of the category) from 7 different descriptions; cohesion 0.91. Example description: ""Our team needs more advanced options for api integration.""."
+theme:how_to#1,theme,"Recurring issue in how_to: help setting, setting, help, need help","Recurring issue theme in how_to (notebook 04) with top words help setting, setting, help, need help. It covers 856 tickets (34.0% of the category) from 7 different descriptions; cohesion 0.89. Example description: ""I need help setting up login auth for my team.""."
+theme:performance#1,theme,"Recurring issue in performance: time load, time, takes long, takes","Recurring issue theme in performance (notebook 04) with top words time load, time, takes long, takes. It covers 851 tickets (34.0% of the category) from 7 different descriptions; cohesion 0.94. Example description: ""The login auth page is very slow and takes a long time to load.""."
+theme:other#2,theme,"Recurring issue in other: workspace, check, check workspace","Recurring issue theme in other (notebook 04) with top words workspace, check, check workspace. It covers 848 tickets (34.0% of the category) from 1 different descriptions; cohesion 1.00. Example description: ""Something seems off, can you please check my workspace?""."
+theme:billing_problem#0,theme,"Recurring issue in billing_problem: tier, plan billed, higher, higher tier","Recurring issue theme in billing_problem (notebook 04) with top words tier, plan billed, higher, higher tier. It covers 841 tickets (34.0% of the category) from 1 different descriptions; cohesion 1.00. Example description: ""I downgraded my plan but I am still being billed for the higher tier.""."
+theme:other#0,theme,"Recurring issue in other: general, general question, question, question account","Recurring issue theme in other (notebook 04) with top words general, general question, question, question account. It covers 833 tickets (33.0% of the category) from 1 different descriptions; cohesion 1.00. Example description: ""I have a general question about my account.""."
+theme:performance#0,theme,"Recurring issue in performance: timing, module, module timing, queries","Recurring issue theme in performance (notebook 04) with top words timing, module, module timing, queries. It covers 833 tickets (33.0% of the category) from 7 different descriptions; cohesion 0.85. Example description: ""Queries in the login auth module are timing out.""."
+theme:how_to#2,theme,"Recurring issue in how_to: configure, explain configure, explain, properly","Recurring issue theme in how_to (notebook 04) with top words configure, explain configure, explain, properly. It covers 833 tickets (33.0% of the category) from 7 different descriptions; cohesion 0.85. Example description: ""Can you explain how to configure data export properly?""."
+theme:security_concern#1,theme,"Recurring issue in security_concern: compliance, need details, details, details data","Recurring issue theme in security_concern (notebook 04) with top words compliance, need details, details, details data. It covers 832 tickets (33.0% of the category) from 1 different descriptions; cohesion 1.00. Example description: ""We need details about your data encryption and compliance.""."
+theme:security_concern#0,theme,"Recurring issue in security_concern: vulnerability, functionality, vulnerability billing, billing functionality","Recurring issue theme in security_concern (notebook 04) with top words vulnerability, functionality, vulnerability billing, billing functionality. It covers 831 tickets (33.0% of the category) from 7 different descriptions; cohesion 0.76. Example description: ""There seems to be a vulnerability in the billing functionality.""."
+theme:account_access#0,theme,"Recurring issue in account_access: password, password incorrect, log, log says","Recurring issue theme in account_access (notebook 04) with top words password, password incorrect, log, log says. It covers 830 tickets (33.0% of the category) from 1 different descriptions; cohesion 1.00. Example description: ""I cannot log in; the system says my password is incorrect.""."
+theme:account_access#1,theme,"Recurring issue in account_access: 2fa, 2fa code, working try, working","Recurring issue theme in account_access (notebook 04) with top words 2fa, 2fa code, working try, working. It covers 829 tickets (33.0% of the category) from 1 different descriptions; cohesion 1.00. Example description: ""My 2FA code is not working when I try to sign in.""."
+theme:security_concern#2,theme,"Recurring issue in security_concern: suspicious login, suspicious, noticed, login account","Recurring issue theme in security_concern (notebook 04) with top words suspicious login, suspicious, noticed, login account. It covers 829 tickets (33.0% of the category) from 1 different descriptions; cohesion 1.00. Example description: ""I noticed a suspicious login on my account.""."
+theme:bug#0,theme,"Recurring issue in bug: changes, feature saving, feature, saving changes","Recurring issue theme in bug (notebook 04) with top words changes, feature saving, feature, saving changes. It covers 825 tickets (33.0% of the category) from 7 different descriptions; cohesion 0.89. Example description: ""The billing feature is not saving my changes.""."
+theme:billing_problem#1,theme,"Recurring issue in billing_problem: twice subscription, twice, charged, charged twice","Recurring issue theme in billing_problem (notebook 04) with top words twice subscription, twice, charged, charged twice. It covers 821 tickets (33.0% of the category) from 1 different descriptions; cohesion 1.00. Example description: ""I was charged twice for my subscription this month.""."
+theme:performance#2,theme,"Recurring issue in performance: overall, overall performance, performance, performance degraded","Recurring issue theme in performance (notebook 04) with top words overall, overall performance, performance, performance degraded. It covers 819 tickets (33.0% of the category) from 1 different descriptions; cohesion 1.00. Example description: ""Overall performance has degraded in the last few days.""."
+theme:billing_problem#2,theme,"Recurring issue in billing_problem: compared, compared plan, plan selected, incorrect compared","Recurring issue theme in billing_problem (notebook 04) with top words compared, compared plan, plan selected, incorrect compared. It covers 814 tickets (33.0% of the category) from 1 different descriptions; cohesion 1.00. Example description: ""My invoice amount is incorrect compared to the plan I selected.""."
+theme:other#1,theme,"Recurring issue in other: sure category, sure, category, category fits","Recurring issue theme in other (notebook 04) with top words sure category, sure, category, category fits. It covers 811 tickets (33.0% of the category) from 1 different descriptions; cohesion 1.00. Example description: ""I need help but I'm not sure which category this fits in.""."
+theme:bug#1,theme,"Recurring issue in bug: try open, open, page keeps, keeps crashing","Recurring issue theme in bug (notebook 04) with top words try open, open, page keeps, keeps crashing. It covers 774 tickets (31.0% of the category) from 7 different descriptions; cohesion 0.92. Example description: ""The page keeps crashing whenever I try to open the notifications section.""."
+theme:feature_request#0,theme,"Recurring issue in feature_request: support product, product, great, support","Recurring issue theme in feature_request (notebook 04) with top words support product, product, great, support. It covers 761 tickets (30.0% of the category) from 7 different descriptions; cohesion 0.85. Example description: ""It would be great to have notifications support in your product.""."
+anomaly:volume,anomaly,Volume anomalies (spikes and drops),"Ticket volume was checked weekly overall and monthly per category with a robust z-score (threshold 3). Flagged periods: feature_request in period starting <PHONE>: 70 tickets vs 44 expected (z = 3.2). Detector check with planted spikes: planted spikes +20% caught: 1 / 5; planted spikes +40% caught: 3 / 5; planted spikes +60% caught: 5 / 5; planted spikes +80% caught: 5 / 5; planted spikes +100% caught: 5 / 5; real weekly flags: 0; real category-month flags: 1; flags expected by pure chance: 1.3. The number of real flags is in line with chance, so there are no strong demand spikes."
+anomaly:hotspots,anomaly,Hotspots: groups needing operational attention,"Segments whose rate is significantly above the overall rate (Bonferroni corrected): low confidence for issue_type = other: 100.0% vs 45.7% overall; low confidence for issue_type = billing_problem: 100.0% vs 45.7% overall; low confidence for issue_type = account_access: 67.1% vs 45.7% overall; low confidence for issue_type = security_concern: 66.7% vs 45.7% overall; negative sentiment for issue_type = performance: 60.8% vs 42.1% overall; negative sentiment for issue_type = security_concern: 60.1% vs 42.1% overall; negative sentiment for issue_type = billing_problem: 59.1% vs 42.1% overall; negative sentiment for issue_type = account_access: 58.1% vs 42.1% overall. No channel, region, product, platform, customer segment or SLA plan stands out."
+anomaly:tickets,anomaly,Unusual individual tickets (Isolation Forest),"Isolation Forest flagged 102 resolved tickets as unusual. The most common reasons: reopened (22 tickets); high priority, reopened (21 tickets); reopened, negative customer, low CSAT (14 tickets); slow for its priority, high priority, reopened (9 tickets). Flagged tickets were resolved in 20.8 hours on average, faster than usual, which suggests some tickets are closed too quickly and then reopened."
+data:quality,data,"Data quality, cleaning and assumptions","Data quality checks found no duplicate tickets, no empty messages and no impossible values. Resolution fields are empty only for unfinished tickets and are left empty. About 20% of region values were missing at random and were set to Unknown. A CSAT score of 0 means not rated and is treated as missing. The data is synthetic: timestamps are generated, the routing table from category to support queue is an assumption because the data has no assignment group, and resolution times never exceed a fixed limit per priority."
+notebook:01#0,notebook,"Notebook 1: Sampling, Data Cleaning and EDA: Introduction","HCLTech Future Ready Data Science Hackathon, Use case 4: IT Support Ticket Classification and Analytics
+
+The project goal is to predict the category of an IT support ticket from the message the customer writes,
+and to build a dashboard that shows categories, trends, recurring issues and problem areas.
+
+The full project runs in six notebooks:
+
+| Notebook | What it does |
+|---|---|
+| **01 (this one)** | Take a 20,000-ticket sample, check quality, clean, explore |
+| 02 | Train and compare classifiers (Logistic Regression, SVM, Naive Bayes) |
+| 03 | Explain the model with SHAP |
+| 04 | Find recurring issues with clustering |
+| 05 | Detect anomalies |
+| 06 | GenAI assistant (RAG) that answers questions about the results |
+
+Before building any model, we want to understand the data properly: what is in it, what is wrong with it,
+what is related to what, and what could mislead a model.
+
+What this notebook covers:
+
+1. Taking the sample, loading the data and understanding the columns
+2. Data quality checks
+3. Cleaning
+4. Univariate analysis (one column at a time)
+5. Class imbalance
+6. Bivariate analysis (two columns at a time)
+7. Correlation analysis
+8. Data leakage
+9. Summary
+
+The raw file goes in `data/raw/`. Outputs are written to `data/processed/` and charts to `reports/figures/`."
+notebook:01#1,notebook,"Notebook 1: Sampling, Data Cleaning and EDA: 1. Load the data and take a sample","The full file has 100,000 tickets. We work with a sample of **20,000** to keep everything fast and easy to rerun.
+
+The sample is **stratified** by `issue_type`, which means each category keeps the same share it has in the full data.
+A fixed random seed (42) means anyone running this gets exactly the same 20,000 tickets.
+
+The category shares match the full data almost exactly, and all the different messages are still present in the sample.
+
+### What each column means
+
+Some columns are available the moment a ticket is created. Others only get filled in after an agent has worked on it.
+This difference matters a lot later, because a model can only use what is known when a new ticket arrives.
+
+| Column | Meaning | Group |
+|---|---|---|
+| ticket_id, customer_id | Identifiers | ID |
+| initial_message | What the customer wrote | Input text |
+| issue_type | Ticket category | Target |
+| created_at, priority, channel, product_area, platform, region, customer_segment, sla_plan, has_attachment | Ticket details | Known at arrival |
+| status, agent_first_reply, resolution_summary, resolution_time_hours, reopened, customer_sentiment, csat_score | What happened afterwards | Known only later |"
+notebook:01#2,notebook,"Notebook 1: Sampling, Data Cleaning and EDA: 2. Data quality checks","### 2.1 Missing values
+
+Three columns have gaps. Before filling anything, let's see why they are empty.
+
+The resolution columns are empty only for tickets that are open, in progress or on hold. Those tickets simply
+haven't been resolved yet, so the gaps are expected and we leave them empty. Filling them would mean inventing data.
+
+Region is missing for about 20% of tickets, and the share is the same in every channel, so it looks random.
+We'll label these as ""Unknown"" so they still show up in filters.
+
+### 2.2 Duplicates
+
+There are no duplicate tickets. The messages, though, repeat a lot: 20,000 tickets use only 96 different sentences.
+The tickets themselves are still different (different customers, dates and priorities), so we keep all rows.
+We'll come back to this in the data leakage section, because it changes how we have to split the data.
+
+### 2.3 Values and ranges
+
+CSAT is a satisfaction score from 1 to 5, yet about 30% of tickets have a 0. Is that a very unhappy customer,
+or a customer who never answered the survey? Comparing it with sentiment should tell us.
+
+Scores 1 to 5 line up neatly with sentiment (very negative customers give 1 or 2, very positive ones give 5).
+A score of 0 shows up for every sentiment, including very positive. So 0 means ""not rated"", and we'll treat it as missing.
+If we left it in, the average CSAT would look much worse than it really is.
+
+### 2.4 Dates and text
+
+### Quality check summary
+
+| Check | What we found | What we do |
+|---|---|---|
+| Missing resolution fields | Only for unfinished tickets | Leave empty |
+| Missing region (20%) | Random | Fill with ""Unknown"" |
+| Duplicate rows or IDs | None | Nothing |
+| Repeated messages | Only 96 unique texts | Keep rows, handle when splitting |
+| csat_score = 0 | Means ""not rated"" | Set to missing |
+| Bad numbers, bad dates, empty text | None | Nothing |
+| customer_id | Personal identifier, not useful here | Drop |"
+notebook:01#3,notebook,"Notebook 1: Sampling, Data Cleaning and EDA: 4. Univariate analysis","Here we look at one column at a time to see what values it takes and how they are spread.
+
+### 4.1 The target: issue_type
+
+Eight categories, each with roughly 12.5% of the tickets. Section 5 looks at balance in more detail.
+
+### 4.2 Categorical columns
+
+- channel, product_area, platform, region and customer_segment are split almost exactly evenly. Real support data is rarely this tidy, which is a hint that the data is synthetic.
+- Priority is uneven: low 40%, medium 35%, high 20%, urgent 5%.
+- Half the tickets are resolved and about 40% are still open, in progress or on hold.
+- 42% of customers are negative or very negative.
+
+### 4.3 Numeric columns
+
+Resolution time has a long right tail. Every ticket above the IQR limit (about 106 hours) is a ""closed_no_action"" ticket,
+meaning it was closed after the customer stopped replying. These aren't errors, they just measure something different
+from a real fix. We keep them, and when we talk about how long fixes take we'll look at resolved tickets only.
+
+About 5% of tickets get reopened and a quarter come with an attachment.
+
+### 4.4 Message text
+
+Messages are short, between 8 and 14 words. The most common sentences are generic ones (""I cannot log in..."",
+""I was charged twice..."") repeated around 4,000 times each. Sentences that name a product
+(""The billing page is very slow..."") appear about 600 times each.
+
+### 4.5 Dates
+
+Volume is flat from 2022 to 2025, at around 420 tickets a month in our sample. There's no busy weekday, no busy hour and no season.
+Real helpdesks are much busier on weekday mornings, so this again points to synthetic timestamps."
+notebook:01#4,notebook,"Notebook 1: Sampling, Data Cleaning and EDA: 5. Class imbalance","If one category had far more tickets than the others, a model could get a high accuracy just by predicting that
+category most of the time, while doing badly on the small ones. So we check how even the classes are.
+
+The classes are balanced. The biggest is only 1.03 times the smallest, and always guessing the biggest class
+would give just 12.7% accuracy. So we don't need oversampling, SMOTE or class weights.
+We'll still report macro F1 (every class counts equally) along with weighted F1, as the brief asks.
+
+There is a less obvious imbalance though: how many *different* sentences each class has.
+
+account_access, billing_problem and other each have only 3 different sentences, while bug, feature_request and how_to have 21.
+The ticket counts are even, but the variety of wording isn't. A model gets very few examples of how people describe
+the 3-sentence classes, so these are the ones most likely to fail on new wording. We'll treat them as the ""minority""
+classes to watch during evaluation."
+notebook:01#5,notebook,"Notebook 1: Sampling, Data Cleaning and EDA: 6. Bivariate analysis","Now we look at two columns together. The main question is which columns are related to the target.
+
+The tools:
+- **Crosstab**: a table of counts or percentages for two categorical columns
+- **Chi-square test**: tells us whether two categorical columns are related at all (p below 0.05 means related)
+- **Cramér's V**: tells us how strong that relationship is, from 0 (none) to 1 (perfect)
+- **Kruskal-Wallis test**: tells us whether a numeric column differs between groups (p below 0.05 means it does)
+
+### 6.1 Target vs every categorical column
+
+Almost nothing is related to the category. Priority, channel, product area, platform, region, segment, SLA plan,
+attachments and weekday all have a Cramér's V of 0.02 or less. Every category gets the same mix of each.
+The one exception is customer sentiment (V about 0.19), but sentiment is only known after the ticket is handled.
+
+So the message text is the only useful input for predicting the category.
+
+### 6.2 Target vs customer experience
+
+This is the clearest real pattern in the data. Customers raising actual problems are much unhappier:
+
+- security_concern, performance, account_access and billing_problem: about 60% negative, average CSAT around 2.8
+- bug and other: about 30% negative, CSAT around 3.4
+- how_to and feature_request: about 20% negative, CSAT around 3.7
+
+Reopen rates are about 5% everywhere, so the unhappiness isn't coming from tickets bouncing back.
+This is a good insight for the dashboard: the problem categories are where customer satisfaction needs attention.
+
+### 6.3 Target vs resolution time
+
+Every category takes about the same time to resolve (median around 23 hours, Kruskal-Wallis p = 0.89). The category doesn't change how fast a ticket gets fixed.
+
+### 6.4 Priority vs resolution time
+
+Priority is what drives resolution time: urgent tickets take about 4 hours, low ones about 40.
+Each priority also has a hard ceiling (8, 24, 48 and 72 hours) that no ticket ever goes past, a bit like an SLA limit.
+That kind of perfect compliance is another sign of generated data.
+
+### 6.5 Volume over time by category
+
+All categories stay flat and close together. No category is growing or fading over the four years.
+
+### 6.6 Message text vs target
+
+Every message always comes with the same category, so the text completely decides the label.
+That's good news for learning, but it also creates a leakage risk, which section 8 deals with."
+notebook:01#6,notebook,"Notebook 1: Sampling, Data Cleaning and EDA: 7. Correlation analysis","Correlation tells us which columns move together. We check it for three kinds of pairs, because each needs a different measure:
+
+| Pair | Measure | Range |
+|---|---|---|
+| Numeric vs numeric | Pearson (straight-line relationship) and Spearman (any steady up/down relationship) | -1 to 1 |
+| Categorical vs categorical | Cramér's V | 0 to 1 |
+| Numeric vs categorical | Correlation ratio (eta): how much of the numeric column's spread is explained by the groups | 0 to 1 |
+
+As a rough guide: below 0.1 is no real relationship, 0.1 to 0.3 is weak, 0.3 to 0.5 is moderate, and above 0.5 is strong.
+
+### 7.1 Numeric vs numeric
+
+Only two pairs are related; everything else is close to zero.
+
+- **csat_score and sentiment_score** are strongly positive (about 0.9). They measure the same thing, the customer's mood, so in any analysis we should use one of them, not both.
+- **priority_rank and resolution_time_hours** are negative: Spearman -0.47, but Pearson only -0.20. Higher priority means faster resolution.
+  The gap between the two is a good example of why we check both. Pearson looks for a straight-line relationship and gets pulled
+  around by the very long closed_no_action times, while Spearman only looks at the ranking, so it isn't thrown off by those extreme values.
+
+Things that are *not* related are worth noting too: word count, hour of day and attachments have nothing to do with any other column,
+and being reopened doesn't affect CSAT.
+
+### 7.2 Categorical vs categorical
+
+Almost every value is 0.02 or less. The only notable link is between issue_type and customer_sentiment (around 0.19, weak),
+which is the ""problem tickets are unhappier"" pattern from section 6.2.
+
+This also tells us there is no hidden relationship among the metadata columns themselves
+(for example, enterprise customers don't use a particular channel more), so none of them is redundant with another.
+
+### 7.3 Numeric vs categorical
+
+A few clear relationships stand out:
+
+- **status and resolution_time_hours** (about 0.8, strong): closed_no_action tickets take far longer than resolved ones, which is what we saw with the outliers.
+- **issue_type and word_count** (about 0.4, moderate): each category is written with its own set of sentences, so message length differs by category. This comes from the text itself, which is our input anyway. product_area has a weak link (about 0.13) for the same reason, since product names change sentence length.
+- **issue_type and csat_score** (about 0.33, moderate): the ""problem tickets are unhappier"" pattern again.
+- **priority and resolution_time_hours** (about 0.2, weak here): weak only because the long closed_no_action times add a lot of spread. Among resolved tickets alone the effect is much stronger (section 6.4).
+
+Everything else is close to zero.
+
+### 7.4 What the correlation analysis tells us
+
+- The category depends on the **text** and on nothing else that is known when a ticket arrives.
+- csat_score and customer_sentiment are basically the same information; keep one in any analysis.
+- Resolution time is explained by priority and status, not by category.
+- There's no multicollinearity to worry about among the arrival columns, because they are all independent of each other."
+notebook:01#7,notebook,"Notebook 1: Sampling, Data Cleaning and EDA: 8. Data leakage","Data leakage is when a model gets information during training that it wouldn't have when predicting a real new ticket.
+The test scores then look great, but the model falls apart in real use. We check three ways this could happen here.
+
+### 8.1 Columns that give away the answer
+
+`agent_first_reply` and `resolution_summary` are written by the agent *after* they've read and categorised the ticket.
+
+Each kind of reply belongs to exactly one category (""Thanks for reporting this bug"" is only ever used for bugs),
+and the same is true for the resolution summaries, apart from the generic ""closed without action"" one.
+A model that could see these columns would simply read the answer off them, so they can't be used as inputs.
+
+### 8.2 Information from the future
+
+`status`, `resolution_time_hours`, `reopened`, `customer_sentiment` and `csat_score` only exist after the ticket has been handled.
+Even though sentiment is somewhat related to category, we can't use it: when a new ticket comes in, nobody knows yet how the customer will feel.
+
+### 8.3 The same message in training and testing
+
+There are only 96 different messages. If we split tickets randomly into train and test, the same sentences end up on both sides.
+The test would then only check whether the model *remembers* sentences it has already seen, not whether it can handle new ones.
+Let's compare a random split with a split by message.
+
+With a random split, every single test message was already in the training data, so any model would look close to perfect.
+That score would be misleading. Splitting by message brings the overlap down to zero, and the test then measures
+what we actually care about: how the model handles wording it hasn't seen.
+
+So for modelling we'll **split by message**. One side effect: the test set ends up with uneven class sizes
+(see the test counts per category above), and the 3-sentence classes are tested on a single sentence.
+That's why we should look at per-class precision, recall and F1, not just overall accuracy.
+
+### 8.4 Leakage summary"
+notebook:01#8,notebook,"Notebook 1: Sampling, Data Cleaning and EDA: 9. Summary","| Area | What we found | What we'll do |
+|---|---|---|
+| Quality | No duplicates, empty texts or impossible values | Light cleaning only |
+| Missing values | Resolution fields empty only for unfinished tickets; region missing at random | Leave resolution empty; region as ""Unknown"" |
+| Invalid values | csat_score = 0 means ""not rated"" | Treat as missing |
+| Univariate | Even spreads, short messages, flat volume over time | Data is synthetic; say so in the report |
+| Outliers | Long resolution times are all closed_no_action tickets | Keep them; use resolved tickets for fix times |
+| Class balance | Balanced (ratio 1.03), but 3 classes have only 3 sentences each | No resampling; watch those 3 classes; use macro F1 |
+| Bivariate | Arrival details are unrelated to category; the text decides it | Use the text only |
+| Bivariate | Problem categories ~60% negative vs ~20% for requests; fix time depends on priority | Main insights for the dashboard |
+| Correlation | csat and sentiment carry the same information; priority drives resolution time; arrival columns are independent | Keep one of csat/sentiment; no multicollinearity issue |
+| Leakage | Agent reply and resolution summary give away the label; outcome columns are from the future | Exclude from model inputs |
+| Leakage | Random split puts every test message in training | Split by message |
+
+Saved: `data/processed/tickets_clean.csv` (used by every later notebook and the dashboard) and all charts in `reports/figures/`.
+
+Next, notebook 02: split by message, start with a simple baseline, then compare Logistic Regression, SVM and Naive Bayes on TF-IDF features,
+using per-class precision, recall and F1, macro and weighted F1, ROC-AUC and a confusion matrix."
+notebook:02#0,notebook,Notebook 2: Ticket Classification (Supervised Machine Learning): Introduction,"**Task:** read a ticket message and predict its `issue_type`. There are 8 categories, so this is **multi-class classification**.
+
+**Plan**
+1. Turn the text into numbers with **TF-IDF**
+2. Split the data **by message**, so the test set only has wording the model has never seen (we found in notebook 01 that a random split leaks)
+3. Train and compare four models: a majority-class baseline, **Naive Bayes**, **Linear SVM** and **Logistic Regression**
+4. Check the results are stable with grouped cross-validation
+5. Look closely at the chosen model: precision, recall, F1, confusion matrix, ROC-AUC, confidence and mistakes
+6. Save predictions and the final model for the dashboard
+
+**How we measure success**
+
+| Metric | What it tells us |
+|---|---|
+| Precision | When the model says ""billing_problem"", how often is it right? |
+| Recall | Of all real billing tickets, how many did the model catch? |
+| F1 | One number that balances precision and recall |
+| Macro F1 | Average F1 over the 8 classes, every class counts equally (our main metric) |
+| Weighted F1 | Average F1 weighted by class size |
+| ROC-AUC | How well the model *ranks* the right class above the others, from 0.5 (guessing) to 1 (perfect) |"
+notebook:02#1,notebook,Notebook 2: Ticket Classification (Supervised Machine Learning): 1. Text to numbers: TF-IDF,"A model can't read words, so we convert each message into a vector of numbers.
+**TF-IDF** gives every word (and pair of words) a score: high if it appears in this message but is rare across all messages,
+low if it's common everywhere (like ""the"" or ""my""). We use single words and word pairs (`ngram_range=(1, 2)`),
+so phrases like ""charged twice"" or ""timing out"" are kept together."
+notebook:02#2,notebook,Notebook 2: Ticket Classification (Supervised Machine Learning): 2. Train / test split by message,"Every message always has the same label, and the same 96 messages are repeated thousands of times.
+So we split the **messages** (20% to test), and every ticket follows its message. The test set then only contains wording the model has never seen.
+We stratify by category, so every category has messages on both sides.
+
+### Why not a random split? A quick demonstration
+
+Same model, two ways of splitting:
+
+The random split gives a near-perfect score because the model has already seen every test sentence. That number says nothing
+about new tickets. The split by message gives the honest number. Everything below uses the split by message."
+notebook:02#3,notebook,Notebook 2: Ticket Classification (Supervised Machine Learning): 3. Train and compare the models,"| Model | Idea in one line |
+|---|---|
+| Majority baseline | Always predicts the most common class. Any real model must beat this. |
+| Naive Bayes | Counts how often each word appears in each category and multiplies the chances. Fast and simple. |
+| Linear SVM | Finds the boundary that separates the categories with the widest margin. |
+| Logistic Regression | Learns a weight for every word per category and turns the total into probabilities. |
+
+All four use the same TF-IDF features. The SVM doesn't output probabilities, so for ROC-AUC we convert its scores with a softmax.
+
+All three real models beat the baseline by a wide margin (macro F1 0.61 vs 0.01), and they make **exactly the same predictions** on the test set.
+That sounds strange but makes sense here: the test set is just 20 different sentences, and each model ends up putting each sentence in the same category.
+They only differ in ROC-AUC, which looks at the full ranking of probabilities rather than just the top pick. Naive Bayes ranks slightly better (0.92 vs 0.89).
+
+With so few distinct sentences, the choice of algorithm matters much less than the variety of wording the model has seen."
+notebook:02#4,notebook,Notebook 2: Ticket Classification (Supervised Machine Learning): 4. Are the results stable? Grouped cross-validation,"The test set has only 20 messages, so one unlucky split could change the ranking. With **grouped 5-fold cross-validation**
+every message is in the test fold exactly once, and a message never appears in train and test of the same fold.
+
+Cross-validation tells the same story: all three models score a macro F1 of 0.59 (± 0.05 across folds), far above the baseline.
+Since they're tied on F1, we pick **Logistic Regression** as the final model, because:
+
+- it gives proper probabilities, which we need for the confidence score and the manual-review rule,
+- each word gets a readable weight per category, so it's easy to explain,
+- SHAP values for a linear model can be calculated exactly (notebook 03)."
+notebook:02#5,notebook,Notebook 2: Ticket Classification (Supervised Machine Learning): 5. A closer look at Logistic Regression,"### 5.1 Precision, recall and F1 per class
+
+The results split into two groups:
+
+- **Perfect on unseen wording:** billing_problem, bug, feature_request and performance. Their test sentences share key words with training sentences (""error"", ""add an option"", ""slow"", ""billed"").
+- **Complete misses:** account_access and other score 0. Each has only 3 sentences in total, so the model learned 2 and was tested on a third that uses different words.
+- how_to and security_concern have perfect recall but low precision, because they absorb the tickets from the two missed classes.
+
+This is the ""hidden imbalance"" from notebook 01 showing up: classes with very little variety in wording don't generalise.
+
+### 5.2 Confusion matrix
+
+Both big mistakes are understandable when you read the sentences:
+
+- ""My account was locked after multiple failed login attempts"" goes to **security_concern**, because the training data only had ""login"" in the security sentence ""I noticed a suspicious **login** on my account"".
+- ""I need help but I'm not sure which category this fits in"" goes to **how_to**, because ""I need help setting up..."" is a how_to sentence.
+
+The model is matching words, not meaning. More varied training wording, or sentence embeddings that capture meaning, would help these two classes most.
+
+### 5.3 ROC curves and ROC-AUC per class
+
+Macro ROC-AUC is 0.89, much better than random (0.5). So even when the top pick is wrong, the right category is usually ranked high.
+The two classes with zero F1 have the lowest AUC, which is consistent with the confusion matrix.
+
+### 5.4 Confidence: can the model tell when it's unsure?
+
+The confidence of a prediction is the probability of the top class. If the model is sensible, low-confidence predictions
+should be wrong more often. Then we can send them to a person instead of forcing a category (requirement FR-04).
+
+Confidence helps, but it's not perfect. Tickets above the 60% threshold are right 71% of the time, while those below it are right only 49% of the time,
+so the review rule does catch a large share of mistakes.
+
+But one fully correct group (billing tickets with new wording) sits at low confidence, and one wrong group (other → how_to) sits at 60–70%.
+With only 20 test sentences, each sentence moves a whole bar. In practice, the threshold should be tuned on more varied real tickets.
+
+### 5.5 Worked examples
+
+The brief asks for examples covering a common ticket, an ambiguous one, a minority category and a low-confidence case.
+Here we use the model trained on the training messages, so these sentences are new to it (except the first one).
+
+- **Common:** a known sentence is classified with 99% confidence and routed straight to the Service Desk.
+- **Ambiguous:** a message mixing ""slow"" and ""error"" goes to performance (71%), with bug as the runner-up. A person might reasonably pick either.
+- **Minority class, new wording:** the account-lockout ticket gets only 47% confidence, so it goes to manual review instead of the wrong team. That's the review rule doing its job.
+- **Out of scope:** a coffee machine complaint gets 46% confidence and is sent to review rather than forced into a category."
+notebook:02#7,notebook,Notebook 2: Ticket Classification (Supervised Machine Learning): Summary,"| Item | Result |
+|---|---|
+| Features | TF-IDF, single words and word pairs |
+| Models compared | Majority baseline, Naive Bayes, Linear SVM, Logistic Regression |
+| Honest evaluation | Split by message (no sentence in both train and test) + grouped 5-fold CV |
+| Random split (leaky) | Macro F1 1.00, misleading |
+| Chosen model | Logistic Regression: tied best F1, gives probabilities, easy to explain |
+| Out-of-fold macro F1 / weighted F1 | about 0.54 / 0.54 |
+| Out-of-fold ROC-AUC (macro) | about 0.86 |
+| Weakest classes | account_access and other (only 3 sentences each) |
+| Low-confidence rule | Below 60% → manual review; reviewed tickets are much less accurate, so the rule is useful |
+
+**Saved:** `data/processed/predictions.csv` (out-of-fold predictions for all tickets), `classification_report.csv`, `confusion_matrix.csv`,
+`model_comparison.csv`, `cv_scores.csv`, `metrics.json`, and the final model `models/tfidf_logreg.joblib`.
+
+**Limitation to mention:** the scores reflect how the model handles *new wording*. With only 96 sentences, that's a tough test.
+Real ticket data with more varied wording would very likely score higher."
+notebook:02b#0,notebook,Notebook 2b: Semantic Embeddings for Ticket Classification: Introduction,"Notebook 02 found that TF-IDF models **match words, not meaning**. For example, ""My account was locked after multiple failed
+**login** attempts"" went to security_concern only because the word ""login"" appeared in a security sentence.
+
+Here we replace TF-IDF with **sentence embeddings**: pre-trained neural models that turn a sentence into a vector so that
+sentences with similar *meaning* get similar vectors, even when they share no words.
+
+**Plan**
+1. Use the same data, the same split by message and the same grouped 5-fold CV as notebook 02, so the scores can be compared directly
+2. Build four text representations: TF-IDF (the notebook 02 baseline) and three sentence-embedding models
+3. Train the same set of classifiers on each one: Logistic Regression, Linear SVM, k-Nearest Neighbours, Random Forest (+ Naive Bayes for TF-IDF)
+4. Compare every combination on accuracy, precision, recall, F1 and ROC-AUC
+5. Look closely at the best combination: per-class scores, confusion matrix, the hard sentences from notebook 02 and the confidence rule
+
+**Requirements:** `pip install sentence-transformers`. The first run downloads the three models (about 0.6 GB in total) from Hugging Face."
+notebook:02b#1,notebook,Notebook 2b: Semantic Embeddings for Ticket Classification: 2. Four ways to turn text into numbers,"| Representation | Type | Size | Idea |
+|---|---|---|---|
+| **TF-IDF** (notebook 02) | word counts | ~400 | One number per word / word pair. Two sentences are similar only if they share words. |
+| **all-MiniLM-L6-v2** | sentence embedding | 384 | Small, fast transformer trained on 1 billion sentence pairs to put paraphrases close together. |
+| **all-mpnet-base-v2** | sentence embedding | 768 | Larger model from the same family; usually better quality than MiniLM. |
+| **BAAI/bge-base-en-v1.5** | sentence embedding | 768 | Newer model trained for retrieval and similarity; among the strongest models of its size. |
+
+The embedding models are used as they are (no fine-tuning). Each vector is scaled to length 1, so the dot product of two vectors is their cosine similarity.
+Only the 96 unique messages need to be encoded; every ticket then reuses its message's vector.
+
+### Do the embeddings capture meaning? A quick check
+
+Below are the two sentences notebook 02 got wrong. For each one we list its closest **training** sentences, once with TF-IDF and once with BGE.
+
+TF-IDF finds training sentences that **share words** (""login"", ""account"", ""I need help""), even when they mean something different. BGE finds sentences with the **same meaning**:
+
+- The lockout sentence's closest neighbour is ""I cannot log in; the system says my password is incorrect"" (account_access, similarity 0.79). TF-IDF's closest is the *suspicious login* sentence (security_concern).
+- The ""not sure which category"" sentence lands next to two other `other` sentences (""I have a general question…"", ""Something seems off…""). TF-IDF puts it next to three how_to sentences that start with ""I need help"".
+
+This is the notebook 02 failure, fixed at the level of the representation."
+notebook:02b#2,notebook,Notebook 2b: Semantic Embeddings for Ticket Classification: 3. Training setup,"Every ticket that uses the same message has the same text and the same label. So instead of training on 15,000+ duplicate rows, we train on the
+**unique training messages, weighted by how many tickets use them**. For Logistic Regression, SVM, Naive Bayes and Random Forest this gives the
+same model as training on every ticket, and it is about 100 times faster. (Check: the TF-IDF models below reproduce notebook 02's CV score exactly.)
+k-Nearest Neighbours is the exception: it simply looks up the 3 most similar training *messages*.
+
+All scores are still computed **per ticket**, exactly as in notebook 02.
+
+| Classifier | Idea in one line |
+|---|---|
+| Logistic Regression | One weight per feature per category, turned into probabilities |
+| Linear SVM | Widest-margin linear boundary (scores turned into probabilities with a softmax for ROC-AUC) |
+| k-Nearest Neighbours | Vote of the 3 most similar training messages (cosine similarity, closer counts more) |
+| Random Forest | 300 decision trees voting; can learn non-linear rules |
+| Naive Bayes | Word-count model; only used with TF-IDF, because it needs non-negative features |"
+notebook:02b#3,notebook,Notebook 2b: Semantic Embeddings for Ticket Classification: 4. Results on the holdout test set (20 unseen messages),"On the 20 holdout messages, **BGE with Logistic Regression, SVM or Random Forest gets every ticket right** (macro F1 1.00). MiniLM and MPNet reach 0.82, and every TF-IDF model stays at 0.61 or lower. The TF-IDF + LR score matches notebook 02 exactly (0.611), which confirms the setup is the same.
+
+But 20 messages is a tiny test, and one sentence moves macro F1 by 0.1 or more. The grouped cross-validation below is the result to trust."
+notebook:02b#4,notebook,Notebook 2b: Semantic Embeddings for Ticket Classification: 5. Grouped 5-fold cross-validation (the main result),"The holdout test has only 20 messages, so one sentence can move macro F1 a lot. Grouped CV tests every one of the 96 messages exactly once,
+always with a model that never saw it. We report:
+- the **mean and spread of macro F1 across the 5 folds** (same as `cv_scores.csv` from notebook 02), and
+- scores on the **out-of-fold predictions for all 20,000 tickets** (same as `metrics.json` from notebook 02).
+
+**Main findings**
+
+- **Sentence embeddings clearly beat TF-IDF.** The best combinations are BGE + Linear SVM (macro F1 **0.82**) and BGE + Logistic Regression (**0.81**). Every TF-IDF model is stuck at **0.59**. That is a gain of about +0.22.
+- **A better embedding model helps a lot.** With Logistic Regression: MiniLM 0.71, then MPNet 0.79, then BGE 0.81.
+- **Linear classifiers work best on embeddings.** Random Forest is the weakest on average (0.55–0.69). In an embedding, meaning is spread over hundreds of dimensions, and trees that split on one dimension at a time can't use it well with only ~77 training sentences.
+- **kNN depends heavily on embedding quality:** 0.80 with BGE but only 0.55–0.59 with MiniLM / MPNet. With BGE, similarity on its own is almost enough to find the right category.
+- **Ranking quality jumps:** out-of-fold ROC-AUC goes from 0.86 (TF-IDF + LR) to 0.99 (BGE + LR). The right category is almost always at or near the top.
+- **Fold-to-fold spread is larger** (±0.09–0.10 vs ±0.05). Each fold has only ~19 messages, and with BGE the remaining errors are a handful of hard sentences that land in some folds and not others.
+
+*Caveat:* we picked the best of 17 combinations on the same CV, so 0.81–0.82 is slightly optimistic. The gap to TF-IDF is much bigger than that effect."
+notebook:02b#5,notebook,Notebook 2b: Semantic Embeddings for Ticket Classification: 6. A closer look: BGE + Logistic Regression vs TF-IDF + Logistic Regression,"We pick **BGE + Logistic Regression** for the deep dive: it is tied for the best CV score with BGE + SVM, and like in notebook 02
+Logistic Regression gives proper probabilities for the confidence rule. All numbers below use out-of-fold predictions
+(every ticket predicted by a model that never saw its message).
+
+### 6.1 Per-class F1
+
+- The two classes TF-IDF **completely missed** improve the most: **account_access 0.00 to 0.80** and **other 0.00 to 0.49**.
+- billing_problem goes from 0.41 to 0.86, how_to from 0.67 to 1.00, security_concern from 0.40 to 0.66.
+- No single model wins every class. MPNet is better on security_concern (0.80) and billing_problem (1.00), and BGE is better on how_to and other.
+- feature_request drops from 1.00 to 0.86. Its recall is still 100%, but one security sentence about ""data encryption and compliance"" is now predicted as a feature request (see 6.3).
+- `other` remains the hardest class. Its sentences are vague by design (""Something seems off…""), so their meaning really does overlap with other categories.
+
+### 6.2 Confusion matrix (BGE + LR, out-of-fold)
+
+### 6.3 Which sentences changed?
+
+Every unique message with its out-of-fold prediction under both models, showing only the ones where at least one model is wrong.
+
+- BGE **fixes 6 of the 10 messages** TF-IDF got wrong and **breaks none**.
+- Fixed: both notebook 02 examples (""account was locked…"" now goes to account_access, ""not sure which category…"" now goes to other), plus ""I was charged twice…"", which TF-IDF had sent to how_to.
+- Still wrong (4 messages):
+  - ""My 2FA code is not working when I try to sign in"" goes to bug (73% confidence). That is an understandable mistake, since ""not working"" sounds like a bug.
+  - Two vague `other` sentences, at very low confidence (26% and 31%), so they would go to manual review.
+  - ""We need details about your data encryption and compliance"" goes to feature_request (58%), also below the review threshold.
+- So **3 of the 4 remaining mistakes would be caught by the manual-review rule**.
+- Why is ticket-level F1 (0.82) lower than 92/96 messages would suggest? The hard messages are in the small classes, where each message stands for ~830 tickets, so every wrong message costs a lot of tickets.
+
+### 6.4 Does the confidence rule still work?
+
+Same rule as notebook 02: below 60% confidence the ticket goes to manual review.
+
+- **The share of tickets sent to manual review drops from 46% to 17%**, cutting the manual triage workload by almost two thirds.
+- Auto-routed tickets are right **95%** of the time (vs 92% with TF-IDF).
+- Overall accuracy goes from **58% to 83%**.
+- Reviewed tickets are mostly wrong (25% accuracy), which is what we want: the rule is catching the mistakes."
+notebook:02b#6,notebook,Notebook 2b: Semantic Embeddings for Ticket Classification: Summary,"| Item | TF-IDF + LR (notebook 02) | BGE + LR (this notebook) |
+|---|---|---|
+| Features | word / word-pair counts (~400) | pre-trained sentence embedding (768) |
+| Grouped CV macro F1 (mean ± std) | 0.59 ± 0.05 | **0.81 ± 0.10** |
+| Out-of-fold macro F1 / accuracy | 0.54 / 0.58 | **0.82 / 0.83** |
+| Out-of-fold macro ROC-AUC | 0.86 | **0.99** |
+| account_access / other F1 | 0.00 / 0.00 | **0.80 / 0.49** |
+| Sent to manual review | 46% | **17%** |
+| Auto-routed accuracy | 92% | **95%** |
+
+**Ranking of representations (best classifier each, grouped CV):** BGE 0.82 > MPNet 0.79 > MiniLM 0.71 > TF-IDF 0.59.
+**Ranking of classifiers on embeddings:** Linear SVM ≈ Logistic Regression > kNN > Random Forest.
+
+**Trade-offs**
+- Embeddings need `sentence-transformers` (PyTorch) and a ~440 MB model. TF-IDF + LR is tiny and instant.
+- SHAP values on embedding dimensions don't map to words. Word-level SHAP for this model is computed in notebook 03b (each word deleted and the sentence re-embedded), which is slower than the instant TF-IDF formula.
+- With only 96 sentences, all these scores come from very little data. Real tickets with more varied wording are needed to confirm the ranking.
+
+**Saved:** `data/processed/embedding_holdout_comparison.csv`, `embedding_cv_scores.csv`, `embedding_per_class_f1.csv`, `embedding_class_report.csv`, `embedding_confidence_rule.csv`, `embedding_message_changes.csv`, `embedding_metrics.json`, figures `25`–`27`, and `models/bge_logreg.joblib` (BGE + LR trained on all messages). The dashboard still uses the TF-IDF model from notebook 02."
+notebook:03#0,notebook,Notebook 3: Explaining the Model with SHAP: Introduction,"A prediction is more useful when we can say *why* the model made it. **SHAP** (SHapley Additive exPlanations) gives every word
+in a message a score for how much it pushed the prediction towards (positive) or away from (negative) a category.
+
+A few things that make SHAP easy to trust here:
+
+- For a **linear model** like our Logistic Regression, SHAP values can be calculated exactly with a simple formula:
+  `SHAP(word) = model weight of the word × (word's TF-IDF value in this message − its average TF-IDF value)`.
+  This is exactly what `shap.LinearExplainer` computes, so we write it out ourselves. It's transparent and needs no extra library.
+- SHAP values **add up**: the average model score plus all the word contributions equals the model's score for that message. We check this below.
+
+We look at two levels:
+- **Global**: which words matter most for each category overall
+- **Local**: why one particular ticket got its prediction"
+notebook:03#1,notebook,Notebook 3: Explaining the Model with SHAP: 1. Calculate the SHAP values,"The ""average message"" (the background) is the mean TF-IDF vector over all 20,000 tickets.
+Because the same 96 sentences repeat, we calculate SHAP once per unique sentence and remember how many tickets each one stands for.
+
+The difference is essentially zero, so the explanations add up exactly to what the model computes.
+
+**Optional cross-check with the `shap` library.** If you have it installed (`pip install shap`), this cell compares our numbers
+with `shap.LinearExplainer`. If it isn't installed, the cell just says so."
+notebook:03#2,notebook,Notebook 3: Explaining the Model with SHAP: 2. Global view: which words drive each category?,"For each category we average the SHAP values of the tickets that belong to it (weighted by how many tickets use each sentence).
+Words with a high average push tickets into that category.
+
+Most of the top words are what a human agent would look for:
+
+- **account_access**: ""locked"", ""failed login"", ""login attempts""
+- **billing_problem**: ""plan"", ""charged twice"", ""subscription""
+- **bug**: ""saving"", ""not saving"", ""error"" (""seeing an error"")
+- **feature_request**: ""option"", ""customize"", ""add an""
+- **security_concern**: ""suspicious"", ""noticed suspicious"", ""vulnerability""
+- **performance**: ""timing out"", ""queries"", ""module""
+
+But there's also a warning sign. Some filler words rank high too: ""after"" for account_access, ""in the"" and ""are"" for performance, ""my changes"" for bug.
+They appear in only one category's sentences, so the model treats them as clues. That's a side effect of the dataset being built from a small set of sentences,
+and it's one reason the model struggles with new wording. Product names (billing, notifications, ...) are *not* near the top, which is good.
+
+The overall ranking confirms the warning. The most influential words across all categories are common words like ""my"", ""the"", ""in the"", ""can"" and ""for"".
+On their own they say nothing about the problem; they matter here only because each sentence template uses them differently.
+With real, varied tickets this effect would shrink. A next step would be to test stop-word removal or sentence embeddings with more diverse training text.
+(We tried removing stop words in testing; on this dataset it lowered macro F1, so we kept them.)"
+notebook:03#3,notebook,Notebook 3: Explaining the Model with SHAP: 3. Local view: why did this ticket get this prediction?,"We explain a few messages. For each one we show the words that pushed hardest towards the predicted category (positive)
+and against it (negative). The new sentences were written by us and are not in the dataset.
+
+- **""charged twice""** (billing_problem, 99%): ""charged twice"", ""subscription"" and ""this month"" all push towards billing.
+- **The lockout sentence** (account_access, 66%) is new wording, but ""locked"" and ""password"" carry it to the right category.
+- **""export page crashes and the invoice is wrong""** (performance, 37%) mixes two problems. ""page"" pulls it towards the ""page is very slow"" sentences, while ""invoice"" pulls against.
+  The low confidence correctly tells us a person should look at it.
+- **""How do I reset my password?""** (account_access, 40%): ""password"" pushes towards access, while ""how"" pushes towards how_to. It's a genuinely ambiguous ticket,
+  and the explanation shows exactly which words pull it each way.
+
+This is what the dashboard shows next to each live prediction."
+notebook:03#4,notebook,Notebook 3: Explaining the Model with SHAP: Summary,"- SHAP values were calculated exactly for the Logistic Regression model, and we confirmed they add up to the model's scores.
+- **Globally**, each category is driven mostly by sensible key words (locked/login attempts for access, charged twice/subscription for billing, timing out for performance).
+- Some filler words (""my"", ""the"", ""after"") also carry weight because of how the synthetic sentences were written. This is a known limitation to mention.
+- **Locally**, explanations show which words pushed a ticket each way, which makes mixed or vague tickets easy to understand.
+- The background vector is saved, so the dashboard can explain brand-new tickets the same way.
+
+Saved: `shap_global.csv`, `shap_local.csv`, `models/shap_background.npy`."
+notebook:03b#0,notebook,Notebook 3b: Explaining the Embedding Model with SHAP: Introduction,"Notebook 02b showed that **BGE sentence embeddings + Logistic Regression** classify much better than TF-IDF (macro F1 0.81 vs 0.59).
+This notebook explains *why* it predicts what it predicts, using SHAP, the same way notebook 03 did for the TF-IDF model.
+
+**The challenge.** The BGE model sees a 768-number vector, not words. SHAP values for ""dimension 412"" would mean nothing to a support agent.
+So we explain the **whole pipeline** (text → BGE → Logistic Regression) in terms of the **words** of the message:
+
+- A ""player"" in the Shapley game is one word of the message.
+- Leaving a word out means **deleting it from the sentence** and embedding the shorter sentence again.
+- The value being explained is the model's **score (logit) for each category**, the same quantity notebook 03 explains.
+- The starting point (base value) is the score of an empty message.
+
+Messages are short (8 to 14 words), so we can try **every** subset of words and get **exact** Shapley values, not an approximation.
+Like in notebook 03, the values add up exactly: base value + sum of word contributions = the model's score. We check this below.
+
+**Requirements:** `sentence-transformers` (same as notebook 02b) and `models/bge_logreg.joblib` from notebook 02b. The `shap` library is optional (cross-check only).
+**Runtime:** about 5 minutes on an Apple-silicon GPU, about 12 minutes on CPU (around 270,000 short sentences to embed)."
+notebook:03b#1,notebook,Notebook 3b: Explaining the Embedding Model with SHAP: 1. Calculate exact word-level SHAP values,"For a message with *n* words we score all 2<sup>n</sup> versions of it (every combination of words kept or deleted) and apply the Shapley formula:
+
+`SHAP(word) = Σ over subsets S without the word: weight(|S|) × [ score(S + word) − score(S) ]`, with `weight(s) = s! (n − s − 1)! / n!`
+
+Every shortened sentence is embedded once and remembered, because many of them repeat across messages (for example the 7 product versions of a sentence share most subsets).
+
+**Optional cross-check with the `shap` library.** `shap.explainers.Exact` computes exact Shapley values for any function. We give it the same
+""keep / delete each word"" switches and compare on a few messages. If `shap` isn't installed the cell just says so."
+notebook:03b#2,notebook,Notebook 3b: Explaining the Embedding Model with SHAP: 2. Global view: which words drive each category?,"Same method as notebook 03: for each category we average the SHAP values (towards that category) over the category's tickets, weighted by how many tickets use each sentence.
+Words are lower-cased and stripped of punctuation, so ""attempts."" and ""attempts"" count as one word.
+
+In every category, the **top 3 words are words a human agent would look for**:
+
+- **account_access:** password, 2fa, locked (then cannot, failed, sign in)
+- **billing_problem:** charged, plan, billed, downgraded, twice
+- **bug:** error, crashing, saving, not (as in ""not saving"")
+- **feature_request:** customize, options, option
+- **how_to:** how, setting, export, configure
+- **other:** question, workspace, general
+- **performance:** slow, timing, degraded, queries
+- **security_concern:** suspicious, vulnerability, encryption
+
+In notebook 03, filler words such as ""after"", ""in the"" and ""are"" made the TF-IDF top lists. Filler words still appear lower down here (""my"" for other, ""we"" for security_concern), but none reaches a top 3.
+
+### Do filler words still matter? Comparison with the TF-IDF model
+
+Notebook 03 found that the TF-IDF model leans on filler words (""my"", ""the"", ""in the"", ""after""). Here we compare both models on the same footing:
+for every message we take the SHAP values of the **words that are in the message**, towards the **predicted** category, and measure how much of the total
+(absolute) contribution goes to **stop words** (common words such as ""the"", ""my"", ""after"", ""in"" from scikit-learn's English list).
+For TF-IDF a word pair counts as a stop word only if both words are stop words.
+
+- **Overall, both models lean on stop words about equally:** 27% of the explanation for TF-IDF and 26% for BGE, while about half of all words in the messages are stop words. BGE does **not** simply ignore common words.
+- The difference is **which words carry the most weight** (chart):
+  - TF-IDF's top 20 is dominated by word pairs from the three one-off sentences (""suspicious login"", ""general question"", ""about my"", ""on my""), plus ""how"", ""can"" and ""in the"".
+  - BGE's top 20 is mostly problem words: error, suspicious, vulnerability, password, encryption, crashing, saving, 2fa, locked, slow, charged.
+- Some of BGE's stop words carry meaning in context:
+  - ""not"" (as in ""not saving"", ""not working"") is its single most influential word.
+  - ""how"" marks how-to questions.
+  - ""in"" comes from ""sign in"".
+- ""I"" and ""my"" are true filler. The synthetic templates differ in whether they are written in the first person, and the model picks that up. This is the same dataset limitation notebook 03 described."
+notebook:03b#3,notebook,Notebook 3b: Explaining the Embedding Model with SHAP: 3. Local view: why did this ticket get this prediction?,"The same four new sentences as notebook 03 (written by us, not in the dataset), plus the lockout sentence that TF-IDF got wrong.
+For each one we show both models' predictions, then the BGE explanation towards its predicted category.
+
+- **""Charged twice"":** both models are sure (99%). BGE relies on ""charged"", ""twice"", ""month"" and ""subscription"".
+- **New wording for the lockout:** confidence rises from 66% (TF-IDF) to **98%** (BGE). ""Locked"", ""password"", ""wrong"" and ""entering"" drive it. They mean the same as the training sentence even though the wording differs.
+- **""The export page crashes and the invoice is wrong"":**
+  - TF-IDF guessed performance (37%). BGE says **bug (69%)** because of ""crashes"" and ""page"", while ""invoice"" pulls the other way.
+  - The ticket really mixes two problems. At 69% it would be auto-routed to the bug team even though half of it is a billing issue. That is a limit of giving each ticket a single label, and the explanation makes it visible.
+- **""How do I reset my password?"":** TF-IDF was unsure (40%, so manual review). BGE is confident (**92%** account_access), driven by ""password"" and ""reset"". That's a reasonable call, though some teams would file it as how_to."
+notebook:03b#4,notebook,Notebook 3b: Explaining the Embedding Model with SHAP: 4. Are the explanations faithful? A deletion test,"If SHAP really finds the words the model relies on, deleting the top SHAP words should hurt the prediction much more than deleting random words.
+For each of the 96 messages we delete the 1, 2 or 3 words with the highest SHAP value towards the predicted category, and compare with deleting
+the same number of random words (average of 20 random draws). We measure how much the probability of the original prediction drops.
+
+- Deleting the single top-SHAP word lowers the confidence of the original prediction by **12 points** on average, vs **3 points** for a random word, about 5 times more.
+- Deleting the top 3 SHAP words lowers it by **52 points** (vs 12 for random words) and changes the prediction for **41%** of messages.
+- So the explanations point to words the model really depends on. They aren't just plausible-looking."
+notebook:03b#5,notebook,Notebook 3b: Explaining the Embedding Model with SHAP: Summary,"| | Notebook 03 (TF-IDF + LR) | Notebook 3b (BGE + LR) |
+|---|---|---|
+| Method | exact linear SHAP on TF-IDF features | exact Shapley values over words (each word deleted and the sentence re-embedded) |
+| Additivity check (largest error) | 2e-14 | 4e-8 (float precision of the embedding model) |
+| Matches the `shap` library | not checked (not installed) | yes, within 1e-8 |
+| Top words per category | mostly key words, some filler in the top lists (""after"", ""in the"") | key words in every top 3 |
+| Stop-word share of the explanation | 27% | 26% |
+| Deletion test | – | the top word matters about 5 times more than a random word |
+| Cost | instant | ~4 minutes for all 96 messages on an Apple GPU; a few seconds for one new ticket |
+
+**Limitations**
+- Each word gets its own value. When words only work together (""not"" + ""saving"", ""sign"" + ""in""), the Shapley rule splits the credit between them.
+- Trying every subset of words only works for short messages (2<sup>n</sup> versions). For long real tickets, use a sampling explainer such as `shap`'s Permutation or Partition explainer.
+- Removing a word can produce ungrammatical text. That is standard for text SHAP, but it means the model is sometimes scored on sentences it would never see.
+
+**Saved:** `data/processed/shap_bge_global.csv` and `shap_bge_local.csv` (same layout as notebook 03's files), plus `shap_bge_examples.csv`, `shap_bge_deletion_test.csv`, `shap_overall_comparison.csv` and `shap_bge_checks.json`, figures `33`–`35`. The dashboard still shows the TF-IDF explanations from notebook 03."
+notebook:04#0,notebook,Notebook 4: Recurring Issue Detection (Unsupervised Clustering): Introduction,"The classifier tells us the category. Inside a category there are usually a few **recurring problems**: for example, inside ""bug""
+some people say a page crashes, others that changes don't save. Finding these themes tells the support team what keeps coming back.
+
+There are no labels for themes, so this is **unsupervised learning**: we group tickets whose descriptions are similar.
+
+**Method**
+1. Turn each description into a **text embedding**, a short list of numbers where similar sentences get similar vectors.
+   We use TF-IDF followed by TruncatedSVD (also called LSA, latent semantic analysis), which compresses the words into 30 ""topic"" dimensions.
+2. Group the embeddings with **K-Means**.
+3. Choose the number of groups with the **silhouette score** (how much closer each point is to its own group than to the next one; higher is better).
+4. Describe each group with its top words and example tickets, and check that each group really is one coherent problem.
+
+*Optional:* set `USE_SENTENCE_TRANSFORMERS = True` to use a pre-trained sentence-embedding model (`all-MiniLM-L6-v2`) instead of LSA.
+It needs `pip install sentence-transformers` and an internet connection the first time. The results below use LSA."
+notebook:04#1,notebook,Notebook 4: Recurring Issue Detection (Unsupervised Clustering): 2. First attempt: cluster all categories together,"Clustering everything at once works reasonably well (most clusters belong to one category), but it has two problems:
+
+- a few clusters mix categories, because short sentences get grouped by shared surface words (""my account"", ""page"") as much as by the actual problem;
+- the silhouette score keeps rising as k grows, so there's no clear ""natural"" number of groups. Any k we pick would be somewhat arbitrary.
+
+Since we already know each ticket's category, a cleaner approach is to **find themes within each category**. That answers the question
+the support team actually asks: ""what keeps coming up in bug tickets?"""
+notebook:04#2,notebook,Notebook 4: Recurring Issue Detection (Unsupervised Clustering): 3. Themes within each category,"For each category we try k = 2 up to 6 and keep the k with the best silhouette score.
+If no k reaches a silhouette of 0.1, the sentences are too different to merge sensibly, so each sentence becomes its own theme.
+
+Categories built from product-specific sentences (bug, feature_request, how_to, performance) split cleanly into 3 themes each, with high silhouette scores.
+Categories with only a handful of very different sentences (account_access, billing_problem, other) don't group well (silhouette ≈ 0), so each sentence is its own theme."
+notebook:04#3,notebook,Notebook 4: Recurring Issue Detection (Unsupervised Clustering): 4. Describe each theme,"**Is each theme coherent?** The cohesion column is the average cosine similarity between a theme's sentences and the theme centre.
+A value near 1 means the sentences all say nearly the same thing. Reading the examples confirms each theme is one recognisable problem:
+
+- **bug**: pages crashing, changes not saving, error messages on click
+- **performance**: pages very slow to load, queries timing out, plus the general ""performance has degraded"" complaint
+- **feature_request**: ""add an option to customise"", ""more advanced options"", ""support for X""
+- **how_to**: exporting data, setting things up for a team, configuring properly
+- **security_concern**: vulnerabilities in a feature, suspicious logins, encryption and compliance questions
+
+All themes are similar in size (roughly 760 to 880 tickets each), because the synthetic data spreads tickets evenly. In real data the sizes would differ a lot,
+and the biggest themes would be the first candidates for a permanent fix or a self-service article."
+notebook:04#4,notebook,Notebook 4: Recurring Issue Detection (Unsupervised Clustering): 5. Where do the themes sit? A 2-D map,"Squeezing 30 dimensions into 2 loses detail, but you can see small tight groups: the 7 product versions of each sentence sit together,
+and sentences from the same category are mostly near each other. The single generic sentences sit on their own."
+notebook:04#5,notebook,Notebook 4: Recurring Issue Detection (Unsupervised Clustering): 6. Are any themes growing?,"No theme is clearly growing or shrinking; they all move around the same level. That matches the flat volume we saw in notebook 01.
+In real data, this chart is where a new problem (say, after a software release) would first show up."
+notebook:04#6,notebook,Notebook 4: Recurring Issue Detection (Unsupervised Clustering): Summary,"- Descriptions were turned into **text embeddings** (TF-IDF + LSA) and grouped with **K-Means**, choosing k with the silhouette score.
+- Clustering all categories together mixed categories, so we cluster **within each category**, which answers ""what keeps coming up in this category"".
+- The result is a set of coherent recurring themes, each with top words, a ticket count, a cohesion score and example descriptions.
+- Theme volumes are stable over time in this synthetic data; the trend chart is ready to catch a growing theme in real data.
+
+Saved: `clusters.csv` (theme for every ticket) and `cluster_summary.csv` (one row per theme)."
+notebook:04b#0,notebook,Notebook 4b: Recurring Issues with Semantic Embeddings: Introduction,"Notebook 04 found recurring themes by clustering **TF-IDF + LSA** vectors, which measure *shared words*.
+Notebook 02b showed that **BGE sentence embeddings** capture *meaning* much better for classification. Here we redo the clustering with BGE and ask:
+
+1. What makes two tickets ""similar"" in each representation?
+2. Do the recurring themes within each category change?
+3. Does meaning-based clustering show anything new?
+
+**Method:** same as notebook 04 (K-Means, number of groups chosen with the silhouette score, tickets as weights), only the embedding changes.
+We recompute the LSA vectors exactly as notebook 04 did, so the two can be compared side by side.
+
+**Requirements:** `sentence-transformers` (same as notebook 02b)."
+notebook:04b#1,notebook,Notebook 4b: Recurring Issues with Semantic Embeddings: 1. What makes two tickets similar?,"84 of the 96 sentences are built from **12 templates × 7 products**, e.g. ""The *billing* page is very slow…"" / ""The *mobile app* page is very slow…"".
+So there are two ways two sentences can be alike: the **same problem** (template) about different products, or the **same product** with a different problem.
+We compare the average cosine similarity of these pairs in both representations.
+
+- Both representations rate **same problem, different product** highest. That's why the themes within each category (which follow the problem) come out mostly the same as in notebook 04 (section 4).
+- The big difference is the middle column. BGE rates two sentences about the **same product** as fairly similar (0.71) even when the problem differs, while LSA barely does (0.26). BGE knows that ""the billing page is slow"" and ""how do I configure billing"" are both about billing.
+- BGE similarities have a **high floor**: even unrelated sentences score 0.53, because they are all short English support messages. LSA gives them 0.00. So BGE clusters are less sharply separated, which shows up as lower silhouette scores below. BGE numbers should be compared with each other, not with LSA's."
+notebook:04b#2,notebook,Notebook 4b: Recurring Issues with Semantic Embeddings: 2. Clustering all categories together,"As in notebook 04 we cluster all 96 sentences at once for a range of k and record two numbers:
+- **silhouette**: how clearly separated the groups are (higher is better),
+- **purity**: the share of a cluster's tickets that come from its most common category, averaged over clusters (1 = every cluster is a single category).
+
+- **Purity: BGE wins at coarse levels.** With 8 clusters, 79% of a BGE cluster's tickets come from one category, vs 66% for LSA. With 4 clusters it's 61% vs 42%. Groups built on meaning line up with the support categories much better.
+- **Silhouette: LSA wins**, rising to 0.40 at k = 24. LSA puts the 7 product versions of each template almost on top of each other (they share nearly every word), so around k = 24 each template becomes its own perfect cluster. BGE's high similarity floor gives lower silhouettes everywhere (0.06–0.19).
+- Neither silhouette curve points to a natural number of groups across all categories, the same conclusion as notebook 04. We keep the within-category themes (section 4) as the main result, and use the cross-category clustering below for a different question."
+notebook:04b#3,notebook,Notebook 4b: Recurring Issues with Semantic Embeddings: 3. A new view: product-area topics across categories,"Because BGE also groups sentences by **what they are about**, clustering across categories gives a different, useful view.
+We ask for 8 clusters (the same number as categories) and look at what ends up together.
+
+With 8 clusters, BGE groups tickets by **subject and intent**, not by category:
+
+| Topic | What's in it | Tickets |
+|---|---|---|
+| **Something is broken** | bug, performance and vulnerability reports, plus ""export my data"" how-tos, mostly for products other than login | 4,886 |
+| **Requests and set-up** | all feature requests plus ""set up / configure"" how-tos | 3,690 |
+| **Login and sign-in** | all account_access tickets plus 8 of the 12 ""login auth"" sentences (crashes, slowness, set-up, vulnerability…) | 3,460 |
+| **Billing and payments** | all billing_problem tickets plus 4 ""billing"" sentences (error, not saving, configure, vulnerability) | 2,992 |
+| **Vague account questions** | the two general `other` sentences plus ""I noticed a suspicious login on my account"" | 2,473 |
+| three single sentences | degraded performance, encryption and compliance, ""check my workspace"" | ~830 each |
+
+**Why this is useful**
+- **A subject-area view for teams.** The identity team would see 3,460 tickets about login, although only 2,522 are labelled account_access. The other 938 sit in bug, performance, how_to and security_concern. Billing is the same: 2,992 tickets vs 2,476 labelled billing_problem. Reporting by category alone hides this.
+- **Only login and billing form areas of their own**, because those product names match the meaning of a whole category. The other five products stay spread over the ""broken"" and ""requests"" topics.
+- It matches the classifier's remaining confusion in notebook 02b: `other` and security_concern sentences sit close together here."
+notebook:04b#4,notebook,Notebook 4b: Recurring Issues with Semantic Embeddings: 4. Recurring themes within each category,"Exactly the notebook 04 rule: for each category try k = 2 to 6, keep the k with the best silhouette, and if no k reaches 0.10, every sentence is its own theme.
+We also measure how much the result agrees with notebook 04's themes (**adjusted Rand index**: 1 = identical grouping, 0 = no better than chance).
+
+- **5 of 8 categories get exactly the same themes as notebook 04** (ARI 1.00): bug, feature_request, performance, billing_problem and other. For template-based categories, the problem wording dominates in both representations.
+- Three categories change, and in each case the change follows meaning rather than shared words (details below).
+- Silhouettes within categories are lower with BGE (0.21–0.28 vs 0.41–0.54 in notebook 04). That comes from BGE's similarity floor, not from worse themes: theme cohesion stays high (0.87–0.95, section 5).
+
+- **account_access:** BGE groups ""I cannot log in; the system says my password is incorrect"" with ""My account was locked after multiple failed login attempts"" (both are password / login failures) and keeps the 2FA problem separate. LSA couldn't group any of the three, because they share no words, so each one was its own theme.
+- **security_concern:** BGE puts the vulnerability reports together with ""suspicious login"" (all possible security incidents) and keeps ""encryption and compliance"" (a request for information) apart. LSA left suspicious login on its own.
+- **how_to:** ""Can you explain how to configure data export properly?"" moves from the ""configure"" theme to the ""export my data"" theme, because it is about data export. Here BGE groups by subject instead of question type. Either grouping is defensible."
+notebook:04b#5,notebook,Notebook 4b: Recurring Issues with Semantic Embeddings: 5. Describe each theme,"**22 themes** (notebook 04 had 24). The two largest themes are now the merged ones:
+- **login / password failures:** 1,693 tickets, 67% of account_access
+- **security incidents** (vulnerabilities + suspicious login): 1,660 tickets, 67% of security_concern
+
+In real data, these would be the first candidates for a permanent fix or a self-service article (for example, a better password-reset flow)."
+notebook:04b#6,notebook,Notebook 4b: Recurring Issues with Semantic Embeddings: 6. A 2-D map of the BGE embeddings,"Categories form clear regions. feature_request and how_to sit next to each other (both are ""asking for something""). bug, security_concern, account_access and other share the lower area (problem reports), and performance is its own island. In the right panel, the 7 product versions of each template stay close together, which matches the first table: the problem matters more than the product."
+notebook:04b#7,notebook,Notebook 4b: Recurring Issues with Semantic Embeddings: Summary,"| | Notebook 04 (TF-IDF + LSA) | Notebook 4b (BGE) |
+|---|---|---|
+| What makes sentences similar | shared words | shared meaning, including the same subject (product) |
+| Purity with 8 clusters across categories | 0.66 | **0.79** |
+| Themes within categories | 24 | 22 |
+| Same themes as notebook 04 | – | 5 of 8 categories identical |
+| What changed | – | login / password failures merged; security incidents merged; ""configure data export"" joins the export theme |
+| New view | – | 8 subject / intent topics; login area 3,460 tickets across 5 categories, billing area 2,992 |
+
+- The recurring themes from notebook 04 are **confirmed** by a completely different representation, which makes them more trustworthy.
+- Where BGE differs, it groups by meaning (login failures, security incidents), which LSA can't do when sentences share no words.
+- The cross-category topic view is new: it shows subject areas, such as login and billing, that span several categories.
+- The trend over time is not repeated here: the themes are nearly the same, and ticket volumes are flat (notebook 04, section 6).
+
+**Saved:** `data/processed/clusters_bge.csv` (theme and topic for every ticket), `cluster_summary_bge.csv` (one row per theme), `topic_clusters_bge.csv` (one row per topic), `clustering_similarity.csv`, `clustering_bge_scan.csv`, `clustering_bge_vs_lsa.csv`, figures `43`–`46`. The dashboard still reads notebook 04's `clusters.csv`."
+notebook:05#0,notebook,Notebook 5: Anomaly Detection: Introduction,"An anomaly is something that doesn't fit the usual pattern. For a support team, three kinds matter:
+
+| Kind | Question | Method |
+|---|---|---|
+| **Volume anomaly** | Did a category suddenly get many more (or fewer) tickets than usual? | Compare each period with a rolling baseline (robust z-score) |
+| **Hotspot** | Is some group of tickets (a channel, a category, a product) doing much worse than average? | Compare rates with a statistical test |
+| **Unusual ticket** | Was a single ticket handled in a strange way? | Isolation Forest |
+
+The robust z-score in one line: `z = (this period's count − usual count) / usual variation`. A z of 3 or more is rare by chance,
+so we flag it. ""Robust"" means we use the median instead of the mean, so one big spike can't hide itself by pulling up the average.
+
+We also **test the detector** by planting fake spikes in a copy of the data. A detector that finds nothing is only useful if we know it *would* have found something."
+notebook:05#1,notebook,Notebook 5: Anomaly Detection: 1. Volume anomalies,"Weekly counts for all tickets (about 95 a week), and monthly counts per category (about 50 a month each; weekly per category would be too small and noisy).
+The baseline for each period is the median of the previous 8 periods. We drop the first and last period if they're only partly covered.
+
+### Does the detector actually work? Plant some spikes and see
+
+We copy the weekly series and add extra tickets to random weeks: first +20%, then +40%, and so on. For each size we plant 5 spikes
+and count how many the detector catches. This tells us how big a jump has to be before we'd notice it.
+We also work out how many flags we'd expect by pure chance at z ≥ 3, to judge whether the real flags mean anything.
+
+**What this tells us**
+
+- The real data has **no weekly spikes** and just **one** flagged category-month (feature_request in March 2025: 70 tickets vs about 44 expected).
+  We'd expect about 1.3 flags across all these series purely by chance, so that single flag is consistent with random noise. We report it, but wouldn't sound an alarm on it alone.
+- The planted-spike test shows the detector works: it catches every jump of +60% or more, and some jumps of +20–40%.
+  With about 95 tickets a week, smaller jumps are hard to tell apart from normal week-to-week variation. More data per period would make the detector more sensitive.
+
+So ""no anomalies found"" here is a real finding about this (synthetic, very steady) data, not a broken detector."
+notebook:05#2,notebook,Notebook 5: Anomaly Detection: 2. Hotspots: groups doing worse than average,"For each group (each category, channel, region, product, priority...) we compare four rates with the overall rate:
+
+- **negative sentiment**: customer was negative or very negative
+- **reopened**: ticket had to be reopened
+- **slow resolution**: resolved, but slower than 90% of tickets with the same priority
+- **low model confidence**: our classifier wasn't sure (these need manual review)
+
+We use a z-test for proportions. Because we test many groups, some will look unusual by chance, so we also apply a **Bonferroni correction**
+(a stricter threshold that accounts for the number of tests).
+
+Eight hotspots survive the strict correction, and they tell two clear stories:
+
+- **Customer frustration:** performance, security_concern, billing_problem and account_access tickets are about 60% negative, against 42% overall.
+  These categories need the most attention for customer satisfaction.
+- **Model uncertainty:** almost all `other`, `billing_problem`, `account_access` and `security_concern` tickets fall below the confidence threshold.
+  That's the classifier struggling with classes it has few sentence types for (notebook 02). Operationally, these are the tickets that will land in manual review,
+  so the triage team should expect most of its work from these four categories.
+
+No channel, region, product, platform, segment or SLA plan stands out. Reopen and slow-resolution rates are even across all groups."
+notebook:05#3,notebook,Notebook 5: Anomaly Detection: 3. Unusual individual tickets: Isolation Forest,"Isolation Forest builds many random trees that keep splitting the data. Unusual points get separated (isolated) after only a few splits,
+so they get a high anomaly score. We use resolved tickets and five features describing how each one was handled:
+
+- resolution time compared with the usual time for its priority
+- priority, reopened or not, sentiment score, CSAT (blank CSAT filled with the middle value 3)
+
+We flag the most unusual 1% and, for each, list the features that make it stand out.
+
+The flagged 1% are mostly **reopened tickets**, often combined with high priority, a negative customer or low CSAT.
+Reopening is rare (5% of resolved tickets), so the forest isolates it quickly. That's sensible: a high-priority ticket that was ""resolved"" and then reopened
+by an unhappy customer is exactly the kind of case a team lead should review.
+
+These flagged tickets are actually resolved *faster* than average (21 vs 27 hours). That suggests a ""closed too quickly, then reopened"" pattern
+worth checking in real data."
+notebook:05#4,notebook,Notebook 5: Anomaly Detection: Summary,"| Check | Result |
+|---|---|
+| Weekly volume spikes | None |
+| Category-month spikes | 1 (feature_request, March 2025), in line with chance |
+| Detector test | Catches all planted jumps of +60% or more |
+| Hotspots (Bonferroni-corrected) | Problem categories ~60% negative; four categories mostly low-confidence for the model |
+| Unusual tickets (Isolation Forest) | ~100 resolved tickets, mostly reopened, often high priority and unhappy customers |
+
+Saved: `volume_anomalies.csv`, `hotspots.csv`, `ticket_anomalies.csv`, `anomaly_validation.csv` for the dashboard and the GenAI assistant."
+notebook:06#0,notebook,Notebook 6: GenAI Assistant with RAG: Introduction,"The earlier notebooks produced a lot of results: category statistics, two classifiers, SHAP for both, recurring themes, cross-category topics and anomalies.
+A support manager shouldn't have to dig through tables to find an answer. So we build an assistant they can ask in plain English,
+for example *""Which categories have the most unhappy customers?""* or *""How much does the BGE model reduce manual review?""*
+
+**Why RAG (Retrieval-Augmented Generation)?** A language model on its own doesn't know our data and may confidently make up numbers.
+With RAG, we first **retrieve** the most relevant facts from our own results, and then the model **generates** an answer using only those facts.
+
+```
+question -> hybrid search over the knowledge base -> top 5 documents -> LLM writes the answer from them -> check the numbers
+```
+
+**Design choices**
+- **Knowledge base** (about 150 documents), built automatically, with no hand-typed numbers:
+  - *data documents* generated from every saved result file (notebooks 01–05 and 02b, 03b, 04b)
+  - *narrative documents*: the written interpretation of every notebook section, the evaluation report and the README
+- **Retrieval**: hybrid search. TF-IDF keyword similarity is combined with **BGE sentence-embedding** similarity (semantic search), so a question
+  finds the right document even when it uses different words. Without `sentence-transformers` it falls back to keywords only.
+- **Generation**: **Mistral** (key read from the `.env` file), Claude or any OpenAI-compatible model. If one Mistral model is rate-limited, the next one is tried.
+  **Without a key it still works**: an offline mode answers with the most relevant document text.
+- **Chat**: follow-up questions are understood, because the previous question is also used for retrieval and the last turns are sent to the LLM.
+- **Safety**:
+  - the prompt tells the model to use only the given documents
+  - sensitive patterns (emails, phone numbers, IP addresses) are masked before anything is sent
+  - every number in the answer is checked against the retrieved documents
+- The assistant only explains. It never closes or changes tickets, which the brief puts out of scope.
+
+The code lives in `src/rag.py`, so the dashboard uses exactly the same assistant."
+notebook:06#1,notebook,Notebook 6: GenAI Assistant with RAG: 1. Build the knowledge base,"Data documents are generated from the saved result files, and narrative documents from the notebooks and reports.
+So if a notebook is re-run with different data, the knowledge base updates automatically."
+notebook:06#2,notebook,Notebook 6: GenAI Assistant with RAG: 2. Retrieval: does the search find the right document?,"Before trusting the answers, we test the search on its own. We wrote **28 questions**, including questions about the embedding models,
+SHAP for the BGE model, cross-category topics, the README and the EDA. For each question we list the document (or documents) that answer it.
+Some questions are phrased in everyday words on purpose (*""My customers keep getting locked out, what does the data say?""*).
+
+We measure:
+- **Hit@1**: how often a right document is the top result
+- **Hit@5**: how often one is in the top 5 (the documents passed to the LLM)
+- **MRR** (mean reciprocal rank): 1 if always first, 0.5 if always second, and so on
+
+We compare keyword search alone with the hybrid search.
+
+Adding semantic search helps a lot. Hit@1 goes from 61% (keywords only) to **79%**, Hit@5 from 86% to **96%**, and MRR from 0.85 to 0.90.
+The biggest gains are on everyday phrasing such as *""My customers keep getting locked out""*, which shares few words with the documents but means the same thing.
+
+Most of the remaining rank-1 misses return a closely related document. For example, *""What are the recurring bug issues?""* returns one specific bug theme first and the full bug theme summary second.
+The LLM sees all 5 documents, so the answer is still complete.
+
+### Follow-up questions (chat)
+
+In a chat, people ask short follow-ups like *""and which classes are still weak?""*. We pass the earlier turns as `history`.
+The previous question is also used for retrieval, so the follow-up finds the right documents.
+
+Without an API key, the answers come from the best-matching documents word for word, so they're always grounded but can read a bit like a report.
+With a key (here Mistral), the LLM writes a shorter, conversational answer from the same documents and cites them in square brackets."
+notebook:06#3,notebook,Notebook 6: GenAI Assistant with RAG: 4. GenAI + SHAP: explain a single prediction,"For a new ticket, we combine three things: the model's prediction, the SHAP words that drove it (notebook 03),
+and the retrieved facts about that category. The assistant turns them into a short explanation for the support agent.
+The dashboard does the same with the BGE model and its word-level SHAP (notebook 3b)."
+notebook:06#4,notebook,Notebook 6: GenAI Assistant with RAG: 5. The grounding check,"Every number in an answer must appear in the documents the assistant was given. Here's what happens with an honest answer and with a made-up one:
+
+The invented ""75%"" isn't in the source, so the answer is flagged. The dashboard shows a warning next to any answer that fails this check."
+notebook:06#5,notebook,Notebook 6: GenAI Assistant with RAG: Summary,"| Part | What we did | Result |
+|---|---|---|
+| Knowledge base | ~150 documents: data documents from every saved result, plus the written interpretation of every notebook section, the evaluation report and the README | Updates automatically when results change |
+| Retrieval | Hybrid: TF-IDF keywords + BGE semantic search | Right document first for 79% of 28 test questions, in the top 5 for 96% |
+| Generation | Mistral (from `.env`) with automatic fallback between models; Claude / OpenAI-compatible also supported; offline mode | Always answers, even without internet |
+| Chat | Follow-up questions use the earlier turns | Short follow-ups find the right documents |
+| Explainability | SHAP words + retrieved category facts | Plain-English reason for each prediction |
+| Safety | Masking, context-only prompt, number check | Made-up numbers are caught |
+
+**To use an LLM:** put the Mistral key in `.env` (either `MISTRAL_API_KEY=...` or just the key on one line), or set `ANTHROPIC_API_KEY` / `OPENAI_API_KEY`.
+Model names are in `src/config.py`."
+report#0,report,Evaluation report: 1. Data and class distribution,"- Stratified sample of **20,000** tickets from a synthetic dataset of 100,000 (seed 42); category shares match the full data.
+- **8 categories**, balanced: largest how_to 12.7%, smallest bug 12.3% (imbalance ratio 1.03). No resampling needed.
+- Only **96 unique messages**; each always carries the same label. account_access, billing_problem and other have just 3 sentences each.
+- Cleaning: `csat_score = 0` → not rated; missing region → ""Unknown""; resolution fields left empty for unfinished tickets.
+- Figures: `01_target.png`, `06_class_balance.png`."
+report#1,report,Evaluation report: 2. Split strategy and leakage,"| Issue | Decision |
+|---|---|
+| Same 96 sentences repeat across tickets | **Split by message**: test sentences are never seen in training. A random split gives a misleading macro F1 of 1.00. |
+| `agent_first_reply`, `resolution_summary` map one-to-one to the label | Excluded from model inputs |
+| Status, sentiment, CSAT, resolution time are known only after handling | Excluded from model inputs; used in analytics only |
+
+Hold-out test: 20% of messages per category (4,523 tickets from 20 messages). Stability check: grouped 5-fold cross-validation."
+report#2,report,Evaluation report: 3. Baseline and model comparison,"Test set (unseen messages):
+
+| Model | Accuracy | Macro precision | Macro recall | Macro F1 | Weighted F1 | Macro ROC-AUC |
+|---|---|---|---|---|---|---|
+| Majority baseline | 0.049 | 0.006 | 0.125 | 0.012 | 0.005 | 0.500 |
+| Naive Bayes | 0.630 | 0.573 | 0.750 | 0.611 | 0.548 | 0.915 |
+| Linear SVM | 0.630 | 0.573 | 0.750 | 0.611 | 0.548 | 0.886 |
+| Logistic Regression | 0.630 | 0.573 | 0.750 | 0.611 | 0.548 | 0.886 |
+
+Grouped 5-fold CV macro F1: 0.591 ± 0.051 for all three real models (baseline 0.002).
+**Chosen: Logistic Regression.** It ties on F1, gives probabilities for the confidence score, and its SHAP values are exact."
+report#3,report,"Evaluation report: 4. Final model: per-class results (out-of-fold, all 20,000 tickets)","| Category | Precision | Recall | F1 | ROC-AUC |
+|---|---|---|---|---|
+| account_access | 0.00 | 0.00 | 0.00 | 0.65 |
+| billing_problem | 0.50 | 0.34 | 0.41 | 0.89 |
+| bug | 0.75 | 1.00 | 0.86 | 1.00 |
+| feature_request | 1.00 | 1.00 | 1.00 | 1.00 |
+| how_to | 0.51 | 1.00 | 0.67 | 1.00 |
+| other | 0.00 | 0.00 | 0.00 | 0.64 |
+| performance | 1.00 | 1.00 | 1.00 | 1.00 |
+| security_concern | 0.49 | 0.33 | 0.40 | 0.72 |
+| **Macro average** | **0.53** | **0.58** | **0.54** | **0.86** |
+| **Weighted average** | 0.53 | 0.58 | 0.54 | |
+
+Accuracy 0.585. **Minority categories:** the three 3-sentence classes are the weakest (account_access and other F1 0.00, billing_problem 0.41)."
+report#4,report,Evaluation report: 5. Confusion and error analysis,"Most frequent confusions (out-of-fold):
+
+| Actual → Predicted | Tickets | Why |
+|---|---|---|
+| other → how_to | 1,659 | ""I need help but I'm not sure..."" looks like ""I need help setting up..."" |
+| account_access → security_concern | 863 | ""account was locked after failed **login** attempts"" vs ""suspicious **login** on my account"" |
+| security_concern → other | 832 | ""We need details about your data encryption"" shares ""need"", ""details"" with vague requests |
+| account_access → billing_problem / bug | 830 / 829 | Unseen password and 2FA wording shares few words with the other access sentences |
+| billing_problem → how_to / account_access | 821 / 814 | Unseen billing wording (""downgraded my plan"", ""invoice"") |
+
+The model matches words rather than meaning. With so few sentences per class, unseen wording in small classes is easily confused. Figure: `22_confusion_matrix.png`."
+report#5,report,Evaluation report: 6. Low-confidence handling,"- Rule: confidence below **60%** → Manual Triage queue.
+- 45.7% of tickets fall below the threshold (out-of-fold).
+- **Auto-routed tickets are 92% correct; reviewed tickets only 18%**, so the rule catches most mistakes.
+- Confidence is only partly calibrated (e.g. some correct billing predictions sit below 40%), so the threshold should be tuned on real data. The dashboard has a slider for this.
+- Figure: `24_confidence.png`."
+report#6,report,Evaluation report: 7. Worked examples (model trained on training messages only),"| Case | Message | Prediction | Confidence | Decision |
+|---|---|---|---|---|
+| Common (seen) | ""I need help setting up data export for my team."" | how_to | 0.99 | Auto-route to Service Desk (L1) |
+| Ambiguous | ""The billing page is very slow and keeps showing an error."" | performance (runner-up bug) | 0.71 | Auto-route to Platform / SRE |
+| Minority class, new wording | ""My account was locked after multiple failed login attempts."" | security_concern | 0.47 | Manual review |
+| Out of scope | ""The coffee machine on the third floor is broken."" | bug | 0.46 | Manual review |"
+report#7,report,Evaluation report: 8. Explainability,"Exact SHAP values for the linear model (verified to add up to the model's scores). Key words per class are sensible
+(e.g. ""charged twice"", ""subscription"" → billing; ""timing out"", ""queries"" → performance; ""suspicious"", ""vulnerability"" → security).
+Filler words (""my"", ""the"", ""after"") also carry weight because of template sentences. Figures: `30–32_shap_*.png`."
+report#8,report,Evaluation report: 9. Recurring issues and anomalies (summary),"- **24 recurring themes** from text embeddings + K-Means within categories, e.g. pages crashing, changes not saving, queries timing out. Themes are coherent (cohesion 0.76–1.00).
+- **Volume:** no weekly spikes; 1 category-month flag (in line with chance). The detector catches every planted spike of +60% or more.
+- **Hotspots:** performance, security_concern, billing_problem and account_access are about 60% negative vs 42% overall.
+- **Unusual tickets:** 102 resolved tickets flagged by Isolation Forest, mostly reopened, often high priority."
+report#9,report,Evaluation report: 10. Limitations,"- Synthetic data: generated labels and timestamps, even distributions, hard resolution-time limits per priority.
+- Only 96 unique sentences, so the scores measure generalisation to new wording on very little variety. Real data should score higher.
+- The routing table (category → queue) is assumed; the data has no assignment group.
+- TF-IDF matches words, not meaning; sentence embeddings or more varied training text are the main improvements.
+- The GenAI assistant uses keyword retrieval; LLM answers need an API key (offline mode otherwise)."
+readme#0,readme,Project README: Introduction,"HCLTech Future Ready Data Science Hackathon · Use case 4
+
+Support teams receive thousands of tickets and sort them by hand, which slows down routing and hides problems that keep coming back.
+This project reads a ticket's description, predicts its category with a confidence score, sends uncertain tickets to a person,
+finds recurring issues and anomalies, and puts it all in a dashboard with a GenAI assistant you can ask questions in plain English."
+readme#1,readme,Project README: What's inside,"| Step | Notebook | What it does | Main output |
+|---|---|---|---|
+| 1 | `01_sampling_cleaning_eda` | Takes a stratified 20,000-ticket sample, checks quality, cleans, and explores: univariate, bivariate, class imbalance, correlation, data leakage | `tickets_clean.csv` |
+| 2 | `02_classification_models` | TF-IDF features; compares Logistic Regression, Linear SVM, Naive Bayes and a baseline; precision, recall, F1, confusion matrix, ROC-AUC, confidence threshold | `predictions.csv`, `metrics.json`, `models/tfidf_logreg.joblib` |
+| 2b | `02b_semantic_embeddings` | Replaces TF-IDF with sentence embeddings (MiniLM, MPNet, BGE) and compares LR, SVM, kNN, Random Forest on each; same splits as 02 | `embedding_cv_scores.csv`, `models/bge_logreg.joblib` |
+| 3 | `03_shap_explainability` | Exact SHAP values for the linear model: global words per category and per-ticket explanations | `shap_global.csv`, `shap_local.csv` |
+| 3b | `03b_shap_embeddings` | Exact word-level SHAP for the BGE + LR model (each word deleted and the sentence re-embedded), compared with notebook 03, plus a deletion test | `shap_bge_global.csv`, `shap_bge_local.csv` |
+| 4 | `04_recurring_issues_clustering` | Text embeddings (TF-IDF + LSA) and K-Means to group similar descriptions into recurring themes | `clusters.csv`, `cluster_summary.csv` |
+| 4b | `04b_clustering_embeddings` | Recurring themes and cross-category topics with BGE embeddings, compared with notebook 04 | `clusters_bge.csv`, `cluster_summary_bge.csv`, `topic_clusters_bge.csv` |
+| 5 | `05_anomaly_detection` | Volume spikes (robust z-score), hotspots (proportion tests), unusual tickets (Isolation Forest), plus a detector test | `volume_anomalies.csv`, `hotspots.csv`, `ticket_anomalies.csv` |
+| 6 | `06_genai_rag_assistant` | RAG assistant over the project's results, with an offline mode and a number check | `knowledge_base.csv` |
+| – | `app.py` | Streamlit dashboard bringing everything together | – |"
+readme#2,readme,Project README: How to run,"```bash
+pip install -r requirements.txt
+
+jupyter nbconvert --to notebook --execute --inplace notebooks/0*.ipynb
+
+streamlit run app.py
+```
+
+The zip already contains all outputs, so you can start the dashboard straight away (step 3).
+If the dashboard can't load the model (a scikit-learn version difference), just re-run notebook 02 once.
+
+**Optional: real LLM answers.** Without a key, the assistant works offline. To use an LLM, set one of these before starting Jupyter or Streamlit:
+
+```bash
+export ANTHROPIC_API_KEY=...        # Claude
+export OPENAI_API_KEY=...           # OpenAI, or any compatible service:
+export OPENAI_BASE_URL=...          # e.g. Groq or a local Ollama server
+```
+On Windows PowerShell use `$env:ANTHROPIC_API_KEY=""...""`. Model names are in `src/config.py`."
+readme#3,readme,Project README: How it fits together,"```
+data/raw (Excel, 100k tickets)
+   │  01: stratified 20k sample → quality checks → cleaning → EDA
+   ▼
+data/processed/tickets_clean.csv  ───────────────────────────────┐
+   │                                                             │
+   ├─ 02: TF-IDF + LR / SVM / NB → predictions, metrics, model   │
+   ├─ 03: SHAP on the LR model    → word explanations            │  all results saved
+   ├─ 04: embeddings + K-Means    → recurring themes             │  as CSV / JSON
+   ├─ 05: z-scores, tests, IForest→ anomalies                    │
+   └─ 06: knowledge base from all of the above → RAG assistant   │
+                                                                 ▼
+                                    app.py (Streamlit) reads the saved files only
+```
+
+Each notebook reads files and writes files; nothing depends on another notebook's code. Shared settings
+(paths, seed, confidence threshold, routing table, model names) live in `src/config.py`. The assistant's code is in
+`src/rag.py`, so the notebook and the dashboard use exactly the same logic."
+readme#4,readme,Project README: Key results,"| Area | Result |
+|---|---|
+| Data | 20,000 tickets, 8 balanced categories (ratio 1.03), only 96 unique messages |
+| Leakage | Random split gives a misleading macro F1 of 1.00. We split by message instead. `agent_first_reply` and `resolution_summary` give away the label and are excluded. |
+| Model comparison | LR, SVM and Naive Bayes tie on macro F1 (0.59 in grouped CV); LR chosen for probabilities and exact SHAP |
+| Final model (out-of-fold) | Macro F1 0.54, weighted F1 0.54, macro ROC-AUC 0.86 |
+| Semantic embeddings (02b) | BGE + LR / SVM reach macro F1 0.81–0.82 in grouped CV vs 0.59 for TF-IDF; account_access 0.00 → 0.80, manual review 46% → 17% |
+| Strong / weak classes | bug, feature_request, how_to, performance near perfect on new wording; account_access and other fail (3 sentences each) |
+| Low confidence | Below 60% → manual review (46% of tickets). Auto-routed tickets are 92% correct; reviewed ones only 18%, so the rule catches most mistakes |
+| SHAP | Sensible key words per class, plus filler words caused by template sentences (a stated limitation) |
+| SHAP for embeddings (03b) | Key words in every category's top 3 (password, error, suspicious…); deleting the top SHAP word hurts the prediction 5× more than a random word; stop-word share similar to TF-IDF (26% vs 27%) |
+| Recurring issues | 24 coherent themes (e.g. pages crashing, changes not saving, queries timing out) |
+| Clustering with embeddings (04b) | 5 of 8 categories get the same themes as notebook 04; BGE merges login/password failures and security incidents; a new topic view shows a login area of 3,460 tickets across 5 categories |
+| Anomalies | No real volume spikes (detector catches every planted spike of +60% or more); problem categories ~60% negative vs 42% overall |
+| GenAI | Right source document in the top 4 for all 13 test questions; invented numbers are flagged |
+
+**Why the scores look modest:** the test only contains wording the model has never seen, and the dataset has very few
+different sentences per category. This is the honest number. The commonly reported ~100% comes from the same sentences appearing in training and test."
+readme#5,readme,Project README: Dashboard tabs,"| Tab | Shows |
+|---|---|
+| Overview | KPIs, tickets per category and queue, monthly trend, resolution trend by priority, negative share by category |
+| Classify a ticket | TF-IDF prediction, confidence, queue or manual review, top-5 probabilities, SHAP word chart, GenAI explanation |
+| Model performance | F1, precision, recall, ROC-AUC, accuracy; model comparison and CV; per-class table and confusion matrix (live for the filter); confidence chart and threshold slider |
+| Explainability | SHAP top words per category; explanation of any description |
+| Recurring issues | Largest themes, representative descriptions, theme trend |
+| Anomalies | Volume with flagged periods, detector test, hotspots, unusual tickets |
+| GenAI assistant | Ask questions; answers cite their source documents; number check |
+| Data & assumptions | Data notes, assumptions, retrieval test, counts check |
+
+All counts come from one table with one row per ticket, and the sidebar checks that category counts add up to the filtered total."
+readme#6,readme,Project README: Assumptions and limitations,"- The data is a synthetic Kaggle dataset. Labels come from its `issue_type` column and timestamps are generated.
+- There is no assignment-group column, so the category → support queue table in `src/config.py` is our own assumption.
+- `csat_score = 0` is treated as ""not rated"".
+- Only 96 different messages exist, so the classifier is tested on a hard task: new wording. Real, more varied data would likely score higher.
+- Notebooks 02b, 03b and 04b need `pip install sentence-transformers` and download three models (~0.6 GB) the first time. The dashboard still uses the TF-IDF model, SHAP and themes from notebooks 02–04, so it doesn't need PyTorch.
+- Text embeddings in notebook 04 use TF-IDF + LSA so everything runs offline. Notebook 04 has a switch for `sentence-transformers` if it's installed.
+- The `shap` library is optional: SHAP values for the linear model are computed exactly with the same formula `shap.LinearExplainer` uses, and notebook 03 cross-checks against the library if it's installed.
+- The system suggests categories and routing and explains results; it never closes or changes tickets."

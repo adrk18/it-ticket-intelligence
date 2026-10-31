@@ -1,0 +1,25 @@
+cluster_id,category,theme,tickets,unique_sentences,cohesion,example,share_of_category
+feature_request#2,feature_request,"option, option customize, customize, add option",880,7,0.89,Can you add an option to customize analytics dashboard?,0.35
+bug#2,bug,"click, message, message click, error",871,7,0.92,I am seeing an error message when I click on notifications.,0.35
+account_access#2,account_access,"locked multiple, login attempts, multiple, multiple failed",863,1,1.0,My account was locked after multiple failed login attempts.,0.34
+how_to#0,how_to,"export data, export, section, data",859,7,0.81,How can I export my data from the billing section?,0.34
+feature_request#1,feature_request,"team needs, options, needs advanced, needs",856,7,0.91,Our team needs more advanced options for api integration.,0.34
+how_to#1,how_to,"help setting, setting, help, need help",856,7,0.89,I need help setting up login auth for my team.,0.34
+performance#1,performance,"time load, time, takes long, takes",851,7,0.94,The login auth page is very slow and takes a long time to load.,0.34
+other#2,other,"workspace, check, check workspace",848,1,1.0,"Something seems off, can you please check my workspace?",0.34
+billing_problem#0,billing_problem,"tier, plan billed, higher, higher tier",841,1,1.0,I downgraded my plan but I am still being billed for the higher tier.,0.34
+other#0,other,"general, general question, question, question account",833,1,1.0,I have a general question about my account.,0.33
+performance#0,performance,"timing, module, module timing, queries",833,7,0.85,Queries in the login auth module are timing out.,0.33
+how_to#2,how_to,"configure, explain configure, explain, properly",833,7,0.85,Can you explain how to configure data export properly?,0.33
+security_concern#1,security_concern,"compliance, need details, details, details data",832,1,1.0,We need details about your data encryption and compliance.,0.33
+security_concern#0,security_concern,"vulnerability, functionality, vulnerability billing, billing functionality",831,7,0.76,There seems to be a vulnerability in the billing functionality.,0.33
+account_access#0,account_access,"password, password incorrect, log, log says",830,1,1.0,I cannot log in; the system says my password is incorrect.,0.33
+account_access#1,account_access,"2fa, 2fa code, working try, working",829,1,1.0,My 2FA code is not working when I try to sign in.,0.33
+security_concern#2,security_concern,"suspicious login, suspicious, noticed, login account",829,1,1.0,I noticed a suspicious login on my account.,0.33
+bug#0,bug,"changes, feature saving, feature, saving changes",825,7,0.89,The billing feature is not saving my changes.,0.33
+billing_problem#1,billing_problem,"twice subscription, twice, charged, charged twice",821,1,1.0,I was charged twice for my subscription this month.,0.33
+performance#2,performance,"overall, overall performance, performance, performance degraded",819,1,1.0,Overall performance has degraded in the last few days.,0.33
+billing_problem#2,billing_problem,"compared, compared plan, plan selected, incorrect compared",814,1,1.0,My invoice amount is incorrect compared to the plan I selected.,0.33
+other#1,other,"sure category, sure, category, category fits",811,1,1.0,I need help but I'm not sure which category this fits in.,0.33
+bug#1,bug,"try open, open, page keeps, keeps crashing",774,7,0.92,The page keeps crashing whenever I try to open the notifications section.,0.31
+feature_request#0,feature_request,"support product, product, great, support",761,7,0.85,It would be great to have notifications support in your product.,0.3

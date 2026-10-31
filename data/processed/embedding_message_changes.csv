@@ -1,0 +1,97 @@
+message,true,tickets,TF-IDF + LR,BGE + LR,BGE confidence,TF-IDF ok,BGE ok
+I have a general question about my account.,other,833,account_access,billing_problem,0.26312536001205444,False,False
+I need help but I'm not sure which category this fits in.,other,811,how_to,other,0.789617657661438,False,True
+It would be great to have api integration support in your product.,feature_request,108,feature_request,feature_request,0.9880353808403015,True,True
+I noticed a suspicious login on my account.,security_concern,829,account_access,security_concern,0.5700730681419373,False,True
+The analytics dashboard feature is not saving my changes.,bug,118,bug,bug,0.9830459356307983,True,True
+Can you add an option to customize api integration?,feature_request,127,feature_request,feature_request,0.9528114199638367,True,True
+I need help setting up notifications for my team.,how_to,130,how_to,how_to,0.97881019115448,True,True
+My account was locked after multiple failed login attempts.,account_access,863,security_concern,account_access,0.7207344174385071,False,True
+There seems to be a vulnerability in the billing functionality.,security_concern,135,security_concern,security_concern,0.9463698267936707,True,True
+The data export page is very slow and takes a long time to load.,performance,120,performance,performance,0.9673882722854614,True,True
+"Something seems off, can you please check my workspace?",other,848,how_to,security_concern,0.31085914373397827,False,False
+My 2FA code is not working when I try to sign in.,account_access,829,bug,bug,0.7305587530136108,False,False
+I need help setting up login auth for my team.,how_to,138,how_to,how_to,0.9790738821029663,True,True
+My invoice amount is incorrect compared to the plan I selected.,billing_problem,814,account_access,billing_problem,0.8377355337142944,False,True
+The page keeps crashing whenever I try to open the notifications section.,bug,134,bug,bug,0.9887730479240417,True,True
+Our team needs more advanced options for analytics dashboard.,feature_request,115,feature_request,feature_request,0.985734224319458,True,True
+I was charged twice for my subscription this month.,billing_problem,821,how_to,billing_problem,0.6710096597671509,False,True
+The api integration page is very slow and takes a long time to load.,performance,111,performance,performance,0.9664320349693298,True,True
+Can you explain how to configure data export properly?,how_to,127,how_to,how_to,0.9928023219108582,True,True
+Overall performance has degraded in the last few days.,performance,819,performance,performance,0.6678856611251831,True,True
+I downgraded my plan but I am still being billed for the higher tier.,billing_problem,841,billing_problem,billing_problem,0.7327991724014282,True,True
+Can you explain how to configure api integration properly?,how_to,117,how_to,how_to,0.9687309861183167,True,True
+I cannot log in; the system says my password is incorrect.,account_access,830,billing_problem,account_access,0.6817543506622314,False,True
+The page keeps crashing whenever I try to open the login auth section.,bug,106,bug,bug,0.916008710861206,True,True
+The page keeps crashing whenever I try to open the api integration section.,bug,105,bug,bug,0.9704408645629883,True,True
+Queries in the billing module are timing out.,performance,129,performance,performance,0.9786836504936218,True,True
+How can I export my data from the billing section?,how_to,134,how_to,how_to,0.952196478843689,True,True
+How can I export my data from the mobile app section?,how_to,97,how_to,how_to,0.9765846133232117,True,True
+I need help setting up analytics dashboard for my team.,how_to,108,how_to,how_to,0.9822423458099365,True,True
+The mobile app page is very slow and takes a long time to load.,performance,132,performance,performance,0.9863613843917847,True,True
+Can you add an option to customize billing?,feature_request,122,feature_request,feature_request,0.9840488433837891,True,True
+How can I export my data from the login auth section?,how_to,117,how_to,how_to,0.9547849893569946,True,True
+It would be great to have data export support in your product.,feature_request,115,feature_request,feature_request,0.9517588019371033,True,True
+Can you add an option to customize login auth?,feature_request,141,feature_request,feature_request,0.9683284163475037,True,True
+The page keeps crashing whenever I try to open the analytics dashboard section.,bug,118,bug,bug,0.9810875058174133,True,True
+I am seeing an error message when I click on data export.,bug,122,bug,bug,0.9708083271980286,True,True
+I need help setting up billing for my team.,how_to,129,how_to,how_to,0.9650577306747437,True,True
+Our team needs more advanced options for billing.,feature_request,121,feature_request,feature_request,0.9790219068527222,True,True
+We need details about your data encryption and compliance.,security_concern,832,other,feature_request,0.5755218863487244,False,False
+It would be great to have notifications support in your product.,feature_request,116,feature_request,feature_request,0.9905468225479126,True,True
+Our team needs more advanced options for login auth.,feature_request,133,feature_request,feature_request,0.9251740574836731,True,True
+Can you add an option to customize notifications?,feature_request,111,feature_request,feature_request,0.9841505289077759,True,True
+Our team needs more advanced options for notifications.,feature_request,123,feature_request,feature_request,0.9827064275741577,True,True
+Can you explain how to configure analytics dashboard properly?,how_to,107,how_to,how_to,0.9274411797523499,True,True
+I am seeing an error message when I click on billing.,bug,133,bug,bug,0.9609683752059937,True,True
+How can I export my data from the data export section?,how_to,134,how_to,how_to,0.9592555165290833,True,True
+Can you add an option to customize analytics dashboard?,feature_request,145,feature_request,feature_request,0.9596841931343079,True,True
+I need help setting up data export for my team.,how_to,116,how_to,how_to,0.9911760091781616,True,True
+The notifications page is very slow and takes a long time to load.,performance,122,performance,performance,0.9739800691604614,True,True
+The login auth page is very slow and takes a long time to load.,performance,132,performance,performance,0.9465020298957825,True,True
+Queries in the data export module are timing out.,performance,120,performance,performance,0.9783097505569458,True,True
+The page keeps crashing whenever I try to open the billing section.,bug,101,bug,bug,0.9583646655082703,True,True
+I need help setting up mobile app for my team.,how_to,119,how_to,how_to,0.9740731716156006,True,True
+The billing feature is not saving my changes.,bug,131,bug,bug,0.929259717464447,True,True
+Can you explain how to configure notifications properly?,how_to,125,how_to,how_to,0.9718378782272339,True,True
+The data export feature is not saving my changes.,bug,122,bug,bug,0.9329697489738464,True,True
+How can I export my data from the api integration section?,how_to,128,how_to,how_to,0.9619964361190796,True,True
+Can you explain how to configure login auth properly?,how_to,114,how_to,how_to,0.8666282892227173,True,True
+The analytics dashboard page is very slow and takes a long time to load.,performance,131,performance,performance,0.9824401140213013,True,True
+Our team needs more advanced options for api integration.,feature_request,139,feature_request,feature_request,0.9795950055122375,True,True
+The mobile app feature is not saving my changes.,bug,105,bug,bug,0.985594630241394,True,True
+Queries in the login auth module are timing out.,performance,132,performance,performance,0.9473167061805725,True,True
+Can you add an option to customize data export?,feature_request,128,feature_request,feature_request,0.8598964214324951,True,True
+There seems to be a vulnerability in the mobile app functionality.,security_concern,105,security_concern,security_concern,0.9676709771156311,True,True
+The billing page is very slow and takes a long time to load.,performance,103,performance,performance,0.9575821161270142,True,True
+It would be great to have login auth support in your product.,feature_request,107,feature_request,feature_request,0.9191391468048096,True,True
+Queries in the mobile app module are timing out.,performance,109,performance,performance,0.98739093542099,True,True
+There seems to be a vulnerability in the analytics dashboard functionality.,security_concern,117,security_concern,security_concern,0.9538595080375671,True,True
+I am seeing an error message when I click on mobile app.,bug,139,bug,bug,0.9768869280815125,True,True
+Our team needs more advanced options for data export.,feature_request,121,feature_request,feature_request,0.9838485717773438,True,True
+There seems to be a vulnerability in the api integration functionality.,security_concern,126,security_concern,security_concern,0.9251351952552795,True,True
+Queries in the notifications module are timing out.,performance,113,performance,performance,0.985870897769928,True,True
+I am seeing an error message when I click on notifications.,bug,144,bug,bug,0.986932098865509,True,True
+The page keeps crashing whenever I try to open the data export section.,bug,101,bug,bug,0.9709901213645935,True,True
+The login auth feature is not saving my changes.,bug,102,bug,bug,0.925582230091095,True,True
+Queries in the analytics dashboard module are timing out.,performance,118,performance,performance,0.9709867835044861,True,True
+There seems to be a vulnerability in the notifications functionality.,security_concern,115,security_concern,security_concern,0.977327823638916,True,True
+How can I export my data from the notifications section?,how_to,125,how_to,how_to,0.9654362797737122,True,True
+I am seeing an error message when I click on analytics dashboard.,bug,103,bug,bug,0.9761101603507996,True,True
+It would be great to have billing support in your product.,feature_request,99,feature_request,feature_request,0.9647903442382812,True,True
+How can I export my data from the analytics dashboard section?,how_to,124,how_to,how_to,0.9501359462738037,True,True
+I am seeing an error message when I click on api integration.,bug,120,bug,bug,0.9337164163589478,True,True
+There seems to be a vulnerability in the login auth functionality.,security_concern,104,security_concern,security_concern,0.9655769467353821,True,True
+Our team needs more advanced options for mobile app.,feature_request,104,feature_request,feature_request,0.9844129681587219,True,True
+The page keeps crashing whenever I try to open the mobile app section.,bug,109,bug,bug,0.9856951832771301,True,True
+The api integration feature is not saving my changes.,bug,130,bug,bug,0.9737895727157593,True,True
+It would be great to have mobile app support in your product.,feature_request,109,feature_request,feature_request,0.9876230955123901,True,True
+I am seeing an error message when I click on login auth.,bug,110,bug,bug,0.7924798727035522,True,True
+Queries in the api integration module are timing out.,performance,112,performance,performance,0.9884220957756042,True,True
+There seems to be a vulnerability in the data export functionality.,security_concern,129,security_concern,security_concern,0.9844489693641663,True,True
+It would be great to have analytics dashboard support in your product.,feature_request,107,feature_request,feature_request,0.9843555092811584,True,True
+Can you explain how to configure mobile app properly?,how_to,126,how_to,how_to,0.9561543464660645,True,True
+Can you explain how to configure billing properly?,how_to,117,how_to,how_to,0.8278660774230957,True,True
+The notifications feature is not saving my changes.,bug,117,bug,bug,0.9803063869476318,True,True
+Can you add an option to customize mobile app?,feature_request,106,feature_request,feature_request,0.9932880997657776,True,True
+I need help setting up api integration for my team.,how_to,116,how_to,how_to,0.9744089841842651,True,True

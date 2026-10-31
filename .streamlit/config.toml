@@ -1,0 +1,17 @@
+[theme]
+primaryColor = "#4F46E5"
+backgroundColor = "#F7F8FC"
+secondaryBackgroundColor = "#EEF0FA"
+textColor = "#111827"
+font = "Inter:https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+headingFont = "Inter:https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+baseRadius = "medium"
+
+[theme.sidebar]
+backgroundColor = "#F3F1FF"
+
+[client]
+toolbarMode = "minimal"
+
+[server]
+runOnSave = false

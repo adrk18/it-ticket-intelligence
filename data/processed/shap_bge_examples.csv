@@ -1,0 +1,6 @@
+message,TF-IDF + LR,BGE + LR
+I was charged twice for my subscription this month.,billing_problem (99%),billing_problem (99%)
+Locked out of my account after entering the wrong password too many times,account_access (66%),account_access (98%)
+The export page crashes and the invoice is wrong,performance (37%),bug (69%)
+How do I reset my password?,account_access (40%),account_access (92%)
+My account was locked after multiple failed login attempts.,account_access (99%),account_access (99%)

@@ -1,0 +1,9 @@
+topic,top words,tickets,categories,products,example
+0,"export, data, section, export data",4886,"bug 39%, performance 29%, how_to 20%, security_concern 12%","data export 20%, notifications 18%, api integration 17%",I am seeing an error message when I click on notifications.
+2,"team, option customize, customize, add",3690,"feature_request 68%, how_to 32%","api integration 16%, notifications 16%, analytics dashboard 16%",Can you add an option to customize analytics dashboard?
+1,"login, says password, says, password incorrect",3460,"account_access 73%, bug 9%, performance 8%, how_to 7%","(none) 73%, login auth 27%",My account was locked after multiple failed login attempts.
+5,"plan, twice, charged, charged twice",2992,"billing_problem 83%, bug 9%, security_concern 5%, how_to 4%","(none) 83%, billing 17%",I downgraded my plan but I am still being billed for the higher tier.
+3,"account, question account, general, general question",2473,"other 66%, security_concern 34%",(none) 100%,I have a general question about my account.
+7,"workspace, check workspace, check",848,other 100%,(none) 100%,"Something seems off, can you please check my workspace?"
+6,"encryption compliance, data encryption, compliance, details",832,security_concern 100%,(none) 100%,We need details about your data encryption and compliance.
+4,"overall performance, degraded days, degraded, days",819,performance 100%,(none) 100%,Overall performance has degraded in the last few days.

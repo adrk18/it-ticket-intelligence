@@ -1,0 +1,9 @@
+category,unique_sentences,themes (BGE),"themes (LSA, nb 04)",best_silhouette,agreement with nb 04 (ARI)
+account_access,3,2,3,0.12,0.0
+billing_problem,3,3,3,0.07,1.0
+bug,21,3,3,0.27,1.0
+feature_request,21,3,3,0.25,1.0
+how_to,21,3,3,0.21,0.85
+other,3,3,3,0.06,1.0
+performance,15,3,3,0.28,1.0
+security_concern,9,2,3,0.27,0.57
